@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ipa/constant/constantroute.dart';
 import 'package:ipa/screen/style/config.dart';
 import 'package:ipa/screen/widgets/menuitemlayout.dart';
 import 'package:ipa/screen/style/palete.dart';
@@ -24,7 +25,7 @@ class _MenuItemState extends State<MenuItem> {
               width: SizeConfig.horizontal * 9,
               paddingTitle: SizeConfig.horizontal * 6,
               menuTitle: "Introduction to Phonetics", onTap: () {
-            print("halo");
+            Navigator.pushNamed(context, introRoute);
           }),
           Padding(
             padding: EdgeInsets.only(top: SizeConfig.vertical * 2.8),
