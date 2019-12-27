@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ipa/screen/pages/mainmenu/screen.dart';
-import 'package:ipa/screen/style/palete.dart';
 
 void main() => runApp(MyApp());
 
