@@ -34,7 +34,7 @@ class _MenuItemState extends State<MenuItem> {
                 paddingTitle: SizeConfig.horizontal * 3.8,
                 width: SizeConfig.horizontal * 11,
                 menuTitle: "Phonetics Chart", onTap: () {
-              print("halo");
+              Navigator.pushNamed(context, phoneticRoute);
             }),
           ),
           Padding(
@@ -44,7 +44,7 @@ class _MenuItemState extends State<MenuItem> {
                 paddingTitle: SizeConfig.horizontal * 3.8,
                 width: SizeConfig.horizontal * 11,
                 menuTitle: "Exercise", onTap: () {
-              print("halo");
+                  Navigator.pushNamed(context, exerciseRoute);
             }),
           ),
           Padding(
@@ -54,7 +54,7 @@ class _MenuItemState extends State<MenuItem> {
                 paddingTitle: SizeConfig.horizontal * 3.8,
                 width: SizeConfig.horizontal * 11,
                 menuTitle: "Information", onTap: () {
-              print("halo");
+                  Navigator.pushNamed(context, infoRoute);
             }),
           ),
         ],
