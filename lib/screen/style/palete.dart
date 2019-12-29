@@ -15,7 +15,7 @@ class Palete {
   static Color bgGrey = Color.fromRGBO(244, 246, 249, 1);
   static Color formGrey = Color.fromRGBO(249, 250, 252, 1);
   static Color isiColor = Color.fromRGBO(80, 80, 80, 1);
-  static Color shadowMenu = Color.fromRGBO(0, 0, 0, 0.6);
+  static Color shadowBlue = Color.fromRGBO(62, 137, 240, 0.3);
 
 
   // TODO : Gradient Color

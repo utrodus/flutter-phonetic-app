@@ -18,7 +18,7 @@ class IntroItemLayout extends StatelessWidget {
     }
 
     buildExpanded() {
-      return Padding(
+      return Container(
         padding: EdgeInsets.all(SizeConfig.horizontal * 3),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,9 +29,10 @@ class IntroItemLayout extends StatelessWidget {
               overflow: TextOverflow.clip,
               textAlign: TextAlign.justify,
               style: TextStyle(
+                  height: SizeConfig.horizontal * 0.4,
                   fontFamily: Palete.cabinRegular,
                   color: Palete.isiColor,
-                  fontSize: SizeConfig.horizontal * 3.7),
+                  fontSize: SizeConfig.horizontal * 3.8),
             ),
           ],
         ),
@@ -43,6 +44,7 @@ class IntroItemLayout extends StatelessWidget {
       child: ExpandableNotifier(
           child: ScrollOnExpand(
         child: Card(
+          elevation: 1.3,
           clipBehavior: Clip.antiAlias,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,10 +52,12 @@ class IntroItemLayout extends StatelessWidget {
               Builder(
                 builder: (context) {
                   var controller = ExpandableController.of(context);
+
                   return Container(
                     decoration: BoxDecoration(
-                        color:
-                            controller.expanded ? Palete.blue : Palete.blueMenu),
+                      color:
+                          controller.expanded ? Palete.blue : Palete.blueMenu,
+                    ),
                     child: ListTile(
                       title: Text(
                         title ?? "-",
