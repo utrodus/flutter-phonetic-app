@@ -18,6 +18,7 @@ class Palete {
   static Color borderGrey = Color.fromRGBO(193, 193, 193, 1);
   static Color isiColor = Color.fromRGBO(80, 80, 80, 1);
   static Color shadowBlue = Color.fromRGBO(62, 137, 240, 0.3);
+  static Color exerciseMenu = Color.fromRGBO(28, 58, 97, 1);
 
 
   // TODO : Gradient Color
@@ -38,6 +39,7 @@ class Palete {
   static String book = "assets/img/book.png";
   static String ae = "assets/img/ae.png";
   static String homework = "assets/img/homework.png";
+  static String exercise = "assets/img/exercise.png";
   static String info = "assets/img/info.png";
   static String playButton = "assets/img/playbutton.png";
   

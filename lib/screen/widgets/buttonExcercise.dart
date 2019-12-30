@@ -23,15 +23,13 @@ Widget ExcerciseLayout(
               spreadRadius: 2.0)
         ]),
         height: SizeConfig.vertical * 10,
-        width: SizeConfig.horizontal * 58,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            SizedBox(
-              width: SizeConfig.horizontal * 5,
-            ),
             Icon(
               icon,
+              size: SizeConfig.horizontal *8,
               color: Colors.white,
             ),
             Padding(
@@ -41,7 +39,7 @@ Widget ExcerciseLayout(
                 style: TextStyle(
                     color: Palete.white,
                     fontFamily: Palete.cabinSemiBold,
-                    fontSize: SizeConfig.horizontal * 4.2),
+                    fontSize: SizeConfig.horizontal * 5),
               ),
             )
           ],
