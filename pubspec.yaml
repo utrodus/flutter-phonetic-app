@@ -20,6 +20,8 @@ dependencies:
   flutter:
     sdk: flutter
   expandable: ^4.0.2
+  audioplayers: ^0.13.5
+  provider: ^3.1.0+1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -47,7 +49,14 @@ flutter:
     - assets/img/ae.png
     - assets/img/book.png
     - assets/img/homework.png
+    - assets/img/playbutton.png
     - assets/img/info.png
+    - assets/gif/coba.gif
+    - assets/gif/b.gif
+    - assets/gif/d.gif
+
+    - assets/audio/b.mp3
+    - assets/audio/d.mp3
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
