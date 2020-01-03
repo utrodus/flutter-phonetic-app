@@ -14,7 +14,7 @@ class KeyboardScreen extends StatefulWidget {
 
 class _KeyboardScreenState extends State<KeyboardScreen> {
   final AudioCache consonant = AudioCache(prefix: 'audio/consonant/');
-  final AudioCache player2 = AudioCache(prefix: 'audio/vowel/');
+  final AudioCache vowel = AudioCache(prefix: 'audio/vowel/');
 
   bool visible;
 
@@ -32,12 +32,12 @@ class _KeyboardScreenState extends State<KeyboardScreen> {
           flex: 2,
           child: Stack(
             children: <Widget>[
-              keyBoard1(context, consonant, visible, () {
+              keyBoard1(context, consonant,vowel, visible, () {
                 setState(() {
                   visible = false;
                 });
               }),
-              keyBoard2(context, player2, !visible, () {
+              keyBoard2(context, vowel, !visible, () {
                 setState(() {
                   visible = true;
                 });

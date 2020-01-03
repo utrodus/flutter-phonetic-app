@@ -5,7 +5,13 @@ import 'package:provider/provider.dart';
 import 'package:phono/screen/style/palete.dart';
 import 'package:phono/screen/pages/state/symbol.dart';
 
-Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
+Widget keyBoard1(
+  BuildContext context,
+  consonant,
+  vowel,
+  visible,
+  onTap,
+) {
   SizeConfig().init(context);
   return Visibility(
     visible: visible,
@@ -13,50 +19,50 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Container(
-              padding: EdgeInsets.only(
-                top: SizeConfig.vertical * 0.5,
-                right: SizeConfig.vertical * 3,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  Material(
-                    color: Colors.transparent,
-                    child: InkWell(
-                      onTap: onTap,
-                      child: Container(
-                        padding: EdgeInsets.only(
-                          top: SizeConfig.vertical * 0.5,
-                          bottom: SizeConfig.vertical * 0.5,
-                          right: SizeConfig.horizontal * 2.5,
-                          left: SizeConfig.horizontal * 2.5,
-                        ),
-                        decoration: BoxDecoration(
-                            color: Palete.keyboardNext,
-                            borderRadius: BorderRadius.circular(15)),
-                        child: Row(
-                          children: <Widget>[
-                            Container(
-                              child: Text(
-                                "Next",
-                                style: TextStyle(
-                                  color: Palete.white,
-                                ),
-                              ),
-                            ),
-                            
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            // Container(
+            //   padding: EdgeInsets.only(
+            //     top: SizeConfig.vertical * 0.5,
+            //     right: SizeConfig.vertical * 3,
+            //   ),
+            //   child: Row(
+            //     mainAxisAlignment: MainAxisAlignment.end,
+            //     children: <Widget>[
+            //       Material(
+            //         color: Colors.transparent,
+            //         child: InkWell(
+            //           onTap: onTap,
+            //           child: Container(
+            //             padding: EdgeInsets.only(
+            //               top: SizeConfig.vertical * 0.5,
+            //               bottom: SizeConfig.vertical * 0.5,
+            //               right: SizeConfig.horizontal * 2.5,
+            //               left: SizeConfig.horizontal * 2.5,
+            //             ),
+            //             decoration: BoxDecoration(
+            //                 color: Palete.keyboardNext,
+            //                 borderRadius: BorderRadius.circular(15)),
+            //             child: Row(
+            //               children: <Widget>[
+            //                 Container(
+            //                   child: Text(
+            //                     "Next",
+            //                     style: TextStyle(
+            //                       color: Palete.white,
+            //                     ),
+            //                   ),
+            //                 ),
+
+            //               ],
+            //             ),
+            //           ),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
             // TODO : BARIS 1
             Container(
-              margin: EdgeInsets.only(top: SizeConfig.vertical * 0),
+              margin: EdgeInsets.only(top: SizeConfig.vertical * 1),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -83,7 +89,7 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                   Padding(
                     padding: EdgeInsets.only(
                         right: SizeConfig.horizontal * 1.4,
-                        left: SizeConfig.horizontal * 3.5),
+                        left: SizeConfig.horizontal * 3),
                     child: KeyboardLayout(
                       symbol: "p",
                       audio: "p.mp3",
@@ -104,7 +110,7 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                   Padding(
                     padding: EdgeInsets.only(
                         right: SizeConfig.horizontal * 1.4,
-                        left: SizeConfig.horizontal * 3.5),
+                        left: SizeConfig.horizontal * 3),
                     child: KeyboardLayout(
                       symbol: "dʒ",
                       audio: "d3.mp3",
@@ -120,6 +126,38 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                     ontap: () {
                       Provider.of<Simbol>(context).setCurrentSymbol(5);
                       consonant.play("tf.mp3");
+                    },
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                        left: SizeConfig.horizontal * 4,
+                        right: SizeConfig.horizontal * 1),
+                    child: KeyboardLayout(
+                      symbol: "i",
+                      audio: "i.mp3",
+                      ontap: () {
+                        Provider.of<Simbol>(context).setCurrentSymbol(5);
+                        vowel.play("i.mp3");
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: SizeConfig.horizontal * 1),
+                    child: KeyboardLayout(
+                      symbol: "-",
+                      audio: "i.mp3",
+                      ontap: () {
+                        // Provider.of<Simbol>(context).setCurrentSymbol(5);
+                        // vowel.play("i.mp3");
+                      },
+                    ),
+                  ),
+                  KeyboardLayout(
+                    symbol: "u",
+                    audio: "u.mp3",
+                    ontap: () {
+                      Provider.of<Simbol>(context).setCurrentSymbol(5);
+                      vowel.play("u.mp3");
                     },
                   ),
                 ],
@@ -154,7 +192,7 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                   Padding(
                     padding: EdgeInsets.only(
                         right: SizeConfig.horizontal * 1.4,
-                        left: SizeConfig.horizontal * 3.5),
+                        left: SizeConfig.horizontal * 3),
                     child: KeyboardLayout(
                       symbol: "t",
                       audio: "t.mp3",
@@ -175,8 +213,8 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                   Padding(
                     padding: EdgeInsets.only(
                         right: SizeConfig.horizontal * 1.4,
-                        top: SizeConfig.vertical *1,
-                        left: SizeConfig.horizontal * 3.5),
+                        top: SizeConfig.vertical * 1,
+                        left: SizeConfig.horizontal * 3),
                     child: KeyboardLayout(
                       symbol: "l",
                       audio: "l.mp3",
@@ -197,6 +235,38 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                       },
                     ),
                   ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                        left: SizeConfig.horizontal * 4,
+                        right: SizeConfig.horizontal * 1),
+                    child: KeyboardLayout(
+                      symbol: "ɪ",
+                      audio: "ɪ.mp3",
+                      ontap: () {
+                        Provider.of<Simbol>(context).setCurrentSymbol(5);
+                        vowel.play("ɪ.mp3");
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: SizeConfig.horizontal * 1),
+                    child: KeyboardLayout(
+                      symbol: "ʌ",
+                      audio: "v2.mp3",
+                      ontap: () {
+                        Provider.of<Simbol>(context).setCurrentSymbol(5);
+                        vowel.play("v2.mp3");
+                      },
+                    ),
+                  ),
+                  KeyboardLayout(
+                    symbol: "ʊ",
+                    audio: "u2.mp3",
+                    ontap: () {
+                      Provider.of<Simbol>(context).setCurrentSymbol(5);
+                      vowel.play("u2.mp3");
+                    },
+                  ),
                 ],
               ),
             ),
@@ -208,75 +278,73 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Column(
-                    
                     children: <Widget>[
                       Row(
                         children: <Widget>[
                           Padding(
                             padding: EdgeInsets.only(
-                                right: SizeConfig.horizontal * 1.4,
-                                ),
+                              right: SizeConfig.horizontal * 1.4,
+                            ),
                             child: KeyboardLayout(
                               symbol: "ʃ",
                               audio: "ff.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(16);
+                                    .setCurrentSymbol(12);
                                 consonant.play("ff.mp3");
                               },
                             ),
                           ),
                           KeyboardLayout(
-                              symbol: "ʒ",
-                              audio: "3.mp3",
-                              ontap: () {
-                                Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(17);
-                                consonant.play("3.mp3");
-                              },
-                            ),
+                            symbol: "ʒ",
+                            audio: "3.mp3",
+                            ontap: () {
+                              Provider.of<Simbol>(context).setCurrentSymbol(13);
+                              consonant.play("3.mp3");
+                            },
+                          ),
                         ],
                       ),
                       Row(
                         children: <Widget>[
                           Padding(
                             padding: EdgeInsets.only(
-                              top: SizeConfig.vertical *0.5,
-                                right: SizeConfig.horizontal * 1.4,
-                                ),
+                              top: SizeConfig.vertical * 0.5,
+                              right: SizeConfig.horizontal * 1.4,
+                            ),
                             child: KeyboardLayout(
                               symbol: "θ",
                               audio: "0.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(16);
+                                    .setCurrentSymbol(18);
                                 consonant.play("0.mp3");
                               },
                             ),
                           ),
-                         Padding(
-                           padding:  EdgeInsets.only(top:SizeConfig.vertical*0.5),
-                           child: KeyboardLayout(
-                                symbol: "ð",
-                                audio: "ð.mp3",
-                                ontap: () {
-                                  Provider.of<Simbol>(context)
-                                      .setCurrentSymbol(17);
-                                  consonant.play("03.mp3");
-                                },
-                              ),
-                         ),
+                          Padding(
+                            padding:
+                                EdgeInsets.only(top: SizeConfig.vertical * 0.5),
+                            child: KeyboardLayout(
+                              symbol: "ð",
+                              audio: "ð.mp3",
+                              ontap: () {
+                                Provider.of<Simbol>(context)
+                                    .setCurrentSymbol(19);
+                                consonant.play("03.mp3");
+                              },
+                            ),
+                          ),
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsets.only(
-                          top: SizeConfig.vertical *0.5 
-                        ),
+                        padding:
+                            EdgeInsets.only(top: SizeConfig.vertical * 0.5),
                         child: KeyboardLayout(
                           symbol: "h",
                           audio: "h.mp3",
                           ontap: () {
-                            Provider.of<Simbol>(context).setCurrentSymbol(17);
+                            Provider.of<Simbol>(context).setCurrentSymbol(22);
                             consonant.play("h.mp3");
                           },
                         ),
@@ -286,7 +354,7 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                   Padding(
                     padding: EdgeInsets.only(
                         right: SizeConfig.horizontal * 1.4,
-                        left: SizeConfig.horizontal * 3.5),
+                        left: SizeConfig.horizontal * 3),
                     child: KeyboardLayout(
                       symbol: "k",
                       audio: "k.mp3",
@@ -305,7 +373,6 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                     },
                   ),
                   Column(
-                    
                     children: <Widget>[
                       Row(
                         children: <Widget>[
@@ -313,7 +380,7 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                             padding: EdgeInsets.only(
                                 top: SizeConfig.vertical * 1,
                                 right: SizeConfig.horizontal * 1.4,
-                                left: SizeConfig.horizontal * 3.5),
+                                left: SizeConfig.horizontal * 3),
                             child: KeyboardLayout(
                               symbol: "w",
                               audio: "w.mp3",
@@ -352,7 +419,7 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                               audio: "m.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(16);
+                                    .setCurrentSymbol(20);
                                 consonant.play("m.mp3");
                               },
                             ),
@@ -366,7 +433,7 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                               audio: "n.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(17);
+                                    .setCurrentSymbol(21);
                                 consonant.play("n.mp3");
                               },
                             ),
@@ -375,16 +442,181 @@ Widget keyBoard1(BuildContext context, consonant, visible, onTap) {
                       ),
                       Padding(
                         padding: EdgeInsets.only(
-                          left: SizeConfig.horizontal *2.5,
-                          top: SizeConfig.vertical *0.5 
-                        ),
+                            left: SizeConfig.horizontal * 2.5,
+                            top: SizeConfig.vertical * 0.5),
                         child: KeyboardLayout(
                           symbol: "ŋ",
                           audio: "n2.mp3",
                           ontap: () {
-                            Provider.of<Simbol>(context).setCurrentSymbol(17);
+                            Provider.of<Simbol>(context).setCurrentSymbol(23);
                             consonant.play("n2.mp3");
                           },
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.only(
+                                left: SizeConfig.horizontal * 4,
+                                right: SizeConfig.horizontal * 1),
+                            child: KeyboardLayout(
+                              symbol: "-",
+                              audio: "ɪ.mp3",
+                              ontap: () {
+                                // Provider.of<Simbol>(context)
+                                //     .setCurrentSymbol(5);
+                                // vowel.play("ɪ.mp3");
+                              },
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(
+                                right: SizeConfig.horizontal * 1),
+                            child: KeyboardLayout(
+                              symbol: "ə",
+                              audio: "ewalik.mp3",
+                              ontap: () {
+                                Provider.of<Simbol>(context)
+                                    .setCurrentSymbol(5);
+                                vowel.play("ewalik.mp3");
+                              },
+                            ),
+                          ),
+                          KeyboardLayout(
+                            symbol: "-",
+                            audio: "u2.mp3",
+                            ontap: () {
+                              // Provider.of<Simbol>(context).setCurrentSymbol(5);
+                              // vowel.play("u2.mp3");
+                            },
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding:
+                            EdgeInsets.only(top: SizeConfig.vertical * 0.5),
+                        child: Row(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  left: SizeConfig.horizontal * 4,
+                                  right: SizeConfig.horizontal * 1),
+                              child: KeyboardLayout(
+                                symbol: "e",
+                                audio: "e.mp3",
+                                ontap: () {
+                                  Provider.of<Simbol>(context)
+                                      .setCurrentSymbol(5);
+                                  vowel.play("e.mp3");
+                                },
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  right: SizeConfig.horizontal * 1),
+                              child: KeyboardLayout(
+                                symbol: "-",
+                                audio: "v2.mp3",
+                                ontap: () {
+                                  // Provider.of<Simbol>(context)
+                                  //     .setCurrentSymbol(5);
+                                  // vowel.play("v2.mp3");
+                                },
+                              ),
+                            ),
+                            KeyboardLayout(
+                              symbol: "-",
+                              audio: "u2.mp3",
+                              ontap: () {
+                                // Provider.of<Simbol>(context)
+                                //     .setCurrentSymbol(5);
+                                // vowel.play("u2.mp3");
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            EdgeInsets.only(top: SizeConfig.vertical * 0.5),
+                        child: Row(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  left: SizeConfig.horizontal * 4,
+                                  right: SizeConfig.horizontal * 1),
+                              child: KeyboardLayout(
+                                symbol: "ae",
+                                audio: "eponi.mp3",
+                                ontap: () {
+                                  Provider.of<Simbol>(context)
+                                      .setCurrentSymbol(5);
+                                  vowel.play("eponi.mp3");
+                                },
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  right: SizeConfig.horizontal * 1),
+                              child: KeyboardLayout(
+                                symbol: "ɑ",
+                                audio: "a.mp3",
+                                ontap: () {
+                                  Provider.of<Simbol>(context)
+                                      .setCurrentSymbol(5);
+                                  vowel.play("a.mp3");
+                                },
+                              ),
+                            ),
+                            KeyboardLayout(
+                              symbol: "ɔ",
+                              audio: "c2.mp3",
+                              ontap: () {
+                                Provider.of<Simbol>(context)
+                                    .setCurrentSymbol(5);
+                                vowel.play("c2.mp3");
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            EdgeInsets.only(top: SizeConfig.vertical * 1.3),
+                        child: Row(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  left: SizeConfig.horizontal * 4,
+                                  right: SizeConfig.horizontal * 1),
+                              child: KeyboardLayout(
+                                symbol: "ɝ",
+                                audio: "3buntut.mp3",
+                                ontap: () {
+                                  Provider.of<Simbol>(context)
+                                      .setCurrentSymbol(5);
+                                  vowel.play("3buntut.mp3");
+                                },
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  right: SizeConfig.horizontal * 1),
+                              child: KeyboardLayout(
+                                symbol: "ɚ",
+                                audio: "ebuntut.mp3",
+                                ontap: () {
+                                  Provider.of<Simbol>(context)
+                                      .setCurrentSymbol(5);
+                                  vowel.play("ebuntut.mp3");
+                                },
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],

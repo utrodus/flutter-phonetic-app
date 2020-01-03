@@ -70,18 +70,27 @@ flutter:
     - assets/audio/0.mp3
     
 #vowel :
-    - assets/audio/ë.mp3
+    # eponi = ë
+    - assets/audio/eponi.mp3
     - assets/audio/i.mp3
     - assets/audio/u.mp3
-    - assets/audio/ɑ.mp3
-    - assets/audio/ɔ.mp3
-    - assets/audio/ə.mp3
-    - assets/audio/ɚ.mp3
-    - assets/audio/ɛ.mp3
-    - assets/audio/ɝ.mp3
+    - assets/audio/a.mp3
+    # c2 = ɔ
+    - assets/audio/c2.mp3
+    # ewalik = ə
+    - assets/audio/ewalik.mp3
+    #- assets/audio/ə.mp3
+    #- assets/audio/ɚ.mp3
+    #- assets/audio/ɛ.mp3
+    #- assets/audio/ɝ.mp3
     - assets/audio/ɪ.mp3
-    - assets/audio/ʊ.mp3
-    - assets/audio/ʌ.mp3
+    - assets/audio/e.mp3
+    - assets/audio/3buntut.mp3
+    - assets/audio/ebuntut.mp3
+    # u2 = ʊ
+    - assets/audio/u2.mp3
+    # v2 = ʌ
+    - assets/audio/v2.mp3
 
  
   fonts:

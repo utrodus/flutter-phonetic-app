@@ -21,7 +21,7 @@ class KeyboardLayout extends StatelessWidget {
         onTap: ontap,
         child: Container(
           alignment: Alignment.center,
-          width: SizeConfig.horizontal *8,
+          width: SizeConfig.horizontal *9,
           margin: EdgeInsets.only(bottom: SizeConfig.horizontal*1),
           decoration: BoxDecoration(
             color: Palete.phoneticButton,
