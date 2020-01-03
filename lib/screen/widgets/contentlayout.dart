@@ -7,10 +7,11 @@ class ContentLayout extends StatelessWidget {
   final String symbol;
   final String gif;
   final String audio;
+  final String materi;
   final bool visible;
   final AudioCache player = AudioCache(prefix: 'audio/');
 
-  ContentLayout({Key key, this.symbol, this.gif, this.audio, this.visible})
+  ContentLayout({Key key, this.symbol, this.gif, this.audio, this.visible, this.materi})
       : super(key: key);
 
   @override
@@ -32,78 +33,77 @@ class ContentLayout extends StatelessWidget {
           ),
           children: <Widget>[
             Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Row(
-                    children: <Widget>[
-                      Container(
-                        padding: EdgeInsets.only(
-                          left: SizeConfig.horizontal * 5,
-                          right: SizeConfig.horizontal * 5,
-                          top: SizeConfig.vertical *1,
-                          bottom: SizeConfig.vertical *1,
-                          
-                        ),
-                        margin: EdgeInsets.only(
-                          left: SizeConfig.horizontal * 5,
-                        ),
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                          color: Palete.borderGrey,
-                        )),
-                        child: Text(
-                          symbol,
-                          style: TextStyle(fontSize: SizeConfig.horizontal * 7),
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Container(
+                      padding: EdgeInsets.only(
+                        left: SizeConfig.horizontal * 5,
+                        right: SizeConfig.horizontal * 5,
+                        top: SizeConfig.vertical * 1,
+                        bottom: SizeConfig.vertical * 1,
+                      ),
+                      margin: EdgeInsets.only(
+                        left: SizeConfig.horizontal * 5,
+                      ),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                        color: Palete.borderGrey,
+                      )),
+                      child: Text(
+                        symbol,
+                        style: TextStyle(fontSize: SizeConfig.horizontal * 7),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(
+                          left: SizeConfig.horizontal * 2,
+                          top: SizeConfig.vertical * 1),
+                      child: Material(
+                        color: Colors.transparent,
+                        child: InkWell(
+                          borderRadius: BorderRadius.circular(18),
+                          child: Image(
+                            alignment: Alignment.center,
+                            fit: BoxFit.contain,
+                            height: SizeConfig.horizontal * 18,
+                            width: SizeConfig.horizontal * 18,
+                            image: AssetImage(
+                              Palete.playButton,
+                            ),
+                          ),
+                          onTap: () {
+                            player.play(audio);
+                          },
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.only(
-                            left: SizeConfig.horizontal * 2,
-                            top: SizeConfig.vertical * 1),
-                        child: Material(
-                          color: Colors.transparent,
-                          child: InkWell(
-                            borderRadius: BorderRadius.circular(18),
-                            child: Image(
-                              alignment: Alignment.center,
-                              fit: BoxFit.contain,
-                              height: SizeConfig.horizontal * 18,
-                              width: SizeConfig.horizontal * 18,
-                              image: AssetImage(
-                                Palete.playButton,
-                              ),
-                            ),
-                            onTap: () {
-                              player.play(audio);
-                            },
-                          ),
-                        ),
-                      )
+                    ),
+                  ],
+                ),
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Image(
+                        width: SizeConfig.horizontal * 30,
+                        image: AssetImage(gif),
+                      ),
                     ],
                   ),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Image(
-                          width: SizeConfig.horizontal * 30,
-                          image: AssetImage(gif),
-                        ),
-                      ],
-                    ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(
+                      top: SizeConfig.vertical * 1,
+                      left: SizeConfig.horizontal * 3,
+                      right: SizeConfig.horizontal * 3),
+                  child: Text(
+                     materi ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ",
                   ),
-                  Container(
-                    padding: EdgeInsets.only(
-                        top: SizeConfig.vertical * 1,
-                        left: SizeConfig.horizontal * 3,
-                        right: SizeConfig.horizontal * 3),
-                    child: Text(
-                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-                    ),
-                  )
-                ],
-              ),
+                )
+              ],
+            ),
           ],
         ),
       ),

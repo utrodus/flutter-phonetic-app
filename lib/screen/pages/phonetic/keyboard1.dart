@@ -136,7 +136,7 @@ Widget keyBoard1(
                       symbol: "i",
                       audio: "i.mp3",
                       ontap: () {
-                        Provider.of<Simbol>(context).setCurrentSymbol(5);
+                        Provider.of<Simbol>(context).setCurrentSymbol(6);
                         vowel.play("i.mp3");
                       },
                     ),
@@ -156,7 +156,7 @@ Widget keyBoard1(
                     symbol: "u",
                     audio: "u.mp3",
                     ontap: () {
-                      Provider.of<Simbol>(context).setCurrentSymbol(5);
+                      Provider.of<Simbol>(context).setCurrentSymbol(7);
                       vowel.play("u.mp3");
                     },
                   ),
@@ -176,7 +176,7 @@ Widget keyBoard1(
                       symbol: "s",
                       audio: "s.mp3",
                       ontap: () {
-                        Provider.of<Simbol>(context).setCurrentSymbol(6);
+                        Provider.of<Simbol>(context).setCurrentSymbol(8);
                         consonant.play("s.mp3");
                       },
                     ),
@@ -185,7 +185,7 @@ Widget keyBoard1(
                     symbol: "z",
                     audio: "z.mp3",
                     ontap: () {
-                      Provider.of<Simbol>(context).setCurrentSymbol(7);
+                      Provider.of<Simbol>(context).setCurrentSymbol(9);
                       consonant.play("z.mp3");
                     },
                   ),
@@ -197,7 +197,7 @@ Widget keyBoard1(
                       symbol: "t",
                       audio: "t.mp3",
                       ontap: () {
-                        Provider.of<Simbol>(context).setCurrentSymbol(8);
+                        Provider.of<Simbol>(context).setCurrentSymbol(10);
                         consonant.play("t.mp3");
                       },
                     ),
@@ -206,7 +206,7 @@ Widget keyBoard1(
                     symbol: "d",
                     audio: "d.mp3",
                     ontap: () {
-                      Provider.of<Simbol>(context).setCurrentSymbol(9);
+                      Provider.of<Simbol>(context).setCurrentSymbol(11);
                       consonant.play("d.mp3");
                     },
                   ),
@@ -219,7 +219,7 @@ Widget keyBoard1(
                       symbol: "l",
                       audio: "l.mp3",
                       ontap: () {
-                        Provider.of<Simbol>(context).setCurrentSymbol(10);
+                        Provider.of<Simbol>(context).setCurrentSymbol(12);
                         consonant.play("l.mp3");
                       },
                     ),
@@ -230,7 +230,7 @@ Widget keyBoard1(
                       symbol: "l",
                       audio: "l.mp3",
                       ontap: () {
-                        Provider.of<Simbol>(context).setCurrentSymbol(11);
+                        Provider.of<Simbol>(context).setCurrentSymbol(13);
                         consonant.play("l.mp3");
                       },
                     ),
@@ -243,7 +243,7 @@ Widget keyBoard1(
                       symbol: "ɪ",
                       audio: "ɪ.mp3",
                       ontap: () {
-                        Provider.of<Simbol>(context).setCurrentSymbol(5);
+                        Provider.of<Simbol>(context).setCurrentSymbol(14);
                         vowel.play("ɪ.mp3");
                       },
                     ),
@@ -254,7 +254,7 @@ Widget keyBoard1(
                       symbol: "ʌ",
                       audio: "v2.mp3",
                       ontap: () {
-                        Provider.of<Simbol>(context).setCurrentSymbol(5);
+                        Provider.of<Simbol>(context).setCurrentSymbol(15);
                         vowel.play("v2.mp3");
                       },
                     ),
@@ -263,7 +263,7 @@ Widget keyBoard1(
                     symbol: "ʊ",
                     audio: "u2.mp3",
                     ontap: () {
-                      Provider.of<Simbol>(context).setCurrentSymbol(5);
+                      Provider.of<Simbol>(context).setCurrentSymbol(16);
                       vowel.play("u2.mp3");
                     },
                   ),
@@ -290,7 +290,7 @@ Widget keyBoard1(
                               audio: "ff.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(12);
+                                    .setCurrentSymbol(17);
                                 consonant.play("ff.mp3");
                               },
                             ),
@@ -299,7 +299,7 @@ Widget keyBoard1(
                             symbol: "ʒ",
                             audio: "3.mp3",
                             ontap: () {
-                              Provider.of<Simbol>(context).setCurrentSymbol(13);
+                              Provider.of<Simbol>(context).setCurrentSymbol(18);
                               consonant.play("3.mp3");
                             },
                           ),
@@ -317,7 +317,7 @@ Widget keyBoard1(
                               audio: "0.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(18);
+                                    .setCurrentSymbol(24);
                                 consonant.play("0.mp3");
                               },
                             ),
@@ -330,7 +330,7 @@ Widget keyBoard1(
                               audio: "ð.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(19);
+                                    .setCurrentSymbol(25);
                                 consonant.play("03.mp3");
                               },
                             ),
@@ -344,7 +344,7 @@ Widget keyBoard1(
                           symbol: "h",
                           audio: "h.mp3",
                           ontap: () {
-                            Provider.of<Simbol>(context).setCurrentSymbol(22);
+                            Provider.of<Simbol>(context).setCurrentSymbol(29);
                             consonant.play("h.mp3");
                           },
                         ),
@@ -359,7 +359,7 @@ Widget keyBoard1(
                       symbol: "k",
                       audio: "k.mp3",
                       ontap: () {
-                        Provider.of<Simbol>(context).setCurrentSymbol(14);
+                        Provider.of<Simbol>(context).setCurrentSymbol(19);
                         consonant.play("k.mp3");
                       },
                     ),
@@ -368,7 +368,7 @@ Widget keyBoard1(
                     symbol: "g",
                     audio: "g.mp3",
                     ontap: () {
-                      Provider.of<Simbol>(context).setCurrentSymbol(15);
+                      Provider.of<Simbol>(context).setCurrentSymbol(20);
                       consonant.play("g.mp3");
                     },
                   ),
@@ -386,7 +386,7 @@ Widget keyBoard1(
                               audio: "w.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(16);
+                                    .setCurrentSymbol(21);
                                 consonant.play("w.mp3");
                               },
                             ),
@@ -400,7 +400,7 @@ Widget keyBoard1(
                               audio: "j.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(17);
+                                    .setCurrentSymbol(22);
                                 consonant.play("j.mp3");
                               },
                             ),
@@ -419,7 +419,7 @@ Widget keyBoard1(
                               audio: "m.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(20);
+                                    .setCurrentSymbol(26);
                                 consonant.play("m.mp3");
                               },
                             ),
@@ -433,7 +433,7 @@ Widget keyBoard1(
                               audio: "n.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(21);
+                                    .setCurrentSymbol(27);
                                 consonant.play("n.mp3");
                               },
                             ),
@@ -448,7 +448,7 @@ Widget keyBoard1(
                           symbol: "ŋ",
                           audio: "n2.mp3",
                           ontap: () {
-                            Provider.of<Simbol>(context).setCurrentSymbol(23);
+                            Provider.of<Simbol>(context).setCurrentSymbol(30);
                             consonant.play("n2.mp3");
                           },
                         ),
@@ -481,7 +481,7 @@ Widget keyBoard1(
                               audio: "ewalik.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(5);
+                                    .setCurrentSymbol(23);
                                 vowel.play("ewalik.mp3");
                               },
                             ),
@@ -510,7 +510,7 @@ Widget keyBoard1(
                                 audio: "e.mp3",
                                 ontap: () {
                                   Provider.of<Simbol>(context)
-                                      .setCurrentSymbol(5);
+                                      .setCurrentSymbol(28);
                                   vowel.play("e.mp3");
                                 },
                               ),
@@ -554,7 +554,7 @@ Widget keyBoard1(
                                 audio: "eponi.mp3",
                                 ontap: () {
                                   Provider.of<Simbol>(context)
-                                      .setCurrentSymbol(5);
+                                      .setCurrentSymbol(31);
                                   vowel.play("eponi.mp3");
                                 },
                               ),
@@ -567,7 +567,7 @@ Widget keyBoard1(
                                 audio: "a.mp3",
                                 ontap: () {
                                   Provider.of<Simbol>(context)
-                                      .setCurrentSymbol(5);
+                                      .setCurrentSymbol(32);
                                   vowel.play("a.mp3");
                                 },
                               ),
@@ -577,7 +577,7 @@ Widget keyBoard1(
                               audio: "c2.mp3",
                               ontap: () {
                                 Provider.of<Simbol>(context)
-                                    .setCurrentSymbol(5);
+                                    .setCurrentSymbol(33);
                                 vowel.play("c2.mp3");
                               },
                             ),
@@ -598,7 +598,7 @@ Widget keyBoard1(
                                 audio: "3buntut.mp3",
                                 ontap: () {
                                   Provider.of<Simbol>(context)
-                                      .setCurrentSymbol(5);
+                                      .setCurrentSymbol(34);
                                   vowel.play("3buntut.mp3");
                                 },
                               ),
@@ -611,7 +611,7 @@ Widget keyBoard1(
                                 audio: "ebuntut.mp3",
                                 ontap: () {
                                   Provider.of<Simbol>(context)
-                                      .setCurrentSymbol(5);
+                                      .setCurrentSymbol(35);
                                   vowel.play("ebuntut.mp3");
                                 },
                               ),
