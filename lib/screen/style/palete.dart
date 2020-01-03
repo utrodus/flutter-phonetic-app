@@ -19,6 +19,8 @@ class Palete {
   static Color isiColor = Color.fromRGBO(80, 80, 80, 1);
   static Color shadowBlue = Color.fromRGBO(62, 137, 240, 0.3);
   static Color exerciseMenu = Color.fromRGBO(28, 58, 97, 1);
+  static Color keyboardNext = Color.fromRGBO(5, 122, 252, 1);
+  static Color keyboardShadow = Color.fromRGBO(58, 159, 208, 1);
 
 
   // TODO : Gradient Color

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/pages/information/infoitem.dart';
-import 'package:ipa/screen/style/palete.dart';
-import 'package:ipa/screen/widgets/appbar.dart';
+import 'package:phono/screen/pages/information/infoitem.dart';
+import 'package:phono/screen/style/palete.dart';
+import 'package:phono/screen/widgets/appbar.dart';
 
 class Information extends StatelessWidget {
   const Information({Key key}) : super(key: key);

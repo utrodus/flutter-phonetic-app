@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/pages/state/symbol.dart';
-import 'package:ipa/screen/widgets/contentlayout.dart';
+import 'package:phono/screen/pages/state/symbol.dart';
+import 'package:phono/screen/widgets/contentlayout.dart';
 import 'package:provider/provider.dart';
 
 class ContentScreen extends StatelessWidget {
@@ -10,7 +10,7 @@ class ContentScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var currentSymbol = Provider.of<Simbol>(context).getCurrentSymbol;
     return Expanded(
-        flex: 2,
+        flex: 3,
         child: Stack(
           children: <Widget>[
             ContentLayout(

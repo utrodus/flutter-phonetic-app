@@ -1,7 +1,7 @@
 import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/style/config.dart';
-import 'package:ipa/screen/style/palete.dart';
+import 'package:phono/screen/style/config.dart';
+import 'package:phono/screen/style/palete.dart';
 
 class ContentLayout extends StatelessWidget {
   final String symbol;
@@ -27,14 +27,11 @@ class ContentLayout extends StatelessWidget {
             )),
         child: ListView(
           padding: EdgeInsets.only(
-            top: SizeConfig.vertical * 2,
             left: SizeConfig.horizontal * 3,
             right: SizeConfig.horizontal * 3,
           ),
           children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(bottom: SizeConfig.vertical * 2),
-              child: Column(
+            Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -44,8 +41,9 @@ class ContentLayout extends StatelessWidget {
                         padding: EdgeInsets.only(
                           left: SizeConfig.horizontal * 5,
                           right: SizeConfig.horizontal * 5,
-                          top: SizeConfig.vertical * 1,
-                          bottom: SizeConfig.vertical * 1,
+                          top: SizeConfig.vertical *1,
+                          bottom: SizeConfig.vertical *1,
+                          
                         ),
                         margin: EdgeInsets.only(
                           left: SizeConfig.horizontal * 5,
@@ -85,7 +83,6 @@ class ContentLayout extends StatelessWidget {
                     ],
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: SizeConfig.vertical * 2),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -98,7 +95,7 @@ class ContentLayout extends StatelessWidget {
                   ),
                   Container(
                     padding: EdgeInsets.only(
-                        top: SizeConfig.vertical * 3,
+                        top: SizeConfig.vertical * 1,
                         left: SizeConfig.horizontal * 3,
                         right: SizeConfig.horizontal * 3),
                     child: Text(
@@ -107,7 +104,6 @@ class ContentLayout extends StatelessWidget {
                   )
                 ],
               ),
-            ),
           ],
         ),
       ),

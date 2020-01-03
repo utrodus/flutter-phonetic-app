@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/style/config.dart';
-import 'package:ipa/screen/style/palete.dart';
+import 'package:phono/screen/style/config.dart';
+import 'package:phono/screen/style/palete.dart';
 
 Widget menuItemLayout(BuildContext context,
     {void Function() onTap, String icon, menuTitle, double width, paddingTitle}) {

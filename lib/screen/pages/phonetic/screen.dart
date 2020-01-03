@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/pages/phonetic/contentscreen.dart';
-import 'package:ipa/screen/pages/phonetic/keyboardscreen.dart';
-import 'package:ipa/screen/style/config.dart';
-import 'package:ipa/screen/style/palete.dart';
-import 'package:ipa/screen/widgets/appbar.dart';
+import 'package:phono/screen/pages/phonetic/contentscreen.dart';
+import 'package:phono/screen/pages/phonetic/keyboardscreen.dart';
+import 'package:phono/screen/style/config.dart';
+import 'package:phono/screen/style/palete.dart';
+import 'package:phono/screen/widgets/appbar.dart';
 
 
 class Phonetic extends StatefulWidget {

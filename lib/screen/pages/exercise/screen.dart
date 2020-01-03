@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/style/palete.dart';
-import 'package:ipa/screen/widgets/appbar.dart';
-import 'package:ipa/screen/widgets/buttonExcercise.dart';
+import 'package:phono/screen/style/palete.dart';
+import 'package:phono/screen/widgets/appbar.dart';
+import 'package:phono/screen/widgets/buttonExcercise.dart';
 import '../../style/config.dart';
 import '../../style/palete.dart';
 

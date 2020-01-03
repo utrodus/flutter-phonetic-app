@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ipa/router/router.dart';
-import 'package:ipa/screen/pages/mainmenu/screen.dart';
-import 'package:ipa/screen/pages/state/symbol.dart';
+import 'package:phono/router/router.dart';
+import 'package:phono/screen/pages/mainmenu/screen.dart';
+import 'package:phono/screen/pages/state/symbol.dart';
 import 'package:provider/provider.dart';
 
 import 'constant/constantroute.dart';
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     ]);
     return MultiProvider(
       child: MaterialApp(
-        title: 'International Phonetic Alphabet',
+        title: "Phono 'foʊ.noʊ",
         debugShowCheckedModeBanner: false,
         home: MainMenu(),
         onGenerateRoute: Router.generateRoute,

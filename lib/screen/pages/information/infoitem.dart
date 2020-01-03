@@ -1,6 +1,6 @@
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/widgets/infoitemlayout.dart';
+import 'package:phono/screen/widgets/infoitemlayout.dart';
 
 import '../../../constant/content.dart';
 import '../../style/config.dart';

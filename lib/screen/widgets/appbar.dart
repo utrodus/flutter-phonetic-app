@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/style/config.dart';
-import 'package:ipa/screen/style/palete.dart';
+import 'package:phono/screen/style/config.dart';
+import 'package:phono/screen/style/palete.dart';
 
 PreferredSizeWidget appBar (BuildContext context, {String judul}){
   SizeConfig().init(context);

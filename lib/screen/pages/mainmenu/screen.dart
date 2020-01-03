@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:ipa/screen/pages/mainmenu/menu.dart';
-import 'package:ipa/screen/pages/mainmenu/top.dart';
-import 'package:ipa/screen/style/config.dart';
-import 'package:ipa/screen/style/palete.dart';
+import 'package:phono/screen/pages/mainmenu/menu.dart';
+import 'package:phono/screen/pages/mainmenu/top.dart';
+import 'package:phono/screen/style/config.dart';
+import 'package:phono/screen/style/palete.dart';
 
 class MainMenu extends StatefulWidget {
   MainMenu({Key key}) : super(key: key);

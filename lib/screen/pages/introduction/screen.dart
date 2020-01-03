@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/pages/introduction/introitem.dart';
-import 'package:ipa/screen/style/palete.dart';
-import 'package:ipa/screen/widgets/appbar.dart';
+import 'package:phono/screen/pages/introduction/introitem.dart';
+import 'package:phono/screen/style/palete.dart';
+import 'package:phono/screen/widgets/appbar.dart';
 
 class Intro extends StatelessWidget {
   const Intro({Key key}) : super(key: key);

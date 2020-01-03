@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/constant/constantroute.dart';
-import 'package:ipa/screen/style/config.dart';
-import 'package:ipa/screen/widgets/menuitemlayout.dart';
-import 'package:ipa/screen/style/palete.dart';
+import 'package:phono/constant/constantroute.dart';
+import 'package:phono/screen/style/config.dart';
+import 'package:phono/screen/widgets/menuitemlayout.dart';
+import 'package:phono/screen/style/palete.dart';
 
 class MenuItem extends StatefulWidget {
   MenuItem({Key key}) : super(key: key);

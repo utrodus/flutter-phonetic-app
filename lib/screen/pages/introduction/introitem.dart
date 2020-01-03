@@ -1,8 +1,8 @@
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'package:ipa/constant/content.dart';
-import 'package:ipa/screen/style/config.dart';
-import 'package:ipa/screen/widgets/introitemlayout.dart';
+import 'package:phono/constant/content.dart';
+import 'package:phono/screen/style/config.dart';
+import 'package:phono/screen/widgets/introitemlayout.dart';
 
 Widget introItem(BuildContext context) {
   SizeConfig().init(context);

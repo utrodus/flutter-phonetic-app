@@ -1,16 +1,6 @@
-name: ipa
-description: A new Flutter project.
+name: phono
+description: Phonetic App Chart.
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 version: 1.0.0+1
 
 environment:
@@ -23,8 +13,6 @@ dependencies:
   audioplayers: ^0.13.5
   provider: ^3.1.0+1
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
@@ -32,18 +20,11 @@ dev_dependencies:
     sdk: flutter
 
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter.
 flutter:
 
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
+
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
   assets:
     - assets/img/phone.png
     - assets/img/ae.png
@@ -55,22 +36,54 @@ flutter:
     - assets/gif/coba.gif
     - assets/gif/b.gif
     - assets/gif/d.gif
-
+#consonan :
     - assets/audio/b.mp3
     - assets/audio/d.mp3
-  #  - images/a_dot_ham.jpeg
+    # d3 = dʒ
+    - assets/audio/d3.mp3
+    - assets/audio/f.mp3
+    - assets/audio/g.mp3
+    - assets/audio/h.mp3
+    - assets/audio/j.mp3
+    - assets/audio/k.mp3
+    - assets/audio/l.mp3
+    - assets/audio/m.mp3
+    - assets/audio/n.mp3
+    - assets/audio/p.mp3
+    - assets/audio/r.mp3
+    - assets/audio/s.mp3
+    - assets/audio/t.mp3
+    # tʃ = tf
+    - assets/audio/tf.mp3
+    - assets/audio/v.mp3
+    - assets/audio/w.mp3
+    - assets/audio/z.mp3
+    #03 = ð
+    - assets/audio/03.mp3
+    # n2 = ŋ
+    - assets/audio/n2.mp3
+    # ff = ʃ
+    - assets/audio/ff.mp3
+    # 3 = ʒ
+    - assets/audio/3.mp3
+    # 0 = θ
+    - assets/audio/0.mp3
+    
+#vowel :
+    - assets/audio/ë.mp3
+    - assets/audio/i.mp3
+    - assets/audio/u.mp3
+    - assets/audio/ɑ.mp3
+    - assets/audio/ɔ.mp3
+    - assets/audio/ə.mp3
+    - assets/audio/ɚ.mp3
+    - assets/audio/ɛ.mp3
+    - assets/audio/ɝ.mp3
+    - assets/audio/ɪ.mp3
+    - assets/audio/ʊ.mp3
+    - assets/audio/ʌ.mp3
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware.
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
+ 
   fonts:
     - family: Cabin-Regular
       fonts:
@@ -91,11 +104,3 @@ flutter:
       fonts:
         - asset: assets/fonts/Cabin-BoldItalic.ttf
        
-   
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages

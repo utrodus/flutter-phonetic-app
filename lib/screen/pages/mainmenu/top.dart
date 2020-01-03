@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/screen/style/config.dart';
-import 'package:ipa/screen/style/palete.dart';
+import 'package:phono/screen/style/config.dart';
+import 'package:phono/screen/style/palete.dart';
 
 class TopContent extends StatelessWidget {
   const TopContent({Key key}) : super(key: key);
@@ -38,10 +38,15 @@ class TopContent extends StatelessWidget {
                   style: TextStyle(
                       color: Palete.white,
                       fontFamily: Palete.cabinRegular,
-                      fontSize: SizeConfig.horizontal * 4.5),
+                      fontSize: SizeConfig.horizontal * 5.5),
                 ),
-                Container(
-                    margin: EdgeInsets.only(left: SizeConfig.horizontal * 1),
+              ],
+            ),
+            Padding(
+                padding: EdgeInsets.only(
+                    top: SizeConfig.vertical * 1.0,
+                    bottom: SizeConfig.vertical * 1),
+                child: Container(
                     padding: EdgeInsets.only(
                         left: SizeConfig.horizontal * 0.8,
                         right: SizeConfig.horizontal * 0.8),
@@ -49,37 +54,28 @@ class TopContent extends StatelessWidget {
                         color: Palete.pink,
                         borderRadius: BorderRadius.circular(5)),
                     child: Text(
-                      "IPA",
+                      "Phono",
                       style: TextStyle(
                           color: Palete.white,
                           fontFamily: Palete.cabinSemiBold,
-                          fontSize: SizeConfig.horizontal * 4.5),
-                    )),
-              ],
+                          fontSize: SizeConfig.horizontal * 6),
+                    ))),
+            Text(
+              "Foʊ.noʊ",
+              style: TextStyle(
+                  color: Palete.white,
+                  fontSize: SizeConfig.horizontal * 5.5,
+                  fontWeight: FontWeight.bold),
             ),
             Padding(
-              padding: EdgeInsets.only(top: SizeConfig.vertical * 1.0),
+              padding: EdgeInsets.only(top: SizeConfig.vertical * 1),
               child: Text(
-                "International",
+                "App",
                 style: TextStyle(
                     color: Palete.white,
-                    fontSize: SizeConfig.horizontal * 5.2,
-                    fontFamily: Palete.cabinSemiBold),
+                    fontSize: SizeConfig.horizontal * 5.5,
+                    fontFamily: Palete.cabinMedium),
               ),
-            ),
-            Text(
-              "Phonetic",
-              style: TextStyle(
-                  color: Palete.white,
-                  fontSize: SizeConfig.horizontal * 5.2,
-                  fontFamily: Palete.cabinSemiBold),
-            ),
-            Text(
-              "Alphabet",
-              style: TextStyle(
-                  color: Palete.white,
-                  fontSize: SizeConfig.horizontal * 5.2,
-                  fontFamily: Palete.cabinSemiBold),
             ),
           ],
         ),

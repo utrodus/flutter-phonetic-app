@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:ipa/constant/constantroute.dart';
-import 'package:ipa/screen/pages/exercise/screen.dart';
-import 'package:ipa/screen/pages/information/screen.dart';
-import 'package:ipa/screen/pages/introduction/screen.dart';
-import 'package:ipa/screen/pages/mainmenu/screen.dart';
-import 'package:ipa/screen/pages/phonetic/screen.dart';
+import 'package:phono/constant/constantroute.dart';
+import 'package:phono/screen/pages/exercise/screen.dart';
+import 'package:phono/screen/pages/information/screen.dart';
+import 'package:phono/screen/pages/introduction/screen.dart';
+import 'package:phono/screen/pages/mainmenu/screen.dart';
+import 'package:phono/screen/pages/phonetic/screen.dart';
 
 
 class Router {
