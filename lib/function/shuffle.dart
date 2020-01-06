@@ -1,6 +1,6 @@
 import 'dart:math';
 
-List shuffle(List items) {
+List Shuflle(List items) {
   var random = new Random();
 
   // Go through all elements.

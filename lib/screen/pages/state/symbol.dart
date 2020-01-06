@@ -4,9 +4,8 @@ class Simbol with ChangeNotifier {
   int _currentSymbol = 0;
   int get getCurrentSymbol => _currentSymbol;
 
-  void setCurrentSymbol(int drawer) {
-    _currentSymbol = drawer;
+  void setCurrentSymbol(int symbol) {
+    _currentSymbol = symbol;
     notifyListeners();
   }
-
 }
