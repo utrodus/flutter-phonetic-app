@@ -14,13 +14,7 @@ class Phonetic extends StatefulWidget {
 }
 
 class _PhoneticState extends State<Phonetic> {
-  String symbol;
-
-  @override
-  void initState() {
-    super.initState();
-    symbol = "b";
-  }
+  
 
   PageController controller = PageController(initialPage: 0);
   

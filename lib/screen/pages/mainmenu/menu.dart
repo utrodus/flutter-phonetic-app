@@ -44,7 +44,7 @@ class _MenuItemState extends State<MenuItem> {
                 paddingTitle: SizeConfig.horizontal * 3.8,
                 width: SizeConfig.horizontal * 11,
                 menuTitle: "Exercise", onTap: () {
-                  Navigator.pushNamed(context, exerciseRoute);
+              Navigator.pushNamed(context, exerciseRoute);
             }),
           ),
           Padding(
@@ -54,7 +54,7 @@ class _MenuItemState extends State<MenuItem> {
                 paddingTitle: SizeConfig.horizontal * 3.8,
                 width: SizeConfig.horizontal * 11,
                 menuTitle: "Information", onTap: () {
-                  Navigator.pushNamed(context, infoRoute);
+              Navigator.pushNamed(context, infoRoute);
             }),
           ),
         ],

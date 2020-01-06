@@ -9,13 +9,9 @@ Widget keyBoard1(
   BuildContext context,
   consonant,
   vowel,
-  visible,
-  onTap,
 ) {
   SizeConfig().init(context);
-  return Visibility(
-    visible: visible,
-    child: Container(
+  return Container(
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -627,6 +623,5 @@ Widget keyBoard1(
           ],
         ),
       ),
-    ),
   );
 }
