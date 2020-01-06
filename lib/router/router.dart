@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:phono/constant/constantroute.dart';
 import 'package:phono/screen/pages/exercise/screen.dart';
+import 'package:phono/screen/pages/exercise/symbolize/screen.dart';
+import 'package:phono/screen/pages/exercise/word/screen.dart';
 import 'package:phono/screen/pages/information/screen.dart';
 import 'package:phono/screen/pages/introduction/screen.dart';
 import 'package:phono/screen/pages/mainmenu/screen.dart';
 import 'package:phono/screen/pages/phonetic/screen.dart';
-
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -20,6 +21,10 @@ class Router {
         return MaterialPageRoute(builder: (_) => Exercise());
       case infoRoute:
         return MaterialPageRoute(builder: (_) => Information());
+      case symbolize:
+        return MaterialPageRoute(builder: (_) => Symbolize());
+      case word:
+        return MaterialPageRoute(builder: (_) => WordGuess());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

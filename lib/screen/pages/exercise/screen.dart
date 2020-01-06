@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:phono/constant/constantroute.dart';
 import 'package:phono/screen/style/palete.dart';
 import 'package:phono/screen/widgets/appbar.dart';
 import 'package:phono/screen/widgets/buttonExcercise.dart';
@@ -14,9 +15,10 @@ class Exercise extends StatelessWidget {
       backgroundColor: Palete.white,
       appBar: appBar(context, judul: "Exercise"),
       body: ListView(
-        padding: EdgeInsets.only(top: SizeConfig.vertical * 5, 
-        left: SizeConfig.horizontal *3,
-        right: SizeConfig.horizontal *3,
+        padding: EdgeInsets.only(
+          top: SizeConfig.vertical * 5,
+          left: SizeConfig.horizontal * 3,
+          right: SizeConfig.horizontal * 3,
         ),
         children: <Widget>[
           SizedBox(
@@ -35,13 +37,13 @@ class Exercise extends StatelessWidget {
             children: <Widget>[
               Text("Select",
                   style: TextStyle(
-                    color: Palete.exerciseMenu,
+                      color: Palete.exerciseMenu,
                       fontFamily: Palete.cabinRegular,
                       fontSize: SizeConfig.horizontal * 6)),
               SizedBox(width: SizeConfig.horizontal * 2),
               Text("Excercise :",
                   style: TextStyle(
-                    color: Palete.exerciseMenu,
+                      color: Palete.exerciseMenu,
                       fontFamily: Palete.cabinSemiBold,
                       fontSize: SizeConfig.horizontal * 6)),
             ],
@@ -59,7 +61,9 @@ class Exercise extends StatelessWidget {
                 menuTitle: "Let's Symbolize",
                 paddingTitle: SizeConfig.vertical * 2,
                 width: SizeConfig.horizontal * 3,
-                onTap: () {}),
+                onTap: () {
+                  Navigator.pushNamed(context, symbolize);
+                }),
           ),
           SizedBox(
             height: SizeConfig.vertical * 3,
@@ -74,7 +78,9 @@ class Exercise extends StatelessWidget {
                 menuTitle: "Word Guessing",
                 paddingTitle: SizeConfig.vertical * 2,
                 width: SizeConfig.horizontal * 3,
-                onTap: () {}),
+                onTap: () {
+                  Navigator.pushNamed(context, word);
+                }),
           ),
         ],
       ),
