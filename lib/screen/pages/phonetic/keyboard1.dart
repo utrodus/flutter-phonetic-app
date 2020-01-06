@@ -216,11 +216,11 @@ Widget keyBoard1(
                         top: SizeConfig.vertical * 1,
                         left: SizeConfig.horizontal * 3),
                     child: KeyboardLayout(
-                      symbol: "l",
-                      audio: "l.mp3",
+                      symbol: "ɹ",
+                      audio: "r.mp3",
                       ontap: () {
                         Provider.of<Simbol>(context).setCurrentSymbol(12);
-                        consonant.play("l.mp3");
+                        consonant.play("r.mp3");
                       },
                     ),
                   ),

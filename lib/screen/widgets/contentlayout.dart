@@ -37,6 +37,7 @@ class ContentLayout extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Container(
                       padding: EdgeInsets.only(
@@ -46,7 +47,7 @@ class ContentLayout extends StatelessWidget {
                         bottom: SizeConfig.vertical * 1,
                       ),
                       margin: EdgeInsets.only(
-                        left: SizeConfig.horizontal * 5,
+                        right: SizeConfig.horizontal * 5,
                       ),
                       decoration: BoxDecoration(
                           border: Border.all(
@@ -57,39 +58,18 @@ class ContentLayout extends StatelessWidget {
                         style: TextStyle(fontSize: SizeConfig.horizontal * 7),
                       ),
                     ),
-                    Container(
-                      margin: EdgeInsets.only(
-                          left: SizeConfig.horizontal * 2,
-                          top: SizeConfig.vertical * 1),
-                      child: Material(
-                        color: Colors.transparent,
-                        child: InkWell(
-                          borderRadius: BorderRadius.circular(18),
-                          child: Image(
-                            alignment: Alignment.center,
-                            fit: BoxFit.contain,
-                            height: SizeConfig.horizontal * 18,
-                            width: SizeConfig.horizontal * 18,
-                            image: AssetImage(
-                              Palete.playButton,
-                            ),
-                          ),
-                          onTap: () {
-                            player.play(audio);
-                          },
-                        ),
+                    Image(
+                        width: SizeConfig.horizontal * 30,
+                        image: AssetImage(gif),
                       ),
-                    ),
+                    
                   ],
                 ),
                 Container(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Image(
-                        width: SizeConfig.horizontal * 30,
-                        image: AssetImage(gif),
-                      ),
+                      
                     ],
                   ),
                 ),
