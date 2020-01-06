@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:phono/constant/constantroute.dart';
+import 'package:phono/function/shuffle.dart';
+import 'package:phono/screen/pages/exercise/symbolize/soal_jawaban.dart';
+import 'package:phono/screen/pages/state/quiz.dart';
 import 'package:phono/screen/style/palete.dart';
 import 'package:phono/screen/widgets/appbar.dart';
 import 'package:phono/screen/widgets/buttonExcercise.dart';
+import 'package:provider/provider.dart';
 import '../../style/config.dart';
 import '../../style/palete.dart';
 
@@ -62,6 +66,8 @@ class Exercise extends StatelessWidget {
                 paddingTitle: SizeConfig.vertical * 2,
                 width: SizeConfig.horizontal * 3,
                 onTap: () {
+                  List hasilshuffle = Shuflle(soalSymbol);
+                  Provider.of<Quiz>(context).setShuffle(hasilshuffle);
                   Navigator.pushNamed(context, symbolize);
                 }),
           ),

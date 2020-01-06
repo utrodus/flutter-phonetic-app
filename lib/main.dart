@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:phono/router/router.dart';
 import 'package:phono/screen/pages/mainmenu/screen.dart';
+import 'package:phono/screen/pages/state/quiz.dart';
 import 'package:phono/screen/pages/state/symbol.dart';
 import 'package:provider/provider.dart';
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         initialRoute: mainRoute,
       ),
       providers: <SingleChildCloneableWidget>[
+        ChangeNotifierProvider<Quiz>(create: (_) => Quiz()),
         ChangeNotifierProvider<Simbol>(create: (_) => Simbol()),
       ],
     );
