@@ -12,6 +12,9 @@ dependencies:
   expandable: ^4.0.2
   audioplayers: ^0.13.5
   provider: ^3.1.0+1
+  flutter_form_builder: ^3.7.2
+  
+  keyboard_actions: ^3.1.2
 
   cupertino_icons: ^0.1.2
 
@@ -112,4 +115,3 @@ flutter:
     - family: Cabin-BoldItalic
       fonts:
         - asset: assets/fonts/Cabin-BoldItalic.ttf
-       
