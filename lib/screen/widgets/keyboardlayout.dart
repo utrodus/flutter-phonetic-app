@@ -5,12 +5,14 @@ import 'package:phono/screen/style/palete.dart';
 class KeyboardLayout extends StatelessWidget {
   final String symbol;
   final String audio;
+  final Color buttonColor;
+  final Color buttonShadow;
   final ontap;
   KeyboardLayout({
     Key key,
     this.symbol,
     this.audio,
-    this.ontap,
+    this.ontap, this.buttonColor, this.buttonShadow,
   }) : super(key: key);
 
   @override
@@ -24,11 +26,11 @@ class KeyboardLayout extends StatelessWidget {
           width: SizeConfig.horizontal *9,
           margin: EdgeInsets.only(bottom: SizeConfig.horizontal*1),
           decoration: BoxDecoration(
-            color: Palete.phoneticButton,
+            color: buttonColor ?? Palete.phoneticButton,
             borderRadius: BorderRadius.circular(5),
             boxShadow: [
               new BoxShadow(
-                  color: Palete.keyboardShadow,
+                  color: buttonShadow ?? Palete.keyboardShadow,
                   offset: new Offset(0.0, 3.5),
                   spreadRadius: 0.1)
             ],
