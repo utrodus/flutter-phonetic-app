@@ -15,6 +15,7 @@ class Exercise extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var quiz = Provider.of<Quiz>(context);
     return Scaffold(
       backgroundColor: Palete.white,
       appBar: appBar(context, judul: "Exercise"),
@@ -66,6 +67,7 @@ class Exercise extends StatelessWidget {
                 paddingTitle: SizeConfig.vertical * 2,
                 width: SizeConfig.horizontal * 3,
                 onTap: () {
+                  quiz.resetScore();
                   List hasilshuffle = Shuflle(soalSymbol);
                   Provider.of<Quiz>(context).setShuffle(hasilshuffle);
                   Navigator.pushNamed(context, symbolize);

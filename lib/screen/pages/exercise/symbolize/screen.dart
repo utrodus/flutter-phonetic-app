@@ -16,17 +16,15 @@ class Symbolize extends StatefulWidget {
 }
 
 class _SymbolizeState extends State<Symbolize> {
-  
-
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     //  List currentShuffle = Provider.of<Quiz>(context).getCurrentShuffle;
     return Scaffold(
-      backgroundColor: Palete.bgQuiz,
-      appBar: appBar(context, judul: "Let's Symbolize"),
-      body: QuizLayout()
-      // ),
-    );
+        backgroundColor: Palete.bgQuiz,
+        appBar: appBar(context, judul: "Let's Symbolize"),
+        body: QuizLayout(noQuiz: 0,)
+        // ),
+        );
   }
 }

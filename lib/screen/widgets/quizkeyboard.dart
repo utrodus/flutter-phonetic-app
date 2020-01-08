@@ -530,10 +530,10 @@ class QuizKeyboard extends StatelessWidget
                                   left: SizeConfig.horizontal * 4,
                                   right: SizeConfig.horizontal * 1),
                               child: KeyboardLayout(
-                                symbol: "ae",
+                                symbol: "æ",
                                 audio: "eponi.mp3",
                                 ontap: () {
-                                  _onTapSymbol('ae');
+                                  _onTapSymbol('æ');
                                 },
                               ),
                             ),

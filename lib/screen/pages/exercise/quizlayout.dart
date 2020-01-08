@@ -6,11 +6,30 @@ import 'package:phono/screen/style/palete.dart';
 import 'package:phono/screen/widgets/quizkeyboard.dart';
 import 'package:provider/provider.dart';
 
-class QuizLayout extends StatelessWidget {
+class QuizLayout extends StatefulWidget {
+  final int noQuiz;
+  QuizLayout({Key key, this.noQuiz}) : super(key: key);
+
+  @override
+  _QuizLayoutState createState() => _QuizLayoutState();
+}
+
+class _QuizLayoutState extends State<QuizLayout> {
+  bool wrong;
+  bool next;
+  @override
+  void initState() {
+    super.initState();
+    wrong = false;
+    next = true;
+  }
+
   final FocusNode _node = FocusNode();
 
   final _notifier = ValueNotifier<String>("");
+
   String answer;
+
   KeyboardActionsConfig _buildConfig(
     BuildContext context,
   ) {
@@ -31,7 +50,6 @@ class QuizLayout extends StatelessWidget {
     );
   }
 
-  QuizLayout({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     var quiz = Provider.of<Quiz>(context);
@@ -67,7 +85,7 @@ class QuizLayout extends StatelessWidget {
                       right: SizeConfig.horizontal * 3,
                     ),
                     child: Text(
-                      "1/10",
+                      "${widget.noQuiz + 1}/10",
                       style: TextStyle(
                           color: Palete.white,
                           fontSize: SizeConfig.horizontal * 5,
@@ -92,7 +110,7 @@ class QuizLayout extends StatelessWidget {
                       right: SizeConfig.horizontal * 3,
                     ),
                     child: Text(
-                      "Score : 0",
+                      "Score : ${quiz.getCurrentScore}",
                       style: TextStyle(
                           color: Color.fromRGBO(46, 85, 144, 1),
                           fontSize: SizeConfig.horizontal * 5,
@@ -109,7 +127,7 @@ class QuizLayout extends StatelessWidget {
                 left: SizeConfig.horizontal * 3,
               ),
               child: Text(
-                "Resign",
+                "${quiz.getCurrentShuffle[widget.noQuiz][0]}",
                 style: TextStyle(
                     decorationStyle: TextDecorationStyle.dashed,
                     decoration: TextDecoration.underline,
@@ -143,41 +161,42 @@ class QuizLayout extends StatelessWidget {
                     child: Text(
                       val.isEmpty ? "Tap to answer ..." : val,
                       style: TextStyle(
-                          fontSize: SizeConfig.horizontal * 5,
-                          color: Color.fromRGBO(41, 48, 88, 1),
+                          fontSize: SizeConfig.horizontal * 5.5,
+                          color: Color.fromRGBO(41, 86, 127, 1),
                           fontWeight: FontWeight.w400),
                     ),
                   );
                 },
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(top: SizeConfig.vertical * 2),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Visibility(
-                    visible: false,
-                    child: Container(
-                      margin: EdgeInsets.only(
-                        top: SizeConfig.vertical * 1.5,
-                        bottom: SizeConfig.vertical * 1.5,
-                        left: SizeConfig.horizontal * 4,
-                        right: SizeConfig.horizontal * 3,
-                      ),
-                      child: Text(
-                        "Correct Answer",
-                        style: TextStyle(
-                            color: Palete.red,
-                            fontSize: SizeConfig.horizontal * 4,
-                            fontWeight: FontWeight.w500),
-                      ),
+            Row(
+              children: <Widget>[
+                Visibility(
+                  visible: wrong,
+                  child: Container(
+                    margin: EdgeInsets.only(
+                      left: SizeConfig.horizontal * 5,
+                      right: SizeConfig.horizontal * 3,
+                    ),
+                    child: Text(
+                      quiz.getCurrentShuffle[widget.noQuiz][1],
+                      style: TextStyle(
+                          color: Palete.red,
+                          fontSize: SizeConfig.horizontal * 5,
+                          fontWeight: FontWeight.w500),
                     ),
                   ),
+                ),
+              ],
+            ),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
                   Stack(
                     children: <Widget>[
                       Visibility(
-                        visible: true,
+                        visible: !next,
                         child: Padding(
                           padding: EdgeInsets.only(
                               right: SizeConfig.horizontal * 3.5),
@@ -210,7 +229,7 @@ class QuizLayout extends StatelessWidget {
                         ),
                       ),
                       Visibility(
-                        visible: true,
+                        visible: next,
                         child: Padding(
                           padding: EdgeInsets.only(
                               right: SizeConfig.horizontal * 3.5),
@@ -218,7 +237,21 @@ class QuizLayout extends StatelessWidget {
                             shape: new RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(10.0)),
                             color: Palete.blue,
-                            onPressed: () {},
+                            onPressed: () {
+                              if(answer.isNotEmpty){
+                                if (quiz.getCurrentShuffle[widget.noQuiz][1]
+                                  .contains(answer)) {
+                                quiz.addScore();
+                              } else {
+                                setState(() {
+                                  wrong = true;
+                                  next = false;
+                                });
+                              }
+                              }else{
+                                print("kosong cok");
+                              }
+                            },
                             child: Container(
                               decoration: BoxDecoration(boxShadow: [
                                 new BoxShadow(
