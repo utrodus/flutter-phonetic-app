@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:keyboard_actions/keyboard_actions.dart';
-import 'package:phono/screen/pages/exercise/quizlayout.dart';
-import 'package:phono/screen/pages/state/quiz.dart';
+import 'package:phono/constant/constantroute.dart';
+import 'package:phono/screen/pages/exercise/layout/quizlayout.dart';
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/style/palete.dart';
 import 'package:phono/screen/widgets/appbar.dart';
-import 'package:phono/screen/widgets/quizkeyboard.dart';
-import 'package:provider/provider.dart';
 
-class Symbolize extends StatefulWidget {
-  Symbolize({Key key}) : super(key: key);
+class Symbolize1 extends StatefulWidget {
+  Symbolize1({Key key}) : super(key: key);
 
   @override
-  _SymbolizeState createState() => _SymbolizeState();
+  _Symbolize1State createState() => _Symbolize1State();
 }
 
-class _SymbolizeState extends State<Symbolize> {
+class _Symbolize1State extends State<Symbolize1> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -23,7 +20,12 @@ class _SymbolizeState extends State<Symbolize> {
     return Scaffold(
         backgroundColor: Palete.bgQuiz,
         appBar: appBar(context, judul: "Let's Symbolize"),
-        body: QuizLayout(noQuiz: 0,)
+        body: QuizLayout(
+          noQuiz: 0,
+          navigation: (){
+            Navigator.pushNamed(context, symbolize2);
+          },
+        )
         // ),
         );
   }

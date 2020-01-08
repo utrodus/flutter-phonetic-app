@@ -8,7 +8,8 @@ import 'package:provider/provider.dart';
 
 class QuizLayout extends StatefulWidget {
   final int noQuiz;
-  QuizLayout({Key key, this.noQuiz}) : super(key: key);
+  final Function navigation;
+  QuizLayout({Key key, this.noQuiz, this.navigation}) : super(key: key);
 
   @override
   _QuizLayoutState createState() => _QuizLayoutState();
@@ -17,11 +18,14 @@ class QuizLayout extends StatefulWidget {
 class _QuizLayoutState extends State<QuizLayout> {
   bool wrong;
   bool next;
+  bool check;
+
   @override
   void initState() {
     super.initState();
     wrong = false;
-    next = true;
+    next = false;
+    check = true;
   }
 
   final FocusNode _node = FocusNode();
@@ -60,8 +64,6 @@ class _QuizLayoutState extends State<QuizLayout> {
       child: Container(
         padding: const EdgeInsets.all(15.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Container(
               child: Row(
@@ -137,9 +139,7 @@ class _QuizLayoutState extends State<QuizLayout> {
               ),
             ),
             Container(
-              padding:
-                  EdgeInsets.symmetric(horizontal: SizeConfig.horizontal * 4),
-              margin: EdgeInsets.only(top: SizeConfig.vertical * 5),
+              margin: EdgeInsets.only(top: SizeConfig.vertical * 2),
               child: KeyboardCustomInput<String>(
                 focusNode: _node,
                 height: SizeConfig.vertical * 10,
@@ -196,7 +196,7 @@ class _QuizLayoutState extends State<QuizLayout> {
                   Stack(
                     children: <Widget>[
                       Visibility(
-                        visible: !next,
+                        visible: next,
                         child: Padding(
                           padding: EdgeInsets.only(
                               right: SizeConfig.horizontal * 3.5),
@@ -204,7 +204,9 @@ class _QuizLayoutState extends State<QuizLayout> {
                             shape: new RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(10.0)),
                             color: Palete.blue,
-                            onPressed: () {},
+                            onPressed: () {
+                              widget.navigation();
+                            },
                             child: Container(
                               decoration: BoxDecoration(boxShadow: [
                                 new BoxShadow(
@@ -229,7 +231,7 @@ class _QuizLayoutState extends State<QuizLayout> {
                         ),
                       ),
                       Visibility(
-                        visible: next,
+                        visible: check,
                         child: Padding(
                           padding: EdgeInsets.only(
                               right: SizeConfig.horizontal * 3.5),
@@ -238,18 +240,21 @@ class _QuizLayoutState extends State<QuizLayout> {
                                 borderRadius: new BorderRadius.circular(10.0)),
                             color: Palete.blue,
                             onPressed: () {
-                              if(answer.isNotEmpty){
+                              if (answer.isNotEmpty) {
                                 if (quiz.getCurrentShuffle[widget.noQuiz][1]
-                                  .contains(answer)) {
-                                quiz.addScore();
+                                    .contains(answer)) {
+                                  quiz.addScore();
+                                  widget.navigation();
+                                  check = false;
+                                  next = true;
+                                } else {
+                                  setState(() {
+                                    wrong = true;
+                                    next = false;
+                                  });
+                                }
                               } else {
-                                setState(() {
-                                  wrong = true;
-                                  next = false;
-                                });
-                              }
-                              }else{
-                                print("kosong cok");
+                                print("kosong");
                               }
                             },
                             child: Container(

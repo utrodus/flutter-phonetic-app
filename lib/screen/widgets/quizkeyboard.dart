@@ -17,7 +17,7 @@ class QuizKeyboard extends StatelessWidget
   }) : super(key: key);
 
   @override
-  Size get preferredSize => Size.fromHeight(SizeConfig.vertical * 40);
+  Size get preferredSize => Size.fromHeight(SizeConfig.vertical * 35);
 
   String _formatValue(String value) {
     final updatedValue = value;
@@ -59,20 +59,6 @@ class QuizKeyboard extends StatelessWidget
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Container(
-              padding: EdgeInsets.only(
-                left: SizeConfig.horizontal * 2,
-                right: SizeConfig.horizontal * 2,
-                top: SizeConfig.vertical * 1,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  _buildButton(icon: Icons.backspace, color: Palete.red),
-                  _buildButton(text: "Done", color: Palete.phoneticButton),
-                ],
-              ),
-            ),
             // TODO : BARIS 1
             Container(
               margin: EdgeInsets.only(top: SizeConfig.vertical * 0.8),
@@ -150,11 +136,11 @@ class QuizKeyboard extends StatelessWidget
                   Padding(
                     padding: EdgeInsets.only(right: SizeConfig.horizontal * 1),
                     child: KeyboardLayout(
-                      symbol: "-",
-                      buttonColor: Palete.unusedColor,
-                      buttonShadow: Palete.unusedShadow,
+                      symbol: "o",
                       audio: "i.mp3",
-                      ontap: () {},
+                      ontap: () {
+                        _onTapSymbol('o');
+                      },
                     ),
                   ),
                   KeyboardLayout(
@@ -268,6 +254,7 @@ class QuizKeyboard extends StatelessWidget
 
             // TODO : BARIS 3
             Container(
+              padding: EdgeInsets.only(left: SizeConfig.horizontal *1),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -437,17 +424,13 @@ class QuizKeyboard extends StatelessWidget
                         children: <Widget>[
                           Padding(
                             padding: EdgeInsets.only(
-                                left: SizeConfig.horizontal * 4,
+                                left: SizeConfig.horizontal * 3.7,
                                 right: SizeConfig.horizontal * 1),
                             child: KeyboardLayout(
-                              symbol: "-",
-                              buttonColor: Palete.unusedColor,
-                              buttonShadow: Palete.unusedShadow,
-                              audio: "ɪ.mp3",
+                              symbol: "e",
+                              audio: "e.mp3",
                               ontap: () {
-                                // Provider.of<Simbol>(context)
-                                //     .setCurrentSymbol(5);
-                                //
+                                _onTapSymbol('e');
                               },
                             ),
                           ),
@@ -462,84 +445,28 @@ class QuizKeyboard extends StatelessWidget
                               },
                             ),
                           ),
-                          KeyboardLayout(
-                            symbol: "-",
-                            audio: "u2.mp3",
-                            buttonColor: Palete.unusedColor,
-                            buttonShadow: Palete.unusedShadow,
-                            ontap: () {
-                              // Provider.of<Simbol>(context).setCurrentSymbol(5);
-                              //
-                            },
+                          Padding(
+                            padding: EdgeInsets.only(
+                                right: SizeConfig.horizontal * 1),
+                            child: KeyboardLayout(
+                              symbol: "æ",
+                              audio: "eponi.mp3",
+                              ontap: () {
+                                _onTapSymbol('æ');
+                              },
+                            ),
                           ),
                         ],
                       ),
                       Padding(
-                        padding:
-                            EdgeInsets.only(top: SizeConfig.vertical * 0.5),
+                        padding: EdgeInsets.only(
+                            top: SizeConfig.vertical * 0.5,
+                            left: SizeConfig.horizontal * 2),
                         child: Row(
                           children: <Widget>[
                             Padding(
                               padding: EdgeInsets.only(
-                                  left: SizeConfig.horizontal * 4,
-                                  right: SizeConfig.horizontal * 1),
-                              child: KeyboardLayout(
-                                symbol: "e",
-                                audio: "e.mp3",
-                                ontap: () {
-                                  _onTapSymbol('e');
-                                },
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  right: SizeConfig.horizontal * 1),
-                              child: KeyboardLayout(
-                                symbol: "-",
-                                buttonColor: Palete.unusedColor,
-                                buttonShadow: Palete.unusedShadow,
-                                audio: "v2.mp3",
-                                ontap: () {
-                                  // Provider.of<Simbol>(context)
-                                  //     .setCurrentSymbol(5);
-                                  //
-                                },
-                              ),
-                            ),
-                            KeyboardLayout(
-                              symbol: "-",
-                              buttonColor: Palete.unusedColor,
-                              buttonShadow: Palete.unusedShadow,
-                              audio: "u2.mp3",
-                              ontap: () {
-                                // Provider.of<Simbol>(context)
-                                //     .setCurrentSymbol(5);
-                                //
-                              },
-                            ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            EdgeInsets.only(top: SizeConfig.vertical * 0.5),
-                        child: Row(
-                          children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: SizeConfig.horizontal * 4,
-                                  right: SizeConfig.horizontal * 1),
-                              child: KeyboardLayout(
-                                symbol: "æ",
-                                audio: "eponi.mp3",
-                                ontap: () {
-                                  _onTapSymbol('æ');
-                                },
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  right: SizeConfig.horizontal * 1),
+                                  left: SizeConfig.horizontal * 0.8),
                               child: KeyboardLayout(
                                 symbol: "ɑ",
                                 audio: "a.mp3",
@@ -548,36 +475,20 @@ class QuizKeyboard extends StatelessWidget
                                 },
                               ),
                             ),
-                            KeyboardLayout(
-                              symbol: "ɔ",
-                              audio: "c2.mp3",
-                              ontap: () {
-                                _onTapSymbol('ɔ');
-                              },
-                            ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            EdgeInsets.only(top: SizeConfig.vertical * 0.6),
-                        child: Row(
-                          children: <Widget>[
                             Padding(
                               padding: EdgeInsets.only(
-                                  left: SizeConfig.horizontal * 4,
-                                  right: SizeConfig.horizontal * 1),
+                                  left: SizeConfig.horizontal * 1),
                               child: KeyboardLayout(
-                                symbol: "ɝ",
-                                audio: "3buntut.mp3",
+                                symbol: "ɔ",
+                                audio: "c2.mp3",
                                 ontap: () {
-                                  _onTapSymbol('ɝ');
+                                  _onTapSymbol('ɔ');
                                 },
                               ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(
-                                  right: SizeConfig.horizontal * 1),
+                                  left: SizeConfig.horizontal * 1),
                               child: KeyboardLayout(
                                 symbol: "ɚ",
                                 audio: "ebuntut.mp3",
@@ -589,8 +500,58 @@ class QuizKeyboard extends StatelessWidget
                           ],
                         ),
                       ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          top: SizeConfig.vertical * 0.6,
+                          left: SizeConfig.horizontal * 5,
+                        ),
+                        child: Row(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  right: SizeConfig.horizontal * 1),
+                              child: KeyboardLayout(
+                                symbol: "ɝ",
+                                audio: "3buntut.mp3",
+                                ontap: () {
+                                  _onTapSymbol('ɝ');
+                                },
+                              ),
+                            ),
+                            _buildButton(
+                                icon: Icons.backspace,
+                                color: Palete.red,
+                                padding: EdgeInsets.only(
+                                  top: SizeConfig.vertical * 0.6,
+                                  bottom: SizeConfig.vertical * 0.6,
+                                  left: SizeConfig.horizontal * 2,
+                                  right: SizeConfig.horizontal * 2.5,
+                                )),
+                          ],
+                        ),
+                      ),
                     ],
                   )
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(
+                left: SizeConfig.horizontal * 2,
+                right: SizeConfig.horizontal * 2,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  _buildButton(
+                      text: "Done",
+                      color: Palete.blue,
+                      padding: EdgeInsets.only(
+                        top: SizeConfig.vertical * 1,
+                        bottom: SizeConfig.vertical * 1,
+                        left: SizeConfig.horizontal * 2,
+                        right: SizeConfig.horizontal * 2.5,
+                      )),
                 ],
               ),
             ),
@@ -600,16 +561,17 @@ class QuizKeyboard extends StatelessWidget
     );
   }
 
-  Widget _buildButton({
-    String text,
-    IconData icon,
-    Color color,
-  }) =>
+  Widget _buildButton(
+          {String text,
+          IconData icon,
+          Color color,
+          EdgeInsetsGeometry padding}) =>
       QuizButton(
         text: text,
         icon: icon,
         color: color,
         onTap: () => icon != null ? _onTapBackspace() : _onTapSymbol(text),
+        padding: padding,
       );
 }
 
@@ -618,6 +580,7 @@ class QuizButton extends StatelessWidget {
   final VoidCallback onTap;
   final IconData icon;
   final Color color;
+  final EdgeInsetsGeometry padding;
 
   const QuizButton({
     Key key,
@@ -625,6 +588,7 @@ class QuizButton extends StatelessWidget {
     this.onTap,
     this.icon,
     this.color,
+    this.padding,
   }) : super(key: key);
 
   @override
@@ -636,12 +600,7 @@ class QuizButton extends StatelessWidget {
         onTap: onTap,
         child: FittedBox(
           child: Padding(
-            padding: EdgeInsets.only(
-              top: SizeConfig.vertical * 0.5,
-              bottom: SizeConfig.vertical * 0.5,
-              left: SizeConfig.horizontal * 2,
-              right: SizeConfig.horizontal * 2.5,
-            ),
+            padding: padding,
             child: icon != null
                 ? Icon(
                     icon,

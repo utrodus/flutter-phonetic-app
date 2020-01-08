@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:phono/constant/constantroute.dart';
 import 'package:phono/screen/pages/exercise/screen.dart';
-import 'package:phono/screen/pages/exercise/symbolize/screen.dart';
+import 'package:phono/screen/pages/exercise/symbolize/quizpage/1.dart';
+import 'package:phono/screen/pages/exercise/symbolize/quizpage/2.dart';
 import 'package:phono/screen/pages/exercise/word/screen.dart';
 import 'package:phono/screen/pages/information/screen.dart';
 import 'package:phono/screen/pages/introduction/screen.dart';
@@ -21,8 +22,10 @@ class Router {
         return MaterialPageRoute(builder: (_) => Exercise());
       case infoRoute:
         return MaterialPageRoute(builder: (_) => Information());
-      case symbolize:
-        return MaterialPageRoute(builder: (_) => Symbolize());
+      case symbolize1:
+        return MaterialPageRoute(builder: (_) => Symbolize1());
+      case symbolize2:
+        return MaterialPageRoute(builder: (_) => Symbolize2());
       case word:
         return MaterialPageRoute(builder: (_) => WordGuess());
       default:

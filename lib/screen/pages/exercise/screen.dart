@@ -70,7 +70,7 @@ class Exercise extends StatelessWidget {
                   quiz.resetScore();
                   List hasilshuffle = Shuflle(soalSymbol);
                   Provider.of<Quiz>(context).setShuffle(hasilshuffle);
-                  Navigator.pushNamed(context, symbolize);
+                  Navigator.pushNamed(context, symbolize1);
                 }),
           ),
           SizedBox(
