@@ -2,12 +2,14 @@ import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/style/palete.dart';
+import 'package:phono/screen/widgets/contentcontainer.dart';
 
 class IntroItemLayout extends StatelessWidget {
-  final String content, title;
+  final String title;
+  final List<Widget> content;
   IntroItemLayout({
-    this.content,
     this.title,
+    this.content,
   });
 
   @override
@@ -21,20 +23,8 @@ class IntroItemLayout extends StatelessWidget {
       return Container(
         padding: EdgeInsets.all(SizeConfig.horizontal * 3),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              content ?? "-",
-              softWrap: true,
-              overflow: TextOverflow.clip,
-              textAlign: TextAlign.justify,
-              style: TextStyle(
-                  height: SizeConfig.horizontal * 0.4,
-                  fontFamily: Palete.cabinRegular,
-                  color: Palete.isiColor,
-                  fontSize: SizeConfig.horizontal * 3.8),
-            ),
-          ],
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: content,
         ),
       );
     }

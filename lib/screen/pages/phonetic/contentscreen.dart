@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:phono/constant/content.dart';
 import 'package:phono/screen/pages/state/symbol.dart';
 import 'package:phono/screen/widgets/contentlayout.dart';
 import 'package:provider/provider.dart';
@@ -14,13 +15,11 @@ class ContentScreen extends StatelessWidget {
         child: Stack(
           children: <Widget>[
             ContentLayout(
-              visible: currentSymbol == 0 ? true : false,
-              symbol: "f",
-              gif: "assets/gif/b.gif",
-              audio: "f.mp3",
-              materi:
-                  "Voiceless Labiodental Fricative\n1. Gently bite the lower lip to leave a tiny gap.\n2. Partially block the airflow with the lower lip and the upper teeth to create a lot friction.\n3. Do not vibrate the vocal cords.\nMost often represented by the letter F. Then by 2 letter FF, PH, GH.\nTongue twister: A fisher named Fischer fished for fish from the edge of fissure",
-            ),
+                visible: currentSymbol == 0 ? true : false,
+                symbol: "f",
+                gif: "assets/gif/b.gif",
+                audio: "f.mp3",
+                materi: materi1A),
             ContentLayout(
               visible: currentSymbol == 1 ? true : false,
               symbol: "v",
@@ -231,8 +230,6 @@ class ContentScreen extends StatelessWidget {
               gif: "assets/gif/b.gif",
               audio: "ebuntut.mp3",
             ),
-            
-
           ],
         ));
   }
