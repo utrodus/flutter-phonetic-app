@@ -13,6 +13,7 @@ dependencies:
   audioplayers: ^0.13.5
   provider: ^3.1.0+1
   flutter_form_builder: ^3.7.2
+  flutter_svg: ^0.15.0
   
   keyboard_actions: ^3.1.2
 
@@ -94,6 +95,13 @@ flutter:
     - assets/audio/u2.mp3
     # v2 = ʌ
     - assets/audio/v2.mp3
+
+    # tabel
+    - assets/tabel/tabel1.svg
+    - assets/tabel/tabel2.svg
+    - assets/tabel/tabel3.svg
+    - assets/tabel/tabel4.svg
+    - assets/tabel/image1.svg
 
  
   fonts:
