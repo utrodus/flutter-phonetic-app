@@ -11,12 +11,13 @@ class Quiz with ChangeNotifier {
     notifyListeners();
   }
 
+
   addScore() {
     _score++;
     notifyListeners();
   }
 
-  resetScore(){
+  resetScore() {
     _score = 0;
     notifyListeners();
   }
