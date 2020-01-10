@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:phono/constant/constantroute.dart';
 import 'package:phono/function/shuffle.dart';
 import 'package:phono/screen/pages/exercise/symbolize/soal_jawaban.dart';
+import 'package:phono/screen/pages/exercise/word/soal_jawaban.dart';
 import 'package:phono/screen/pages/state/quiz.dart';
 import 'package:phono/screen/style/palete.dart';
 import 'package:phono/screen/widgets/appbar.dart';
@@ -75,7 +76,7 @@ class Exercise extends StatelessWidget {
                   onTap: () {
                     quiz.resetScore();
                     List hasilshuffle = Shuflle(soalSymbol);
-                    Provider.of<Quiz>(context).setShuffle(hasilshuffle);
+                    quiz.setShuffle(hasilshuffle);
                     Navigator.pushNamed(context, symbolize1);
                   }),
             ),
@@ -93,7 +94,10 @@ class Exercise extends StatelessWidget {
                   paddingTitle: SizeConfig.vertical * 2,
                   width: SizeConfig.horizontal * 3,
                   onTap: () {
-                    Navigator.pushNamed(context, word);
+                    quiz.resetScore();
+                    List hasilshuffle = Shuflle(soalWord);
+                    quiz.setShuffle(hasilshuffle);
+                    Navigator.pushNamed(context, word1);
                   }),
             ),
           ],
