@@ -5,14 +5,14 @@ import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/style/palete.dart';
 import 'package:phono/screen/widgets/appbar.dart';
 
-class Symbolize2 extends StatefulWidget {
-  Symbolize2({Key key}) : super(key: key);
+class Symbolize8 extends StatefulWidget {
+  Symbolize8({Key key}) : super(key: key);
 
   @override
-  _Symbolize2State createState() => _Symbolize2State();
+  _Symbolize8State createState() => _Symbolize8State();
 }
 
-class _Symbolize2State extends State<Symbolize2> {
+class _Symbolize8State extends State<Symbolize8> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -21,9 +21,9 @@ class _Symbolize2State extends State<Symbolize2> {
         backgroundColor: Palete.bgQuiz,
         appBar: appBar(context, judul: "Let's Symbolize"),
         body: QuizLayout(
-          noQuiz: 1,
+          noQuiz: 7,
           navigation: (){
-            Navigator.pushNamed(context, symbolize3);
+            Navigator.pushNamed(context, symbolize9);
           },
         )
         // ),

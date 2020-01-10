@@ -17,16 +17,23 @@ class _Symbolize1State extends State<Symbolize1> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     //  List currentShuffle = Provider.of<Quiz>(context).getCurrentShuffle;
-    return Scaffold(
-        backgroundColor: Palete.bgQuiz,
-        appBar: appBar(context, judul: "Let's Symbolize"),
-        body: QuizLayout(
-          noQuiz: 0,
-          navigation: (){
-            Navigator.pushNamed(context, symbolize2);
-          },
-        )
-        // ),
-        );
+    return WillPopScope(
+      onWillPop: () async {
+       
+        await Navigator.pushNamed(context, exerciseRoute);
+        return true; // return true if the route to be popped
+      },
+      child: Scaffold(
+          backgroundColor: Palete.bgQuiz,
+          appBar: appBar(context, judul: "Let's Symbolize"),
+          body: QuizLayout(
+            noQuiz: 0,
+            navigation: () {
+              Navigator.pushNamed(context, symbolize2);
+            },
+          )
+          // ),
+          ),
+    );
   }
 }

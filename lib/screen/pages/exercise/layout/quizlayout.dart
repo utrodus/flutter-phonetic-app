@@ -250,7 +250,8 @@ class _QuizLayoutState extends State<QuizLayout> {
                                 } else {
                                   setState(() {
                                     wrong = true;
-                                    next = false;
+                                    check = false;
+                                    next = true;
                                   });
                                 }
                               } else {

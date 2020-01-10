@@ -32,6 +32,7 @@ flutter:
   assets:
     - assets/img/phone.png
     - assets/img/ae.png
+    - assets/img/games.svg
     - assets/img/book.png
     - assets/img/homework.png
     - assets/img/playbutton.png
