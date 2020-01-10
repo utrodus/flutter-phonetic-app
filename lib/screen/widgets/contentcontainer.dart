@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:phono/constant/content.dart';
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/style/palete.dart';
+
 //TEXT
 Widget textContentContainer({String text, double margin}) {
   return Container(
@@ -23,19 +24,23 @@ Widget textContentContainer({String text, double margin}) {
     ),
   );
 }
+
 //IMAGE
 Widget imageContentContainer(String image) {
-  return Container(
-    margin: EdgeInsets.only(
-      top: SizeConfig.vertical * 5,
-      bottom: SizeConfig.vertical * 5,
+  return Padding(
+    padding: EdgeInsets.only(
+      top: SizeConfig.vertical * 3,
+      bottom: SizeConfig.vertical *3,
     ),
-    width: SizeConfig.horizontal * 20,
-    height: SizeConfig.vertical * 20,
-    decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage(image), fit: BoxFit.contain)),
+    child: Container(
+      height: SizeConfig.vertical * 20,
+      decoration: BoxDecoration(
+          image:
+              DecorationImage(image: AssetImage(image), fit: BoxFit.contain)),
+    ),
   );
 }
+
 //TABEL
 Widget tableContentContainer(String tabel) {
   return SvgPicture.asset(

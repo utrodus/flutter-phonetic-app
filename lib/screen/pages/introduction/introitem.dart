@@ -23,7 +23,7 @@ Widget introItem(BuildContext context) {
         IntroItemLayout(
           title: "Articulatory Phonetic",
           content: [
-            imageContentContainer(Palete.book),
+            imageContentContainer(image2),
             textContentContainer(text: materi1A),
             textContentContainer(
                 text: materi1B, margin: SizeConfig.horizontal * 2.5)
@@ -52,9 +52,37 @@ Widget introItem(BuildContext context) {
           title: "Vowel Sounds",
           content: [
             tableContentContainer(image1),
+            Text(
+              "*the close and open are the indication of the tongue rising to the roof of the mouth\n*the front, central, and back is the position of the tongue inside the oral cavity.\n*using the standard of American English\n\n",
+              overflow: TextOverflow.clip,
+              textAlign: TextAlign.justify,
+              style: TextStyle(
+                  height: SizeConfig.horizontal * 0.4,
+                  fontFamily: Palete.cabinRegular,
+                  color: Palete.isiColor,
+                  fontStyle: FontStyle.italic,
+                  fontSize: SizeConfig.horizontal * 3.5),
+            ),
             textContentContainer(text: materi2),
-            Text("Problem of Language Interference in Indonesia"),
-            tableContentContainer(tabel4),
+            Text(
+              "\nProblem of Language Interference in Indonesia\n",
+              overflow: TextOverflow.clip,
+              style: TextStyle(
+                  height: SizeConfig.horizontal * 0.4,
+                  fontFamily: Palete.cabinRegular,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: SizeConfig.horizontal * 4),
+            ),
+            textContentContainer(text: subVowel2),
+            SubItemLayout(subtitle: "1.	Consonants", subcontent: [
+              SizedBox(height: SizeConfig.vertical * 5),
+              tableContentContainer(tabel4),
+            ]),
+            SubItemLayout(subtitle: "2.	Vowels", subcontent: [
+              SizedBox(height: SizeConfig.vertical * 5),
+              tableContentContainer(tabel5),
+            ]),
           ],
         )
       ],

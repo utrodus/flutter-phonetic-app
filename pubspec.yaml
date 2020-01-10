@@ -102,7 +102,9 @@ flutter:
     - assets/tabel/tabel2.svg
     - assets/tabel/tabel3.svg
     - assets/tabel/tabel4.svg
+    - assets/tabel/tabel5.svg
     - assets/tabel/image1.svg
+    - assets/tabel/image.png
 
  
   fonts:
