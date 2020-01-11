@@ -16,6 +16,7 @@ dependencies:
   flutter_svg: ^0.15.0
   
   keyboard_actions: ^3.1.2
+  gif_ani: ^0.0.2
 
   cupertino_icons: ^0.1.2
 
@@ -38,9 +39,72 @@ flutter:
     - assets/img/playbutton.png
     - assets/img/info.png
     - assets/img/exercise.png
+    # TODO: GIF CONSONANT: 
     - assets/gif/coba.gif
     - assets/gif/b.gif
     - assets/gif/d.gif
+    - assets/gif/consonant/h-min.gif
+    - assets/gif/consonant/b-min.gif
+    - assets/gif/consonant/d-min.gif
+    - assets/gif/consonant/d~-min.gif
+    - assets/gif/consonant/d3-min.gif
+    - assets/gif/consonant/f-min.gif
+    - assets/gif/consonant/g-min.gif
+    - assets/gif/consonant/j-min.gif
+    - assets/gif/consonant/k-min.gif
+    - assets/gif/consonant/l-min.gif
+    - assets/gif/consonant/m-min.gif
+    - assets/gif/consonant/n-min.gif
+    - assets/gif/consonant/o-min.gif
+    - assets/gif/consonant/p-min.gif
+    - assets/gif/consonant/r-min.gif
+    - assets/gif/consonant/s-min.gif
+    - assets/gif/consonant/ʃ-min.gif
+    - assets/gif/consonant/t-min.gif
+    - assets/gif/consonant/tʃ-min.gif
+    - assets/gif/consonant/v-min.gif
+    - assets/gif/consonant/w-min.gif
+    - assets/gif/consonant/z-min.gif
+    - assets/gif/consonant/ʒ-min.gif
+    - assets/gif/consonant/θ-min.gif
+    # TODO: GIF VOWEL:
+    - assets/gif/vowel/a-min.gif
+    - assets/gif/vowel/æ-min.gif
+    - assets/gif/vowel/ə-min.gif
+    - assets/gif/vowel/ɛ-min.gif
+    - assets/gif/vowel/ɚ-min.gif
+    - assets/gif/vowel/ɝ-min.gif
+    - assets/gif/vowel/i-min.gif
+    - assets/gif/vowel/II-min.gif
+    - assets/gif/vowel/ɔ-min.gif
+    - assets/gif/vowel/u-min.gif
+    - assets/gif/vowel/ʊ-min.gif
+    - assets/gif/vowel/ʌ-min.gif 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
 #consonan :
     - assets/audio/b.mp3
     - assets/audio/d.mp3
