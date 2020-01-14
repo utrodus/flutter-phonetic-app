@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:phono/constant/content.dart';
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/style/palete.dart';
 
@@ -30,7 +29,7 @@ Widget imageContentContainer(String image) {
   return Padding(
     padding: EdgeInsets.only(
       top: SizeConfig.vertical * 3,
-      bottom: SizeConfig.vertical *3,
+      bottom: SizeConfig.vertical * 3,
     ),
     child: Container(
       height: SizeConfig.vertical * 20,

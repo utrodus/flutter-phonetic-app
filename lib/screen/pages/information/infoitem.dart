@@ -1,8 +1,9 @@
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
+import 'package:phono/constant/content.dart';
+import 'package:phono/screen/widgets/buttonExcercise.dart';
+import 'package:phono/screen/widgets/contentcontainer.dart';
 import 'package:phono/screen/widgets/infoitemlayout.dart';
-
-import '../../../constant/content.dart';
 import '../../style/config.dart';
 
 Widget InfoItem(BuildContext context) {
@@ -16,9 +17,50 @@ Widget InfoItem(BuildContext context) {
         right: SizeConfig.horizontal * 5,
       ),
       children: <Widget>[
-        InfoItemLayout(title: "About Apps", content: subBab1),
-        InfoItemLayout(title: "What Is Phonetic ?", content: subBab1),
-        InfoItemLayout(title: "How To Spell Correctly ?", content: subBab1),
+        InfoItemLayout(
+          title: "Let’s Symbolize",
+          content: <Widget>[
+            Container(
+              margin: EdgeInsets.only(
+                right:  SizeConfig.vertical * 3,
+                left:  SizeConfig.vertical * 3,
+              ),
+              padding: EdgeInsets.only(
+                top: SizeConfig.vertical * 3,
+                bottom: SizeConfig.vertical * 3,
+              ),
+              child: ExcerciseLayout(
+                  icon: Icons.category,
+                  menuTitle: "Let's Symbolize",
+                  paddingTitle: SizeConfig.vertical * 2,
+                  width: SizeConfig.horizontal * 2,
+                 ),
+            ),
+            textContentContainer(text: information1)
+          ],
+        ),
+        InfoItemLayout(
+          title: "Word Guessing",
+          content: <Widget>[
+            Container(
+              margin: EdgeInsets.only(
+                right:  SizeConfig.vertical * 3,
+                left:  SizeConfig.vertical * 3,
+              ),
+              padding: EdgeInsets.only(
+                top: SizeConfig.vertical * 3,
+                bottom: SizeConfig.vertical * 3,
+              ),
+              child: ExcerciseLayout(
+                  icon: Icons.spellcheck,
+                  menuTitle: "Word Guessing",
+                  paddingTitle: SizeConfig.vertical * 2,
+                  width: SizeConfig.horizontal * 2,
+                  ),
+            ),
+            textContentContainer(text: information2)
+          ],
+        ),
       ],
     ),
   );

@@ -13,6 +13,10 @@ const materiConsonantSounds3 =
 const subVowel2 =
     "Here are some phonemes that come problematic caused by the interference of first language in Indonesia.";
 
+const information1 = "This exercise is designed to train the users transcribing a word into phonemes";
+const information2 = "This exercise is designed to train the users transforming a phonemic transcription into word.";
+
+
 String image1 = "assets/tabel/image1.svg";
 String image2 = "assets/tabel/image.png";
 String tabel1 = "assets/tabel/tabel1.svg";
