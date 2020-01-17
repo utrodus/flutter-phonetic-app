@@ -26,6 +26,7 @@ import 'package:phono/screen/pages/information/screen.dart';
 import 'package:phono/screen/pages/introduction/screen.dart';
 import 'package:phono/screen/pages/mainmenu/screen.dart';
 import 'package:phono/screen/pages/phonetic/screen.dart';
+import 'package:phono/screen/pages/phonetic/twisterscreen.dart';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -87,6 +88,14 @@ class Router {
         return MaterialPageRoute(
             builder: (_) => GameOver(title: data.title, ontap: data.ontap));
 
+      case twister:
+        TwisterArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Twister(
+                  symbol: data.symbol,
+                  kalimat: data.kalimat,
+                ));
+
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(
@@ -101,4 +110,13 @@ class GameOverArgument {
   final String title;
   final Function ontap;
   GameOverArgument({this.ontap, this.title});
+}
+
+class TwisterArgument {
+  final String symbol;
+  final String kalimat;
+  TwisterArgument(
+    this.symbol,
+    this.kalimat,
+  );
 }

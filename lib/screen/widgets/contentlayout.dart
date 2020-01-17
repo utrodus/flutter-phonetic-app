@@ -1,6 +1,8 @@
 import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gifimage/flutter_gifimage.dart';
+import 'package:phono/constant/constantroute.dart';
+import 'package:phono/router/router.dart';
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/style/palete.dart';
 import 'package:phono/screen/widgets/keyboardlayout.dart';
@@ -90,7 +92,9 @@ class ContentLayout extends StatelessWidget {
                                 color: Colors.transparent,
                                 child: InkWell(
                                   onTap: () {
-                                    print('test');
+                                    Navigator.pushNamed(context, twister,
+                                        arguments: TwisterArgument("f",
+                                            "A fisher named Fischer fished for fish from the edge of fissure"));
                                   }, // needed
                                   child: Image.asset(
                                     "assets/img/tongue.png",
