@@ -16,7 +16,7 @@ dependencies:
   flutter_svg: ^0.15.0
   
   keyboard_actions: ^3.1.2
-  gif_ani: ^0.0.2
+  flutter_gifimage: ^1.0.1
 
   cupertino_icons: ^0.1.2
 
@@ -32,6 +32,8 @@ flutter:
 
   assets:
     - assets/img/phone.png
+    - assets/img/wrong.jpg
+    - assets/img/tongue.png
     - assets/img/ae.png
     - assets/img/games.svg
     - assets/img/book.png

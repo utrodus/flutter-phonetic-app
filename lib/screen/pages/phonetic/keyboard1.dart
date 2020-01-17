@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gifimage/flutter_gifimage.dart';
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/widgets/keyboardlayout.dart';
 import 'package:provider/provider.dart';
 import 'package:phono/screen/style/palete.dart';
 import 'package:phono/screen/pages/state/symbol.dart';
 
-Widget keyBoard1(
-  BuildContext context,
-  consonant,
-  vowel,
-) {
+Widget keyBoard1(BuildContext context, consonant, vowel,
+    {GifController controller}) {
   SizeConfig().init(context);
   return Container(
     child: SingleChildScrollView(
@@ -28,6 +26,9 @@ Widget keyBoard1(
                     audio: "f.mp3",
                     ontap: () {
                       Provider.of<Simbol>(context).setCurrentSymbol(0);
+                      controller.value = 0.0;
+                      controller.animateTo(19,
+                          duration: Duration(milliseconds: 2000));
                       consonant.play("f.mp3");
                     },
                   ),
@@ -413,7 +414,7 @@ Widget keyBoard1(
                           child: KeyboardLayout(
                             symbol: "-",
                             buttonColor: Palete.unusedColor,
-                    buttonShadow: Palete.unusedShadow,
+                            buttonShadow: Palete.unusedShadow,
                             audio: "ɪ.mp3",
                             ontap: () {
                               // Provider.of<Simbol>(context)
@@ -437,7 +438,7 @@ Widget keyBoard1(
                         KeyboardLayout(
                           symbol: "-",
                           buttonColor: Palete.unusedColor,
-                    buttonShadow: Palete.unusedShadow,
+                          buttonShadow: Palete.unusedShadow,
                           audio: "u2.mp3",
                           ontap: () {
                             // Provider.of<Simbol>(context).setCurrentSymbol(5);
@@ -470,7 +471,7 @@ Widget keyBoard1(
                             child: KeyboardLayout(
                               symbol: "-",
                               buttonColor: Palete.unusedColor,
-                    buttonShadow: Palete.unusedShadow,
+                              buttonShadow: Palete.unusedShadow,
                               audio: "v2.mp3",
                               ontap: () {
                                 // Provider.of<Simbol>(context)
@@ -482,7 +483,7 @@ Widget keyBoard1(
                           KeyboardLayout(
                             symbol: "-",
                             buttonColor: Palete.unusedColor,
-                    buttonShadow: Palete.unusedShadow,
+                            buttonShadow: Palete.unusedShadow,
                             audio: "u2.mp3",
                             ontap: () {
                               // Provider.of<Simbol>(context)

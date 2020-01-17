@@ -1,25 +1,48 @@
 import 'package:flutter/material.dart';
-import 'package:phono/constant/content.dart';
+import 'package:flutter_gifimage/flutter_gifimage.dart';
 import 'package:phono/screen/pages/state/symbol.dart';
 import 'package:phono/screen/widgets/contentlayout.dart';
 import 'package:provider/provider.dart';
 
 class ContentScreen extends StatelessWidget {
-  ContentScreen({Key key}) : super(key: key);
+  final GifController controller;
+  ContentScreen({Key key, this.controller}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var currentSymbol = Provider.of<Simbol>(context).getCurrentSymbol;
+
     return Expanded(
         flex: 3,
         child: Stack(
           children: <Widget>[
+            Container(),
             ContentLayout(
-                visible: currentSymbol == 0 ? true : false,
-                symbol: "f",
-                gif: "assets/gif/b.gif",
-                audio: "f.mp3",
-                materi: materi1A),
+              controller: controller,
+              visible: currentSymbol == 0 ? true : false,
+              symbol: "f",
+              sifat: "Voiceless Labiodental Fricative",
+              gif: "assets/gif/consonant/f-min.gif",
+              audio: "f.mp3",
+              content: Column(
+                children: <Widget>[
+                  penjelasan(context,
+                      number: "1. ",
+                      text: "Gently bite the lower lip to leave a tiny gap."),
+                  penjelasan(context,
+                      number: "2. ",
+                      text:
+                          "Partially block the airflow with the lower lip and the upper teeth to create a lot friction."),
+                  penjelasan(context,
+                      number: "3. ", text: "Do not vibrate the vocal cords."),
+                  penjelasan(context,
+                      number: "- ", text: "Counterpart: /v/ (voiced)."),
+                  penjelasan(context,
+                      number: "- ",
+                      text:"Most often represented by the letter F. Then by 2 letter FF, PH, GH."),
+                ],
+              ),
+            ),
             ContentLayout(
               visible: currentSymbol == 1 ? true : false,
               symbol: "v",
