@@ -39,15 +39,37 @@ class ContentScreen extends StatelessWidget {
                       number: "- ", text: "Counterpart: /v/ (voiced)."),
                   penjelasan(context,
                       number: "- ",
-                      text:"Most often represented by the letter F. Then by 2 letter FF, PH, GH."),
+                      text:
+                          "Most often represented by the letter F. Then by 2 letter FF, PH, GH."),
                 ],
               ),
             ),
             ContentLayout(
               visible: currentSymbol == 1 ? true : false,
               symbol: "v",
-              gif: "assets/gif/d.gif",
+              gif: "assets/gif/consonant/v-min.gif",
               audio: "v.mp3",
+              controller: controller,
+              sifat: "Voiceless Labiodental Fricative",
+              content: Column(
+                children: <Widget>[
+                  penjelasan(context,
+                      number: "1. ",
+                      text: "Gently bite the lower lip to leave a tiny gap."),
+                  penjelasan(context,
+                      number: "2. ",
+                      text:
+                          "Partially block the airflow with the lower lip and the upper teeth to create a lot friction."),
+                  penjelasan(context,
+                      number: "3. ", text: "Do not vibrate the vocal cords."),
+                  penjelasan(context,
+                      number: "- ", text: "Counterpart: /v/ (voiced)."),
+                  penjelasan(context,
+                      number: "- ",
+                      text:
+                          "Most often represented by the letter F. Then by 2 letter FF, PH, GH."),
+                ],
+              ),
             ),
             ContentLayout(
               visible: currentSymbol == 2 ? true : false,

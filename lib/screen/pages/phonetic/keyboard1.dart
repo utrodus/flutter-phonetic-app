@@ -39,6 +39,9 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                   ontap: () {
                     Provider.of<Simbol>(context).setCurrentSymbol(1);
                     consonant.play("v.mp3");
+                    controller.value = 0.0;
+                    controller.animateTo(18,
+                        duration: Duration(milliseconds: 2000));
                   },
                 ),
                 Padding(
