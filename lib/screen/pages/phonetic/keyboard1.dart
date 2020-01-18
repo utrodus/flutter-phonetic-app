@@ -28,7 +28,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       Provider.of<Simbol>(context).setCurrentSymbol(0);
                       controller.value = 0.0;
                       controller.animateTo(19,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                       consonant.play("f.mp3");
                     },
                   ),
@@ -41,7 +41,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     consonant.play("v.mp3");
                     controller.value = 0.0;
                     controller.animateTo(18,
-                        duration: Duration(milliseconds: 2000));
+                        duration: Duration(milliseconds: 1000));
                   },
                 ),
                 Padding(
@@ -56,7 +56,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       consonant.play("p.mp3");
                       controller.value = 0.0;
                       controller.animateTo(22,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -68,7 +68,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     consonant.play("b.mp3");
                     controller.value = 0.0;
                     controller.animateTo(39,
-                        duration: Duration(milliseconds: 2000));
+                        duration: Duration(milliseconds: 1000));
                   },
                 ),
                 Padding(
@@ -83,7 +83,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       consonant.play("d3.mp3");
                       controller.value = 0.0;
                       controller.animateTo(21,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -95,7 +95,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     consonant.play("tf.mp3");
                     controller.value = 0.0;
                     controller.animateTo(21,
-                        duration: Duration(milliseconds: 2000));
+                        duration: Duration(milliseconds: 1000));
                   },
                 ),
                 Padding(
@@ -110,7 +110,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       vowel.play("i.mp3");
                       controller.value = 0.0;
                       controller.animateTo(20,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -135,7 +135,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     vowel.play("u.mp3");
                     controller.value = 0.0;
                     controller.animateTo(19,
-                        duration: Duration(milliseconds: 2000));
+                        duration: Duration(milliseconds: 1000));
                   },
                 ),
               ],
@@ -157,7 +157,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       consonant.play("s.mp3");
                       controller.value = 0.0;
                       controller.animateTo(20,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -169,7 +169,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     consonant.play("z.mp3");
                     controller.value = 0.0;
                     controller.animateTo(18,
-                        duration: Duration(milliseconds: 2000));
+                        duration: Duration(milliseconds: 1000));
                   },
                 ),
                 Padding(
@@ -184,7 +184,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       consonant.play("t.mp3");
                       controller.value = 0.0;
                       controller.animateTo(26,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -196,7 +196,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     consonant.play("d.mp3");
                     controller.value = 0.0;
                     controller.animateTo(29,
-                        duration: Duration(milliseconds: 2000));
+                        duration: Duration(milliseconds: 1000));
                   },
                 ),
                 Padding(
@@ -205,14 +205,14 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       top: SizeConfig.vertical * 1,
                       left: SizeConfig.horizontal * 3),
                   child: KeyboardLayout(
-                    symbol: "ɹ",
+                    symbol: "r",
                     audio: "r.mp3",
                     ontap: () {
                       Provider.of<Simbol>(context).setCurrentSymbol(12);
                       consonant.play("r.mp3");
                       controller.value = 0.0;
                       controller.animateTo(17,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -226,7 +226,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       consonant.play("l.mp3");
                       controller.value = 0.0;
                       controller.animateTo(16,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -242,7 +242,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       vowel.play("ɪ.mp3");
                       controller.value = 0.0;
                       controller.animateTo(20,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -256,7 +256,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       vowel.play("v2.mp3");
                       controller.value = 0.0;
                       controller.animateTo(17,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -268,7 +268,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     vowel.play("u2.mp3");
                     controller.value = 0.0;
                     controller.animateTo(16,
-                        duration: Duration(milliseconds: 2000));
+                        duration: Duration(milliseconds: 1000));
                   },
                 ),
               ],
@@ -297,7 +297,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               consonant.play("ff.mp3");
                               controller.value = 0.0;
                               controller.animateTo(15,
-                                  duration: Duration(milliseconds: 2000));
+                                  duration: Duration(milliseconds: 1000));
                             },
                           ),
                         ),
@@ -309,7 +309,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                             consonant.play("3.mp3");
                             controller.value = 0.0;
                             controller.animateTo(17,
-                                duration: Duration(milliseconds: 2000));
+                                duration: Duration(milliseconds: 1000));
                           },
                         ),
                       ],
@@ -329,7 +329,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               consonant.play("0.mp3");
                               controller.value = 0.0;
                               controller.animateTo(17,
-                                  duration: Duration(milliseconds: 2000));
+                                  duration: Duration(milliseconds: 1000));
                             },
                           ),
                         ),
@@ -344,7 +344,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               consonant.play("03.mp3");
                               controller.value = 0.0;
                               controller.animateTo(15,
-                                  duration: Duration(milliseconds: 2000));
+                                  duration: Duration(milliseconds: 1000));
                             },
                           ),
                         ),
@@ -360,7 +360,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                           consonant.play("h.mp3");
                           controller.value = 0.0;
                           controller.animateTo(16,
-                              duration: Duration(milliseconds: 2000));
+                              duration: Duration(milliseconds: 1000));
                         },
                       ),
                     ),
@@ -378,7 +378,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       consonant.play("k.mp3");
                       controller.value = 0.0;
                       controller.animateTo(20,
-                          duration: Duration(milliseconds: 2000));
+                          duration: Duration(milliseconds: 1000));
                     },
                   ),
                 ),
@@ -390,7 +390,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     consonant.play("g.mp3");
                     controller.value = 0.0;
                     controller.animateTo(20,
-                        duration: Duration(milliseconds: 2000));
+                        duration: Duration(milliseconds: 1000));
                   },
                 ),
                 Column(
@@ -410,7 +410,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               consonant.play("w.mp3");
                               controller.value = 0.0;
                               controller.animateTo(19,
-                                  duration: Duration(milliseconds: 2000));
+                                  duration: Duration(milliseconds: 1000));
                             },
                           ),
                         ),
@@ -426,7 +426,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               consonant.play("j.mp3");
                               controller.value = 0.0;
                               controller.animateTo(13,
-                                  duration: Duration(milliseconds: 2000));
+                                  duration: Duration(milliseconds: 1000));
                             },
                           ),
                         ),
@@ -447,7 +447,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               consonant.play("m.mp3");
                               controller.value = 0.0;
                               controller.animateTo(16,
-                                  duration: Duration(milliseconds: 2000));
+                                  duration: Duration(milliseconds: 1000));
                             },
                           ),
                         ),
@@ -463,7 +463,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               consonant.play("n.mp3");
                               controller.value = 0.0;
                               controller.animateTo(16,
-                                  duration: Duration(milliseconds: 2000));
+                                  duration: Duration(milliseconds: 1000));
                             },
                           ),
                         ),
@@ -481,7 +481,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                           consonant.play("n2.mp3");
                           controller.value = 0.0;
                           controller.animateTo(16,
-                              duration: Duration(milliseconds: 2000));
+                              duration: Duration(milliseconds: 1000));
                         },
                       ),
                     ),
@@ -518,7 +518,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               vowel.play("ewalik.mp3");
                               controller.value = 0.0;
                               controller.animateTo(14,
-                                  duration: Duration(milliseconds: 2000));
+                                  duration: Duration(milliseconds: 1000));
                             },
                           ),
                         ),
@@ -551,7 +551,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                 vowel.play("e.mp3");
                                 controller.value = 0.0;
                                 controller.animateTo(16,
-                                    duration: Duration(milliseconds: 2000));
+                                    duration: Duration(milliseconds: 1000));
                               },
                             ),
                           ),
@@ -601,7 +601,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                 vowel.play("eponi.mp3");
                                 controller.value = 0.0;
                                 controller.animateTo(18,
-                                    duration: Duration(milliseconds: 2000));
+                                    duration: Duration(milliseconds: 1000));
                               },
                             ),
                           ),
@@ -617,7 +617,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                 vowel.play("a.mp3");
                                 controller.value = 0.0;
                                 controller.animateTo(17,
-                                    duration: Duration(milliseconds: 2000));
+                                    duration: Duration(milliseconds: 1000));
                               },
                             ),
                           ),
@@ -629,7 +629,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               vowel.play("c2.mp3");
                               controller.value = 0.0;
                               controller.animateTo(20,
-                                  duration: Duration(milliseconds: 2000));
+                                  duration: Duration(milliseconds: 1000));
                             },
                           ),
                         ],
@@ -652,7 +652,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                 vowel.play("3buntut.mp3");
                                 controller.value = 0.0;
                                 controller.animateTo(16,
-                                    duration: Duration(milliseconds: 2000));
+                                    duration: Duration(milliseconds: 1000));
                               },
                             ),
                           ),
@@ -668,7 +668,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                 vowel.play("ebuntut.mp3");
                                 controller.value = 0.0;
                                 controller.animateTo(16,
-                                    duration: Duration(milliseconds: 2000));
+                                    duration: Duration(milliseconds: 1000));
                               },
                             ),
                           ),
