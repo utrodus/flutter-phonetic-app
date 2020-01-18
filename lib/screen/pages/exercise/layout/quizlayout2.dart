@@ -159,7 +159,7 @@ class _QuizLayout2State extends State<QuizLayout2> {
                       style: TextStyle(
                           color: Palete.red,
                           fontSize: SizeConfig.horizontal * 5,
-                          fontWeight: FontWeight.w500),
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
@@ -214,7 +214,7 @@ class _QuizLayout2State extends State<QuizLayout2> {
                           child: FlatButton(
                             shape: new RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(10.0)),
-                            color: Palete.blue,
+                             color: Color.fromRGBO(224, 157, 0, 1),
                             onPressed: () {
                               _quizKey.currentState.save();
 
@@ -239,13 +239,7 @@ class _QuizLayout2State extends State<QuizLayout2> {
                               }
                             },
                             child: Container(
-                              decoration: BoxDecoration(boxShadow: [
-                                new BoxShadow(
-                                    color: Palete.shadowBlue,
-                                    offset: new Offset(0.0, 3.5),
-                                    spreadRadius: 0.1,
-                                    blurRadius: 3)
-                              ], borderRadius: BorderRadius.circular(10)),
+                              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                               padding: EdgeInsets.only(
                                 top: SizeConfig.vertical * 1.5,
                                 bottom: SizeConfig.vertical * 1.5,
