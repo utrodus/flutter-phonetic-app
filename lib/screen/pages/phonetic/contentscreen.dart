@@ -21,6 +21,8 @@ class ContentScreen extends StatelessWidget {
               controller: controller,
               visible: currentSymbol == 0 ? true : false,
               symbol: "f",
+              twistertext:
+                  "A fisher named Fischer fished for fish from the edge of fissure",
               sifat: "Voiceless Labiodental Fricative",
               gif: "assets/gif/consonant/f-min.gif",
               audio: "f.mp3",
@@ -50,6 +52,8 @@ class ContentScreen extends StatelessWidget {
               gif: "assets/gif/consonant/v-min.gif",
               audio: "v.mp3",
               controller: controller,
+              twistertext:
+                  " Vivian believes that Valerie's violet volleyball can be very valuable.",
               sifat: "Voiced Labiodental Fricative",
               content: Column(
                 children: <Widget>[
@@ -74,6 +78,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 2 ? true : false,
               symbol: "p",
+              twistertext:
+                  "Please place the pleated pressed pants on the plain pressing plank",
               gif: "assets/gif/consonant/p-min.gif",
               audio: "p.mp3",
               controller: controller,
@@ -101,6 +107,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 3 ? true : false,
               symbol: "b",
+              twistertext: " A big black bug bit a big black bear",
               audio: "b.mp3",
               gif: "assets/gif/consonant/b-min.gif",
               controller: controller,
@@ -128,6 +135,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 4 ? true : false,
               symbol: "dʒ",
+              twistertext:
+                  "Major John Bridges and sergeant Jim Rogers gently changed the engine in their huge Jeep",
               audio: "d3.mp3",
               gif: "assets/gif/consonant/d3-min.gif",
               controller: controller,
@@ -158,6 +167,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 5 ? true : false,
               symbol: "tʃ",
+              twistertext:
+                  " If Charlie choose Charlton chocolate, should Charlie choose the cheap Charlton chocolate to chew?",
               audio: "tf.mp3",
               controller: controller,
               gif: "assets/gif/consonant/tʃ-min.gif",
@@ -188,6 +199,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 6 ? true : false,
               symbol: "i",
+              twistertext:
+                  "A piece of cheap meat with cheese and cream for meal",
               audio: "i.mp3",
               controller: controller,
               gif: "assets/gif/vowel/i-min.gif",
@@ -216,6 +229,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 7 ? true : false,
               symbol: "u",
+              twistertext: "Cute troops in blue boots",
               audio: "u.mp3",
               controller: controller,
               gif: "assets/gif/vowel/u-min.gif",
@@ -244,6 +258,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 8 ? true : false,
               symbol: "s",
+              twistertext:
+                  " If she stops at the stop where I stop, then i shouldn't stop at the stop where she stops",
               audio: "s.mp3",
               controller: controller,
               gif: "assets/gif/consonant/s-min.gif",
@@ -271,6 +287,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 9 ? true : false,
               symbol: "z",
+              twistertext:
+                  "Fuzzy Wuzzy was a bear, Fuzzy Wuzzy had no hair, Fuzzy Wuzzy wasn't fuzzy, was he?",
               audio: "z.mp3",
               controller: controller,
               gif: "assets/gif/consonant/z-min.gif",
@@ -302,6 +320,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 10 ? true : false,
               symbol: "t",
+              twistertext:
+                  'The two teen talk to the tutor, "is it harder to toot or to tutor two tooters to toot?"',
               audio: "t.mp3",
               controller: controller,
               gif: "assets/gif/consonant/t-min.gif",
@@ -331,6 +351,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 11 ? true : false,
               symbol: "d",
+              twistertext:
+                  "The duke dropped the dirty double damask dinner napkin.",
               audio: "d.mp3",
               controller: controller,
               gif: "assets/gif/consonant/d-min.gif",
@@ -359,7 +381,8 @@ class ContentScreen extends StatelessWidget {
             ),
             ContentLayout(
               visible: currentSymbol == 12 ? true : false,
-              symbol: "ɹ",
+              symbol: "r",
+              twistertext: "A rider rides racing bike in the rain",
               audio: "r.mp3",
               controller: controller,
               gif: "assets/gif/consonant/r-min.gif",
@@ -382,6 +405,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 13 ? true : false,
               symbol: "l",
+              twistertext: "A lone lamb lost his land",
               audio: "l.mp3",
               controller: controller,
               gif: "assets/gif/consonant/l-min.gif",
@@ -402,6 +426,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 14 ? true : false,
               symbol: "ɪ",
+              twistertext: " A king visits a kid in a big ship",
               audio: "ɪ.mp3",
               controller: controller,
               gif: "assets/gif/vowel/i-min.gif",
@@ -433,6 +458,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 15 ? true : false,
               symbol: "ʌ",
+              twistertext: "A duck comes into a pub",
               audio: "v2.mp3",
               controller: controller,
               gif: "assets/gif/vowel/ʌ-min.gif",
@@ -458,6 +484,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 16 ? true : false,
               symbol: "ʊ",
+              twistertext: "A cook stood in a brook",
               audio: "u2.mp3",
               controller: controller,
               gif: "assets/gif/vowel/ʊ-min.gif",
@@ -489,6 +516,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 17 ? true : false,
               symbol: "ʃ",
+              twistertext:
+                  "If she stops at the shop where I stop, then i shouldn't stop to shop at the shop where she stops",
               audio: "ff.mp3",
               controller: controller,
               gif: "assets/gif/consonant/ʃ-min.gif",
@@ -521,6 +550,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 18 ? true : false,
               symbol: "ʒ",
+              twistertext:
+                  "The beige version of the television does not look usual but casual.",
               audio: "3.mp3",
               controller: controller,
               gif: "assets/gif/consonant/ʒ-min.gif",
@@ -552,6 +583,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 19 ? true : false,
               symbol: "k",
+              twistertext: " Kane is keenly cleaning copper kettles",
               audio: "k.mp3",
               controller: controller,
               gif: "assets/gif/consonant/k-min.gif",
@@ -582,6 +614,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 20 ? true : false,
               symbol: "g",
+              twistertext: "Gale's great glass globe glows green",
               audio: "g.mp3",
               controller: controller,
               gif: "assets/gif/vowel/i-min.gif",
@@ -628,6 +661,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 21 ? true : false,
               symbol: "w",
+              twistertext:
+                  "If two witches watched two watches, which witch would watch which watch?",
               audio: "w.mp3",
               controller: controller,
               gif: "assets/gif/consonant/w-min.gif",
@@ -657,6 +692,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 22 ? true : false,
               symbol: "j",
+              twistertext: "Local yokel yells the yellow yacht.",
               audio: "j.mp3",
               controller: controller,
               gif: "assets/gif/consonant/j-min.gif",
@@ -689,6 +725,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 23 ? true : false,
               symbol: "ə",
+              twistertext: "Seven balloons above the ocean",
               audio: "ewalik.mp3",
               controller: controller,
               gif: "assets/gif/vowel/ə-min.gif",
@@ -713,6 +750,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 24 ? true : false,
               symbol: "θ",
+              twistertext:
+                  " I thought a thought but the thought I thought I thought wasn't the thought I thought",
               audio: "θ.mp3",
               controller: controller,
               gif: "assets/gif/consonant/θ-min.gif",
@@ -738,6 +777,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 25 ? true : false,
               symbol: "ð",
+              twistertext:
+                  "Whether the weather be fine, or whether the weather be not, we'll weather the weather whatever the weather.",
               audio: "ð.mp3",
               controller: controller,
               gif: "assets/gif/consonant/o-min.gif",
@@ -770,6 +811,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 26 ? true : false,
               symbol: "m",
+              twistertext: "The mad man mixed a medicine mixture",
               audio: "m.mp3",
               controller: controller,
               gif: "assets/gif/consonant/m-min.gif",
@@ -791,6 +833,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 27 ? true : false,
               symbol: "n",
+              twistertext: "Nine nimble nobleman nibbled nuts",
               audio: "n.mp3",
               controller: controller,
               gif: "assets/gif/consonant/n-min.gif",
@@ -816,6 +859,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 28 ? true : false,
               symbol: "e",
+              twistertext: "Men met and fed a wet elk",
               audio: "e.mp3",
               controller: controller,
               gif: "assets/gif/vowel/ɛ-min.gif",
@@ -840,6 +884,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 29 ? true : false,
               symbol: "h",
+              twistertext: "Why Harry Hunt hunt heavy hairy hares for herb?",
               audio: "h.mp3",
               controller: controller,
               gif: "assets/gif/consonant/h-min.gif",
@@ -864,6 +909,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 30 ? true : false,
               symbol: "ŋ",
+              twistertext:
+                  "Mrs. King is bringing something pink for Mr. King to drink",
               audio: "n2.mp3",
               controller: controller,
               gif: "assets/gif/consonant/n-min.gif",
@@ -886,6 +933,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 31 ? true : false,
               symbol: "ae",
+              twistertext: "A fat black cat in a hat had a nap",
               audio: "eponi.mp3",
               controller: controller,
               gif: "assets/gif/vowel/æ-min.gif",
@@ -916,6 +964,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 32 ? true : false,
               symbol: "ɑ",
+              twistertext: "A fox got a shock in a shop",
               audio: "a.mp3",
               controller: controller,
               gif: "assets/gif/vowel/a-min.gif",
@@ -947,6 +996,7 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 33 ? true : false,
               symbol: "ɔ",
+              twistertext: "A small frog lost in a fog",
               audio: "c2.mp3",
               controller: controller,
               gif: "assets/gif/vowel/ɔ-min.gif",
@@ -978,6 +1028,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 34 ? true : false,
               symbol: "ɝ",
+              twistertext:
+                  "The nurse heard a thirsty bird flies to observe the dessert.",
               audio: "3buntut.mp3",
               controller: controller,
               gif: "assets/gif/vowel/ɝ-min.gif",
@@ -1009,6 +1061,8 @@ class ContentScreen extends StatelessWidget {
             ContentLayout(
               visible: currentSymbol == 35 ? true : false,
               symbol: "ɚ",
+              twistertext:
+                  "Mr. Fraser, the red-colored collar man, is the clever author to answer the question better.",
               audio: "ebuntut.mp3",
               controller: controller,
               gif: "assets/gif/vowel/ɚ-min.gif",
@@ -1032,7 +1086,9 @@ class ContentScreen extends StatelessWidget {
                   penjelasan(context,
                       number: "- ", text: "Occurs in unstressed syllables."),
                   penjelasan(context,
-                      number: "- ", text: "Most often represented by the letter ER. Followed by OR, UR, AR."),
+                      number: "- ",
+                      text:
+                          "Most often represented by the letter ER. Followed by OR, UR, AR."),
                 ],
               ),
             ),

@@ -11,6 +11,7 @@ class ContentLayout extends StatelessWidget {
   final String symbol;
   final String sifat;
   final String gif;
+  final String twistertext;
   final String audio;
   final String materi;
   final bool visible;
@@ -18,17 +19,18 @@ class ContentLayout extends StatelessWidget {
   final AudioCache player = AudioCache(prefix: 'audio/');
   final GifController controller;
 
-  ContentLayout(
-      {Key key,
-      this.symbol,
-      this.gif,
-      this.audio,
-      this.visible,
-      this.materi,
-      this.controller,
-      this.sifat,
-      this.content})
-      : super(key: key);
+  ContentLayout({
+    Key key,
+    this.symbol,
+    this.gif,
+    this.audio,
+    this.visible,
+    this.materi,
+    this.controller,
+    this.sifat,
+    this.content,
+    this.twistertext,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +75,9 @@ class ContentLayout extends StatelessWidget {
                                   color: Colors.transparent,
                                   child: InkWell(
                                     onTap: () {
-                                      print('test');
+                                      Navigator.pushNamed(context, wrong,
+                                          arguments: WrongArgument(
+                                              currentSymbol: "f"));
                                     }, // needed
                                     child: ClipRRect(
                                       borderRadius:
@@ -93,8 +97,8 @@ class ContentLayout extends StatelessWidget {
                                 child: InkWell(
                                   onTap: () {
                                     Navigator.pushNamed(context, twister,
-                                        arguments: TwisterArgument("f",
-                                            "A fisher named Fischer fished for fish from the edge of fissure"));
+                                        arguments: TwisterArgument(
+                                            symbol, twistertext));
                                   }, // needed
                                   child: Image.asset(
                                     "assets/img/tongue.png",
