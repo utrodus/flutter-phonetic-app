@@ -41,6 +41,16 @@ flutter:
     - assets/img/playbutton.png
     - assets/img/info.png
     - assets/img/exercise.png
+    # TODO: IMAGE MISSPRONON:
+    #ɓ 
+    #- assets/img/missp/b2.png
+    #- assets/img/missp/p.png
+    #- assets/img/missp/Rwalik.png
+    #t̪
+    #- assets/img/missp/t2.png
+    #β
+    #- assets/img/missp/b3.png
+    
     # TODO: GIF CONSONANT: 
     - assets/gif/coba.gif
     - assets/gif/b.gif

@@ -5,7 +5,6 @@ import 'package:phono/constant/constantroute.dart';
 import 'package:phono/router/router.dart';
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/style/palete.dart';
-import 'package:phono/screen/widgets/keyboardlayout.dart';
 
 class ContentLayout extends StatelessWidget {
   final String symbol;
@@ -15,9 +14,14 @@ class ContentLayout extends StatelessWidget {
   final String audio;
   final String materi;
   final bool visible;
+  final List<Widget> listwrongContent;
+  final List<Widget> listWrongKeyboard;
   final Widget content;
   final AudioCache player = AudioCache(prefix: 'audio/');
   final GifController controller;
+  final int flexWrong;
+  final bool isWrong;
+  final String wrongRoute;
 
   ContentLayout({
     Key key,
@@ -30,6 +34,11 @@ class ContentLayout extends StatelessWidget {
     this.sifat,
     this.content,
     this.twistertext,
+    this.listwrongContent,
+    this.listWrongKeyboard,
+    this.flexWrong,
+    this.isWrong,
+    this.wrongRoute,
   }) : super(key: key);
 
   @override
@@ -67,25 +76,29 @@ class ContentLayout extends StatelessWidget {
                         children: <Widget>[
                           Row(
                             children: <Widget>[
-                              Container(
-                                margin: EdgeInsets.only(
-                                    right: SizeConfig.horizontal * 2),
-                                child: Material(
-                                  // needed
-                                  color: Colors.transparent,
-                                  child: InkWell(
-                                    onTap: () {
-                                      Navigator.pushNamed(context, wrong,
-                                          arguments: WrongArgument(
-                                              currentSymbol: "f"));
-                                    }, // needed
-                                    child: ClipRRect(
-                                      borderRadius:
-                                          new BorderRadius.circular(15.0),
-                                      child: Image.asset(
-                                        "assets/img/wrong.jpg",
-                                        width: SizeConfig.horizontal * 12,
-                                        fit: BoxFit.cover,
+                              Visibility(
+                                visible: isWrong ?? false,
+                                child: Container(
+                                  margin: EdgeInsets.only(
+                                      right: SizeConfig.horizontal * 2),
+                                  child: Material(
+                                    // needed
+                                    color: Colors.transparent,
+                                    child: InkWell(
+                                      onTap: () {
+                                        Navigator.pushNamed(
+                                            context, wrongRoute ?? wrongf,
+                                            arguments:
+                                                WrongArgument(symbol: symbol));
+                                      }, // needed
+                                      child: ClipRRect(
+                                        borderRadius:
+                                            new BorderRadius.circular(15.0),
+                                        child: Image.asset(
+                                          "assets/img/wrong.jpg",
+                                          width: SizeConfig.horizontal * 12,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -113,7 +126,10 @@ class ContentLayout extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: SizeConfig.horizontal * 2),
+                      margin: EdgeInsets.only(
+                          left: isWrong == false
+                              ? SizeConfig.horizontal * 15
+                              : SizeConfig.horizontal * 2),
                       width: SizeConfig.horizontal * 35,
                       child: GifImage(
                         fit: BoxFit.cover,

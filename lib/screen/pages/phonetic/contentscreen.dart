@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gifimage/flutter_gifimage.dart';
+import 'package:phono/constant/constantroute.dart';
 import 'package:phono/screen/pages/state/symbol.dart';
+import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/widgets/contentlayout.dart';
+import 'package:phono/screen/widgets/contentlayoutwrong.dart';
+import 'package:phono/screen/widgets/keyboardlayout.dart';
 import 'package:provider/provider.dart';
 
 class ContentScreen extends StatelessWidget {
@@ -10,8 +14,10 @@ class ContentScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var currentSymbol = Provider.of<Simbol>(context).getCurrentSymbol;
-
+    var currentContent = Provider.of<Simbol>(context).getCurrentSymbol;
+    var currentFlex = Provider.of<Simbol>(context);
+    var wrongState = Provider.of<Simbol>(context);
+    SizeConfig().init(context);
     return Expanded(
         flex: 3,
         child: Stack(
@@ -19,7 +25,7 @@ class ContentScreen extends StatelessWidget {
             Container(),
             ContentLayout(
               controller: controller,
-              visible: currentSymbol == 0 ? true : false,
+              visible: currentContent == 0 ? true : false,
               symbol: "f",
               twistertext:
                   "A fisher named Fischer fished for fish from the edge of fissure",
@@ -45,9 +51,11 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter F. Then by 2 letter FF, PH, GH."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongf,
             ),
             ContentLayout(
-              visible: currentSymbol == 1 ? true : false,
+              visible: currentContent == 1 ? true : false,
               symbol: "v",
               gif: "assets/gif/consonant/v-min.gif",
               audio: "v.mp3",
@@ -74,9 +82,11 @@ class ContentScreen extends StatelessWidget {
                           "Only represented by the letter V, exception for the preposition *of* "),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongv,
             ),
             ContentLayout(
-              visible: currentSymbol == 2 ? true : false,
+              visible: currentContent == 2 ? true : false,
               symbol: "p",
               twistertext:
                   "Please place the pleated pressed pants on the plain pressing plank",
@@ -105,7 +115,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 3 ? true : false,
+              visible: currentContent == 3 ? true : false,
               symbol: "b",
               twistertext: " A big black bug bit a big black bear",
               audio: "b.mp3",
@@ -133,7 +143,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 4 ? true : false,
+              visible: currentContent == 4 ? true : false,
               symbol: "dʒ",
               twistertext:
                   "Major John Bridges and sergeant Jim Rogers gently changed the engine in their huge Jeep",
@@ -165,7 +175,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 5 ? true : false,
+              visible: currentContent == 5 ? true : false,
               symbol: "tʃ",
               twistertext:
                   " If Charlie choose Charlton chocolate, should Charlie choose the cheap Charlton chocolate to chew?",
@@ -197,7 +207,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 6 ? true : false,
+              visible: currentContent == 6 ? true : false,
               symbol: "i",
               twistertext:
                   "A piece of cheap meat with cheese and cream for meal",
@@ -227,7 +237,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 7 ? true : false,
+              visible: currentContent == 7 ? true : false,
               symbol: "u",
               twistertext: "Cute troops in blue boots",
               audio: "u.mp3",
@@ -256,7 +266,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 8 ? true : false,
+              visible: currentContent == 8 ? true : false,
               symbol: "s",
               twistertext:
                   " If she stops at the stop where I stop, then i shouldn't stop at the stop where she stops",
@@ -285,7 +295,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 9 ? true : false,
+              visible: currentContent == 9 ? true : false,
               symbol: "z",
               twistertext:
                   "Fuzzy Wuzzy was a bear, Fuzzy Wuzzy had no hair, Fuzzy Wuzzy wasn't fuzzy, was he?",
@@ -318,7 +328,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 10 ? true : false,
+              visible: currentContent == 10 ? true : false,
               symbol: "t",
               twistertext:
                   'The two teen talk to the tutor, "is it harder to toot or to tutor two tooters to toot?"',
@@ -349,7 +359,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 11 ? true : false,
+              visible: currentContent == 11 ? true : false,
               symbol: "d",
               twistertext:
                   "The duke dropped the dirty double damask dinner napkin.",
@@ -380,7 +390,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 12 ? true : false,
+              visible: currentContent == 12 ? true : false,
               symbol: "r",
               twistertext: "A rider rides racing bike in the rain",
               audio: "r.mp3",
@@ -403,7 +413,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 13 ? true : false,
+              visible: currentContent == 13 ? true : false,
               symbol: "l",
               twistertext: "A lone lamb lost his land",
               audio: "l.mp3",
@@ -424,7 +434,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 14 ? true : false,
+              visible: currentContent == 14 ? true : false,
               symbol: "ɪ",
               twistertext: " A king visits a kid in a big ship",
               audio: "ɪ.mp3",
@@ -456,7 +466,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 15 ? true : false,
+              visible: currentContent == 15 ? true : false,
               symbol: "ʌ",
               twistertext: "A duck comes into a pub",
               audio: "v2.mp3",
@@ -482,7 +492,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 16 ? true : false,
+              visible: currentContent == 16 ? true : false,
               symbol: "ʊ",
               twistertext: "A cook stood in a brook",
               audio: "u2.mp3",
@@ -514,7 +524,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 17 ? true : false,
+              visible: currentContent == 17 ? true : false,
               symbol: "ʃ",
               twistertext:
                   "If she stops at the shop where I stop, then i shouldn't stop to shop at the shop where she stops",
@@ -548,7 +558,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 18 ? true : false,
+              visible: currentContent == 18 ? true : false,
               symbol: "ʒ",
               twistertext:
                   "The beige version of the television does not look usual but casual.",
@@ -581,7 +591,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 19 ? true : false,
+              visible: currentContent == 19 ? true : false,
               symbol: "k",
               twistertext: " Kane is keenly cleaning copper kettles",
               audio: "k.mp3",
@@ -612,7 +622,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 20 ? true : false,
+              visible: currentContent == 20 ? true : false,
               symbol: "g",
               twistertext: "Gale's great glass globe glows green",
               audio: "g.mp3",
@@ -659,7 +669,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 21 ? true : false,
+              visible: currentContent == 21 ? true : false,
               symbol: "w",
               twistertext:
                   "If two witches watched two watches, which witch would watch which watch?",
@@ -690,7 +700,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 22 ? true : false,
+              visible: currentContent == 22 ? true : false,
               symbol: "j",
               twistertext: "Local yokel yells the yellow yacht.",
               audio: "j.mp3",
@@ -723,7 +733,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 23 ? true : false,
+              visible: currentContent == 23 ? true : false,
               symbol: "ə",
               twistertext: "Seven balloons above the ocean",
               audio: "ewalik.mp3",
@@ -748,7 +758,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 24 ? true : false,
+              visible: currentContent == 24 ? true : false,
               symbol: "θ",
               twistertext:
                   " I thought a thought but the thought I thought I thought wasn't the thought I thought",
@@ -775,7 +785,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 25 ? true : false,
+              visible: currentContent == 25 ? true : false,
               symbol: "ð",
               twistertext:
                   "Whether the weather be fine, or whether the weather be not, we'll weather the weather whatever the weather.",
@@ -809,7 +819,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 26 ? true : false,
+              visible: currentContent == 26 ? true : false,
               symbol: "m",
               twistertext: "The mad man mixed a medicine mixture",
               audio: "m.mp3",
@@ -831,7 +841,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 27 ? true : false,
+              visible: currentContent == 27 ? true : false,
               symbol: "n",
               twistertext: "Nine nimble nobleman nibbled nuts",
               audio: "n.mp3",
@@ -857,7 +867,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 28 ? true : false,
+              visible: currentContent == 28 ? true : false,
               symbol: "e",
               twistertext: "Men met and fed a wet elk",
               audio: "e.mp3",
@@ -882,7 +892,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 29 ? true : false,
+              visible: currentContent == 29 ? true : false,
               symbol: "h",
               twistertext: "Why Harry Hunt hunt heavy hairy hares for herb?",
               audio: "h.mp3",
@@ -907,7 +917,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 30 ? true : false,
+              visible: currentContent == 30 ? true : false,
               symbol: "ŋ",
               twistertext:
                   "Mrs. King is bringing something pink for Mr. King to drink",
@@ -931,7 +941,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 31 ? true : false,
+              visible: currentContent == 31 ? true : false,
               symbol: "ae",
               twistertext: "A fat black cat in a hat had a nap",
               audio: "eponi.mp3",
@@ -962,7 +972,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 32 ? true : false,
+              visible: currentContent == 32 ? true : false,
               symbol: "ɑ",
               twistertext: "A fox got a shock in a shop",
               audio: "a.mp3",
@@ -994,7 +1004,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 33 ? true : false,
+              visible: currentContent == 33 ? true : false,
               symbol: "ɔ",
               twistertext: "A small frog lost in a fog",
               audio: "c2.mp3",
@@ -1026,7 +1036,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 34 ? true : false,
+              visible: currentContent == 34 ? true : false,
               symbol: "ɝ",
               twistertext:
                   "The nurse heard a thirsty bird flies to observe the dessert.",
@@ -1059,7 +1069,7 @@ class ContentScreen extends StatelessWidget {
               ),
             ),
             ContentLayout(
-              visible: currentSymbol == 35 ? true : false,
+              visible: currentContent == 35 ? true : false,
               symbol: "ɚ",
               twistertext:
                   "Mr. Fraser, the red-colored collar man, is the clever author to answer the question better.",

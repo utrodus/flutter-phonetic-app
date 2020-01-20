@@ -27,7 +27,8 @@ import 'package:phono/screen/pages/introduction/screen.dart';
 import 'package:phono/screen/pages/mainmenu/screen.dart';
 import 'package:phono/screen/pages/phonetic/screen.dart';
 import 'package:phono/screen/pages/phonetic/twisterscreen.dart';
-import 'package:phono/screen/pages/phonetic/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/f/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/v/wrongscreen.dart';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -97,13 +98,18 @@ class Router {
                   kalimat: data.kalimat,
                 ));
 
-      case wrong:
+      case wrongf:
         WrongArgument data = settings.arguments;
         return MaterialPageRoute(
-            builder: (_) => Wrong(
-                  currentSymbol: data.currentSymbol,
-                  gambar: data.gambar,
-                  symbol: data.symbol,
+            builder: (_) => Wrongf(
+                  simbol: data.symbol,
+                ));
+                
+      case wrongv:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongv(
+                  simbol: data.symbol,
                 ));
 
       default:
@@ -132,8 +138,8 @@ class TwisterArgument {
 }
 
 class WrongArgument {
-  List symbol;
-  List gambar;
-  String currentSymbol;
-  WrongArgument({this.currentSymbol, this.symbol, this.gambar});
+  final String symbol;
+  WrongArgument({
+    this.symbol,
+  });
 }

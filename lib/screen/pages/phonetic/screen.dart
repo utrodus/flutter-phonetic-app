@@ -38,7 +38,7 @@ class _PhoneticState extends State<Phonetic> with TickerProviderStateMixin {
             ),
             KeyboardScreen(
               controller: controller,
-            )
+            ),
           ],
         ));
   }
