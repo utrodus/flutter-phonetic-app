@@ -21,7 +21,7 @@ class ContentWrong extends StatelessWidget {
         children: <Widget>[
           ContentLayoutWrong(
             visible: wrongState.getWrongContent == 0 ? true : false,
-            symbol: "f",
+            symbol: simbol,
             sifat: "Voiced Uvular Fricative",
             img: "assets/img/ae.png",
             content: Column(
@@ -42,7 +42,7 @@ class ContentWrong extends StatelessWidget {
           ),
           ContentLayoutWrong(
             visible: wrongState.getWrongContent == 1 ? true : false,
-            symbol: "f",
+            symbol: simbol,
             sifat: "Voiceless Bilabial Stop",
             img: "assets/img/ae.png",
           ),

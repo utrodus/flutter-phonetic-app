@@ -4,8 +4,6 @@ import 'package:phono/constant/constantroute.dart';
 import 'package:phono/screen/pages/state/symbol.dart';
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/widgets/contentlayout.dart';
-import 'package:phono/screen/widgets/contentlayoutwrong.dart';
-import 'package:phono/screen/widgets/keyboardlayout.dart';
 import 'package:provider/provider.dart';
 
 class ContentScreen extends StatelessWidget {
@@ -113,6 +111,7 @@ class ContentScreen extends StatelessWidget {
                           "Aspiration is essential for all stop sounds, but only at the beginning of words."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 3 ? true : false,
@@ -141,6 +140,8 @@ class ContentScreen extends StatelessWidget {
                           "Aspiration is essential for all stop sounds, but only at the beginning of words."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongb,
             ),
             ContentLayout(
               visible: currentContent == 4 ? true : false,
@@ -173,6 +174,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter G. Then by the letter J, DG, D, GG."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 5 ? true : false,
@@ -205,6 +207,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter CH. Followed by T, TCH, C."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 6 ? true : false,
@@ -235,6 +238,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter CH. Followed by T, TCH, C."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 7 ? true : false,
@@ -264,6 +268,8 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter U. Followed by OO, O, EW, OU."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongu,
             ),
             ContentLayout(
               visible: currentContent == 8 ? true : false,
@@ -293,6 +299,7 @@ class ContentScreen extends StatelessWidget {
                           "Sibilant is fricative consonants with a higher amplitude."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 9 ? true : false,
@@ -326,6 +333,8 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter S. Followed by Z, X."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongz,
             ),
             ContentLayout(
               visible: currentContent == 10 ? true : false,
@@ -357,6 +366,8 @@ class ContentScreen extends StatelessWidget {
                           "Aspiration is essential for all stop sounds, but only at the beginning of words."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongt,
             ),
             ContentLayout(
               visible: currentContent == 11 ? true : false,
@@ -388,6 +399,7 @@ class ContentScreen extends StatelessWidget {
                           "Aspiration is essential for all stop sounds, but only at the beginning of words.."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 12 ? true : false,
@@ -411,6 +423,8 @@ class ContentScreen extends StatelessWidget {
                       number: "4. ", text: "Vibrate the vocal cords."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongr,
             ),
             ContentLayout(
               visible: currentContent == 13 ? true : false,
@@ -432,6 +446,7 @@ class ContentScreen extends StatelessWidget {
                       number: "3. ", text: "Vibrate the vocal cords."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 14 ? true : false,
@@ -464,6 +479,8 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter I. Followed by E, A, Y."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongI,
             ),
             ContentLayout(
               visible: currentContent == 15 ? true : false,
@@ -490,6 +507,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter U. Followed by O, OU, OO."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 16 ? true : false,
@@ -522,6 +540,8 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter U, lalu OO, O, da OU."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongu2,
             ),
             ContentLayout(
               visible: currentContent == 17 ? true : false,
@@ -556,6 +576,8 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter T. Followed by SH, C, S, CH."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongs2,
             ),
             ContentLayout(
               visible: currentContent == 18 ? true : false,
@@ -589,6 +611,8 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter S. Followed by G, Z, T."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrong32,
             ),
             ContentLayout(
               visible: currentContent == 19 ? true : false,
@@ -620,6 +644,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter C. Followed by the letter K, CK, CH, CC, QUE."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 20 ? true : false,
@@ -667,6 +692,8 @@ class ContentScreen extends StatelessWidget {
                           "- The letter G followed by the consonant letter is typically pronounced as /g/."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongg,
             ),
             ContentLayout(
               visible: currentContent == 21 ? true : false,
@@ -698,6 +725,8 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter W. Followed by QU, GU, SU."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongw,
             ),
             ContentLayout(
               visible: currentContent == 22 ? true : false,
@@ -731,6 +760,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter U. Followed by the letter Y, I, EW."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 23 ? true : false,
@@ -756,6 +786,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter A. Followed by O, E, IO, I, U."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 24 ? true : false,
@@ -783,6 +814,8 @@ class ContentScreen extends StatelessWidget {
                       number: "- ", text: "Counterpart /ð/ (voiceless)."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongteta,
             ),
             ContentLayout(
               visible: currentContent == 25 ? true : false,
@@ -817,6 +850,8 @@ class ContentScreen extends StatelessWidget {
                       text: "Used in only less then 1% of English words."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongobuntut,
             ),
             ContentLayout(
               visible: currentContent == 26 ? true : false,
@@ -839,6 +874,7 @@ class ContentScreen extends StatelessWidget {
                       number: "- ", text: "Only represented by the letter M."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 27 ? true : false,
@@ -865,6 +901,7 @@ class ContentScreen extends StatelessWidget {
                           "Most frequently used consonant in American English."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 28 ? true : false,
@@ -890,6 +927,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter E. Followed by EA, A, IE."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 29 ? true : false,
@@ -915,6 +953,8 @@ class ContentScreen extends StatelessWidget {
                       number: "- ", text: "Only represented by the letter H."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrongh,
             ),
             ContentLayout(
               visible: currentContent == 30 ? true : false,
@@ -939,6 +979,7 @@ class ContentScreen extends StatelessWidget {
                           "Most commonly represented by the letter N when it comes before the letter G, K, and C."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 31 ? true : false,
@@ -970,6 +1011,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter A. Followed by AL, AU."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 32 ? true : false,
@@ -1002,6 +1044,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter O. Followed by A, AL."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 33 ? true : false,
@@ -1034,6 +1077,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter O. Followed by AU, A, AL, AW, OU, OA."),
                 ],
               ),
+              isWrong: false,
             ),
             ContentLayout(
               visible: currentContent == 34 ? true : false,
@@ -1067,6 +1111,8 @@ class ContentScreen extends StatelessWidget {
                       number: "- ", text: "Occurs in stressed syllables."),
                 ],
               ),
+              isWrong: true,
+              wrongRoute: wrong3buntut,
             ),
             ContentLayout(
               visible: currentContent == 35 ? true : false,
@@ -1101,6 +1147,7 @@ class ContentScreen extends StatelessWidget {
                           "Most often represented by the letter ER. Followed by OR, UR, AR."),
                 ],
               ),
+              isWrong: false,
             ),
           ],
         ));

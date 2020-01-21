@@ -25,7 +25,7 @@ class Wrongv extends StatelessWidget {
             right: SizeConfig.horizontal * 3,
           ),
           child: Column(
-            children: <Widget>[ContentWrong(), KeyboardWrong()],
+            children: <Widget>[ContentWrong(simbol: simbol,), KeyboardWrong()],
           )),
     );
   }

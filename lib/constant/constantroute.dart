@@ -4,8 +4,26 @@ const String phoneticRoute = '/phonetic';
 const String exerciseRoute = '/exercise';
 const String infoRoute = '/info';
 const String twister = '/twister';
+
 const String wrongf = '/wrongf';
 const String wrongv = '/wrongv';
+const String wrongb = '/wrongb';
+const String wrongu = '/wrongu';
+const String wrongz = '/wrongz';
+const String wrongt = '/wrongt';
+const String wrongr = '/wrongr';
+const String wrongI = '/wrongI';
+const String wrongu2 = '/wrongu2';
+const String wrongs2 = '/wrongs2';
+
+const String wrong32 = '/wrong32';
+const String wrongg = '/wrongg';
+const String wrongw = '/wrongw';
+const String wrongteta = '/wrongteta';
+const String wrongobuntut = '/wrongobuntut';
+const String wrongh = '/wrongh';
+const String wrong3buntut = '/wrong3buntut';
+
 const String symbolize1 = '/symbolize1';
 const String symbolize2 = '/symbolize2';
 const String symbolize3 = '/symbolize3';

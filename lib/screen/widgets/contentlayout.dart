@@ -62,74 +62,58 @@ class ContentLayout extends StatelessWidget {
           ),
           children: <Widget>[
             Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
-                    Padding(
-                      padding:
-                          EdgeInsets.only(left: SizeConfig.horizontal * 3.0),
-                      child: Column(
-                        children: <Widget>[
-                          Row(
-                            children: <Widget>[
-                              Visibility(
-                                visible: isWrong ?? false,
-                                child: Container(
-                                  margin: EdgeInsets.only(
-                                      right: SizeConfig.horizontal * 2),
-                                  child: Material(
-                                    // needed
-                                    color: Colors.transparent,
-                                    child: InkWell(
-                                      onTap: () {
-                                        Navigator.pushNamed(
-                                            context, wrongRoute ?? wrongf,
-                                            arguments:
-                                                WrongArgument(symbol: symbol));
-                                      }, // needed
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            new BorderRadius.circular(15.0),
-                                        child: Image.asset(
-                                          "assets/img/wrong.jpg",
-                                          width: SizeConfig.horizontal * 12,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
+                    Visibility(
+                      visible: isWrong ?? false,
+                      child: Container(
+                        margin:
+                            EdgeInsets.only(right: SizeConfig.horizontal * 2),
+                        child: Material(
+                          // needed
+                          color: Colors.transparent,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, wrongRoute,
+                                  arguments: WrongArgument(symbol: symbol));
+                            }, // needed
+                            child: ClipRRect(
+                              borderRadius: new BorderRadius.circular(15.0),
+                              child: Image.asset(
+                                "assets/img/wrong.jpg",
+                                width: SizeConfig.horizontal * 12,
+                                fit: BoxFit.cover,
                               ),
-                              Material(
-                                // needed
-                                color: Colors.transparent,
-                                child: InkWell(
-                                  onTap: () {
-                                    Navigator.pushNamed(context, twister,
-                                        arguments: TwisterArgument(
-                                            symbol, twistertext));
-                                  }, // needed
-                                  child: Image.asset(
-                                    "assets/img/tongue.png",
-                                    width: SizeConfig.horizontal * 12,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          )
-                        ],
+                            ),
+                          ),
+                        ),
                       ),
                     ),
+                    Material(
+                      // needed
+                      color: Colors.transparent,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, twister,
+                              arguments: TwisterArgument(symbol, twistertext));
+                        }, // needed
+                        child: Image.asset(
+                          "assets/img/tongue.png",
+                          width: SizeConfig.horizontal * 12,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: isWrong == false
+                          ? SizeConfig.horizontal * 16
+                          : SizeConfig.horizontal * 3,
+                    ),
                     Container(
-                      margin: EdgeInsets.only(
-                          left: isWrong == false
-                              ? SizeConfig.horizontal * 15
-                              : SizeConfig.horizontal * 2),
                       width: SizeConfig.horizontal * 35,
                       child: GifImage(
                         fit: BoxFit.cover,

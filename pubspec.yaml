@@ -42,8 +42,9 @@ flutter:
     - assets/img/info.png
     - assets/img/exercise.png
     # TODO: IMAGE MISSPRONON:
+    - assets/img/missp/f.png
     #ɓ 
-    #- assets/img/missp/b2.png
+    - assets/img/missp/b2.png
     #- assets/img/missp/p.png
     #- assets/img/missp/Rwalik.png
     #t̪

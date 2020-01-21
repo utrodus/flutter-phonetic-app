@@ -37,7 +37,7 @@ class KeyboardWrong extends StatelessWidget {
                   KeyboardLayout(
                     symbol: "p",
                     ontap: () {
-                      wrongState.setCurrentFlex(2);
+                      wrongState.setCurrentFlex(1);
                       wrongState.setWrongContent(1);
                     },
                   ),

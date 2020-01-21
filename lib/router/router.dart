@@ -27,8 +27,23 @@ import 'package:phono/screen/pages/introduction/screen.dart';
 import 'package:phono/screen/pages/mainmenu/screen.dart';
 import 'package:phono/screen/pages/phonetic/screen.dart';
 import 'package:phono/screen/pages/phonetic/twisterscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/32/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/3buntut/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/I/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/b/wrongscreen.dart';
 import 'package:phono/screen/pages/phonetic/wrong/f/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/g/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/h/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/obuntut/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/r/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/s2/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/t/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/teta/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/u/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/u2/wrongscreen.dart';
 import 'package:phono/screen/pages/phonetic/wrong/v/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/w/wrongscreen.dart';
+import 'package:phono/screen/pages/phonetic/wrong/z/wrongscreen.dart';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -104,11 +119,116 @@ class Router {
             builder: (_) => Wrongf(
                   simbol: data.symbol,
                 ));
-                
+
       case wrongv:
         WrongArgument data = settings.arguments;
         return MaterialPageRoute(
             builder: (_) => Wrongv(
+                  simbol: data.symbol,
+                ));
+
+      case wrongb:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongb(
+                  simbol: data.symbol,
+                ));
+
+      case wrongu:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongu(
+                  simbol: data.symbol,
+                ));
+
+      case wrongz:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongz(
+                  simbol: data.symbol,
+                ));
+
+      case wrongt:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongt(
+                  simbol: data.symbol,
+                ));
+
+      case wrongr:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongr(
+                  simbol: data.symbol,
+                ));
+
+      case wrongI:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => WrongI(
+                  simbol: data.symbol,
+                ));
+
+      case wrongu2:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongu2(
+                  simbol: data.symbol,
+                ));
+
+      case wrongs2:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongs2(
+                  simbol: data.symbol,
+                ));
+
+      case wrong32:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrong32(
+                  simbol: data.symbol,
+                ));
+
+      case wrongg:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongw(
+                  simbol: data.symbol,
+                ));
+
+      case wrongw:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongg(
+                  simbol: data.symbol,
+                ));
+
+      case wrongteta:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongteta(
+                  simbol: data.symbol,
+                ));
+
+      case wrongh:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongh(
+                  simbol: data.symbol,
+                ));
+
+      case wrong3buntut:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrong3buntut(
+                  simbol: data.symbol,
+                ));
+
+      case wrongobuntut:
+        WrongArgument data = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => Wrongobuntut(
                   simbol: data.symbol,
                 ));
 

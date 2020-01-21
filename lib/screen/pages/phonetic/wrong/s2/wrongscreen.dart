@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:phono/screen/pages/phonetic/wrong/f/contentwrong.dart';
-import 'package:phono/screen/pages/phonetic/wrong/f/keyboardwrong.dart';
+import 'package:phono/screen/pages/phonetic/wrong/s2/contentwrong.dart';
+import 'package:phono/screen/pages/phonetic/wrong/s2/keyboardwrong.dart';
+
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/widgets/appbar.dart';
 
-class Wrongf extends StatelessWidget {
+class Wrongs2 extends StatelessWidget {
   final String simbol;
 
-  Wrongf({
+  Wrongs2({
     Key key,
     this.simbol,
   }) : super(key: key);
