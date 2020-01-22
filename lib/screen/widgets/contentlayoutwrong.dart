@@ -78,7 +78,7 @@ class ContentLayoutWrong extends StatelessWidget {
                   ],
                 ),
                 Visibility(
-                  visible: !viewImg ?? false,
+                  visible: viewImg ?? false,
                   child: Container(
                     margin: EdgeInsets.only(top: SizeConfig.vertical * 7),
                       alignment: Alignment.center,
