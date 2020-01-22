@@ -22,6 +22,8 @@ class ContentWrong extends StatelessWidget {
           ContentLayoutWrong(
             visible: wrongState.getWrongContent == 0 ? true : false,
             symbol: simbol,
+            viewImg: true,
+            viewSifat: true,
             sifat: "Voiced Bilabial Fricative",
             img: "assets/img/wrong/bs.png",
             content: Column(
@@ -31,7 +33,8 @@ class ContentWrong extends StatelessWidget {
                     text: "Move the two lips close enough, no blocking"),
                 penjelasan(context,
                     number: "2. ",
-                    text: "Constrict the airflow through the narrow channel to make a friction"),
+                    text:
+                        "Constrict the airflow through the narrow channel to make a friction"),
                 penjelasan(context,
                     number: "3. ", text: "Vibrate the vocal cords"),
               ],
@@ -39,6 +42,7 @@ class ContentWrong extends StatelessWidget {
           ),
           ContentLayoutWrong(
             viewImg: false,
+            viewSifat: false,
             visible: wrongState.getWrongContent == 1 ? true : false,
             symbol: simbol,
             sifat: "Voiceless Bilabial Stop",

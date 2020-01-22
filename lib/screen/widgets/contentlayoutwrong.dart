@@ -18,7 +18,8 @@ class ContentLayoutWrong extends StatelessWidget {
     this.content,
     this.img,
     this.sifat,
-    this.viewSifat, this.viewImg,
+    this.viewSifat,
+    this.viewImg,
   }) : super(key: key);
 
   @override
@@ -62,11 +63,12 @@ class ContentLayoutWrong extends StatelessWidget {
                           style:
                               TextStyle(fontSize: SizeConfig.horizontal * 6)),
                     ),
-                    Container(
-                      margin: EdgeInsets.only(left: SizeConfig.horizontal * 15),
-                      width: SizeConfig.horizontal * 34,
-                      child: Visibility(
-                        visible: viewImg ?? true,
+                    Visibility(
+                      visible: viewImg ?? true,
+                      child: Container(
+                        margin:
+                            EdgeInsets.only(left: SizeConfig.horizontal * 15),
+                        width: SizeConfig.horizontal * 34,
                         child: Image(
                           fit: BoxFit.cover,
                           image: AssetImage(img),
@@ -74,6 +76,18 @@ class ContentLayoutWrong extends StatelessWidget {
                       ),
                     ),
                   ],
+                ),
+                Visibility(
+                  visible: !viewImg ?? false,
+                  child: Container(
+                    margin: EdgeInsets.only(top: SizeConfig.vertical * 7),
+                      alignment: Alignment.center,
+                      child: Text(
+                        "Pronounced In Silent Letter",
+                        style: TextStyle(
+                            fontSize: SizeConfig.horizontal * 7,
+                            fontFamily: Palete.cabinMedium),
+                      )),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
