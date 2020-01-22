@@ -20,16 +20,28 @@ class ContentWrong extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           ContentLayoutWrong(
+            viewSifat: true,
             visible: wrongState.getWrongContent == 0 ? true : false,
             symbol: simbol,
-            sifat: "Voiceless Labiodental Fricative",
-            img: "assets/img/missp/f.png",
-          ),
-          ContentLayoutWrong(
-            visible: wrongState.getWrongContent == 1 ? true : false,
-            symbol: simbol,
-            sifat: "Voiceless Bilabial Stop",
-            img: "assets/img/missp/f.png",
+            img: "assets/img/wrong/g2.png",
+            sifat: "Voiced Unaspirated Bilabial Implosive Stop",
+            content: Column(
+              children: <Widget>[
+                penjelasan(context,
+                    number: "1. ",
+                    text:
+                        "Implosively pull in the air through mouth"),
+                penjelasan(context,
+                    number: "2. ",
+                    text: "Obstruct the airflow in the vocal tract"),
+                penjelasan(context,
+                    number: "3. ", text: "Block the nasal channel"),
+                penjelasan(context,
+                    number: "4. ", text: "Block the air entirely"),
+                penjelasan(context,
+                    number: "5. ", text: "Vibrate the vocal cords"),
+              ],
+            ),
           ),
         ],
       ),

@@ -27,7 +27,7 @@ class KeyboardWrong extends StatelessWidget {
                     padding:
                         EdgeInsets.only(right: SizeConfig.horizontal * 1.0),
                     child: KeyboardLayout(
-                      symbol: "ʁ",
+                      symbol: "f",
                       ontap: () {
                         wrongState.setCurrentFlex(4);
                         wrongState.setWrongContent(0);

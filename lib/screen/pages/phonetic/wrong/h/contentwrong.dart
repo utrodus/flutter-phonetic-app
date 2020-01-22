@@ -20,17 +20,13 @@ class ContentWrong extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           ContentLayoutWrong(
+            viewImg: false,
             visible: wrongState.getWrongContent == 0 ? true : false,
             symbol: simbol,
             sifat: "Voiceless Labiodental Fricative",
             img: "assets/img/missp/f.png",
           ),
-          ContentLayoutWrong(
-            visible: wrongState.getWrongContent == 1 ? true : false,
-            symbol: simbol,
-            sifat: "Voiceless Bilabial Stop",
-            img: "assets/img/missp/f.png",
-          ),
+        
         ],
       ),
     );

@@ -13,9 +13,10 @@ const materiConsonantSounds3 =
 const subVowel2 =
     "Here are some phonemes that come problematic caused by the interference of first language in Indonesia.";
 
-const information1 = "This exercise is designed to train the users transcribing a word into phonemes";
-const information2 = "This exercise is designed to train the users transforming a phonemic transcription into word.";
-
+const information1 =
+    "This exercise is designed to train the users transcribing a word into phonemes";
+const information2 =
+    "This exercise is designed to train the users transforming a phonemic transcription into word.";
 
 String image1 = "assets/tabel/image1.svg";
 String image2 = "assets/tabel/image.png";
@@ -24,3 +25,23 @@ String tabel2 = "assets/tabel/tabel2.svg";
 String tabel3 = "assets/tabel/tabel3.svg";
 String tabel4 = "assets/tabel/tabel4.svg";
 String tabel5 = "assets/tabel/tabel5.svg";
+
+String a_miss = "assets/img/wrong/a.png";
+String i_miss = "assets/img/wrong/i.png";
+String u_miss = "assets/img/wrong/u.png";
+String u2_miss = "assets/img/wrong/u2.png";
+String d_miss = "assets/img/wrong/d.png";
+String d3_miss = "assets/img/wrong/d3.png";
+String f_miss = "assets/img/wrong/f.png";
+String obunt_miss = "assets/img/wrong/obuntut.png";
+String p_miss = "assets/img/wrong/p.png";
+String r_miss = "assets/img/wrong/r.png";
+String s_miss = "assets/img/wrong/s.png";
+String ss_miss = "assets/img/wrong/ss.png";
+String t_miss = "assets/img/wrong/t.png";
+String z_miss = "assets/img/wrong/z.png";
+
+String bs_miss= "assets/img/wrong/bs.png";
+String g2_miss = "assets/img/wrong/g2.png";
+String rvers_miss = "assets/img/wrong/rvers.png";
+String t2_miss = "assets/img/wrong/t2.png";

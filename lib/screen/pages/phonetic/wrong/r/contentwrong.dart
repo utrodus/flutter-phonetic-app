@@ -22,15 +22,9 @@ class ContentWrong extends StatelessWidget {
           ContentLayoutWrong(
             visible: wrongState.getWrongContent == 0 ? true : false,
             symbol: simbol,
-            sifat: "Voiceless Labiodental Fricative",
-            img: "assets/img/missp/f.png",
+            img: "assets/img/wrong/r.png",
           ),
-          ContentLayoutWrong(
-            visible: wrongState.getWrongContent == 1 ? true : false,
-            symbol: simbol,
-            sifat: "Voiceless Bilabial Stop",
-            img: "assets/img/missp/f.png",
-          ),
+          
         ],
       ),
     );

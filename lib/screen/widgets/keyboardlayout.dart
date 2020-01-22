@@ -12,19 +12,21 @@ class KeyboardLayout extends StatelessWidget {
     Key key,
     this.symbol,
     this.audio,
-    this.ontap, this.buttonColor, this.buttonShadow,
+    this.ontap,
+    this.buttonColor,
+    this.buttonShadow,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Material(
-          child: InkWell(
+      child: InkWell(
         onTap: ontap,
         child: Container(
           alignment: Alignment.center,
-          width: SizeConfig.horizontal *9,
-          margin: EdgeInsets.only(bottom: SizeConfig.horizontal*1),
+          width: SizeConfig.horizontal * 9,
+          margin: EdgeInsets.only(bottom: SizeConfig.horizontal * 1),
           decoration: BoxDecoration(
             color: buttonColor ?? Palete.phoneticButton,
             borderRadius: BorderRadius.circular(5),
@@ -45,12 +47,47 @@ class KeyboardLayout extends StatelessWidget {
             child: Text(
               symbol,
               style: TextStyle(
-                  color: Palete.white,
-                  fontSize: SizeConfig.horizontal * 4.5),
+                  color: Palete.white, fontSize: SizeConfig.horizontal * 4.5),
             ),
           ),
         ),
       ),
     );
   }
+}
+
+Widget customKeyboards(BuildContext context, {Function ontap, String symbol}) {
+  SizeConfig().init(context);
+  return Material(
+    child: InkWell(
+      onTap: ontap,
+      child: Container(
+        alignment: Alignment.center,
+        margin: EdgeInsets.only(bottom: SizeConfig.horizontal * 1),
+        decoration: BoxDecoration(
+          color: Palete.phoneticButton,
+          borderRadius: BorderRadius.circular(5),
+          boxShadow: [
+            new BoxShadow(
+                color: Palete.keyboardShadow,
+                offset: new Offset(0.0, 3.5),
+                spreadRadius: 0.1)
+          ],
+        ),
+        padding: EdgeInsets.only(
+          top: SizeConfig.vertical * 0.5,
+          bottom: SizeConfig.vertical * 0.5,
+          left: SizeConfig.horizontal * 1,
+          right: SizeConfig.horizontal * 1,
+        ),
+        child: Container(
+          child: Text(
+            symbol,
+            style: TextStyle(
+                color: Palete.white, fontSize: SizeConfig.horizontal * 4.5),
+          ),
+        ),
+      ),
+    ),
+  );
 }

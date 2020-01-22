@@ -16,14 +16,15 @@ class ContentWrong extends StatelessWidget {
     var wrongState = Provider.of<Simbol>(context);
 
     return Expanded(
-      flex: wrongState.getFlexContent ?? 1,
+      flex: wrongState.getFlexContent,
       child: Stack(
         children: <Widget>[
           ContentLayoutWrong(
+            viewSifat: true,
             visible: wrongState.getWrongContent == 0 ? true : false,
             symbol: simbol,
             sifat: "Voiced Uvular Fricative",
-            img: "assets/img/ae.png",
+            img: "assets/img/wrong/rvers.png",
             content: Column(
               children: <Widget>[
                 penjelasan(context,
@@ -44,7 +45,7 @@ class ContentWrong extends StatelessWidget {
             visible: wrongState.getWrongContent == 1 ? true : false,
             symbol: simbol,
             sifat: "Voiceless Bilabial Stop",
-            img: "assets/img/ae.png",
+            img: "assets/img/wrong/p.png",
           ),
         ],
       ),

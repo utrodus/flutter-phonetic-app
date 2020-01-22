@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gifimage/flutter_gifimage.dart';
 import 'package:phono/constant/constantroute.dart';
 import 'package:phono/router/router.dart';
+import 'package:phono/screen/pages/state/symbol.dart';
 import 'package:phono/screen/style/config.dart';
 import 'package:phono/screen/style/palete.dart';
+import 'package:provider/provider.dart';
 
 class ContentLayout extends StatelessWidget {
   final String symbol;
@@ -80,6 +82,7 @@ class ContentLayout extends StatelessWidget {
                             onTap: () {
                               Navigator.pushNamed(context, wrongRoute,
                                   arguments: WrongArgument(symbol: symbol));
+                                  Provider.of<Simbol>(context).setWrongContent(0);
                             }, // needed
                             child: ClipRRect(
                               borderRadius: new BorderRadius.circular(15.0),

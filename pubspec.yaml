@@ -42,6 +42,26 @@ flutter:
     - assets/img/info.png
     - assets/img/exercise.png
     # TODO: IMAGE MISSPRONON:
+
+    - assets/img/wrong/a.png
+    - assets/img/wrong/i.png
+    - assets/img/wrong/u.png
+    - assets/img/wrong/u2.png
+    - assets/img/wrong/d.png
+    - assets/img/wrong/d3.png
+    - assets/img/wrong/f.png
+    - assets/img/wrong/obuntut.png
+    - assets/img/wrong/p.png
+    - assets/img/wrong/r.png
+    - assets/img/wrong/s.png
+    - assets/img/wrong/ss.png
+    - assets/img/wrong/t.png
+    - assets/img/wrong/z.png
+    - assets/img/wrong/bs.png
+    - assets/img/wrong/g2.png
+    - assets/img/wrong/rvers.png
+    - assets/img/wrong/t2.png
+
     - assets/img/missp/f.png
     #ɓ 
     - assets/img/missp/b2.png

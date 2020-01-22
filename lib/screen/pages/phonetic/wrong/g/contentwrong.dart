@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:phono/screen/pages/state/symbol.dart';
-import 'package:phono/screen/widgets/contentlayout.dart';
 import 'package:phono/screen/widgets/contentlayoutwrong.dart';
 import 'package:provider/provider.dart';
 
@@ -23,13 +22,7 @@ class ContentWrong extends StatelessWidget {
             visible: wrongState.getWrongContent == 0 ? true : false,
             symbol: simbol,
             sifat: "Voiceless Labiodental Fricative",
-            img: "assets/img/missp/f.png",
-          ),
-          ContentLayoutWrong(
-            visible: wrongState.getWrongContent == 1 ? true : false,
-            symbol: simbol,
-            sifat: "Voiceless Bilabial Stop",
-            img: "assets/img/missp/f.png",
+            img: "assets/img/wrong/d3.png",
           ),
         ],
       ),

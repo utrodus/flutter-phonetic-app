@@ -193,14 +193,14 @@ class Router {
       case wrongg:
         WrongArgument data = settings.arguments;
         return MaterialPageRoute(
-            builder: (_) => Wrongw(
+            builder: (_) => Wrongg(
                   simbol: data.symbol,
                 ));
 
       case wrongw:
         WrongArgument data = settings.arguments;
         return MaterialPageRoute(
-            builder: (_) => Wrongg(
+            builder: (_) => Wrongw(
                   simbol: data.symbol,
                 ));
 

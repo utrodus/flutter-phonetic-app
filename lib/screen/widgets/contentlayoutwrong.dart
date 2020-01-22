@@ -5,6 +5,8 @@ import 'package:phono/screen/style/palete.dart';
 class ContentLayoutWrong extends StatelessWidget {
   final String symbol;
   final bool visible;
+  final bool viewSifat;
+  final bool viewImg;
   final Widget content;
   final String img;
   final String sifat;
@@ -16,6 +18,7 @@ class ContentLayoutWrong extends StatelessWidget {
     this.content,
     this.img,
     this.sifat,
+    this.viewSifat, this.viewImg,
   }) : super(key: key);
 
   @override
@@ -62,9 +65,12 @@ class ContentLayoutWrong extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(left: SizeConfig.horizontal * 15),
                       width: SizeConfig.horizontal * 34,
-                      child: Image(
-                        fit: BoxFit.cover,
-                        image: AssetImage(img),
+                      child: Visibility(
+                        visible: viewImg ?? true,
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage(img),
+                        ),
                       ),
                     ),
                   ],
@@ -72,27 +78,30 @@ class ContentLayoutWrong extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Container(
-                      alignment: Alignment.center,
-                      margin: EdgeInsets.only(
-                          bottom: SizeConfig.horizontal * 1,
-                          top: SizeConfig.vertical * 2),
-                      decoration: BoxDecoration(
-                          color: Color.fromRGBO(224, 157, 0, 1),
-                          borderRadius: BorderRadius.circular(13)),
-                      padding: EdgeInsets.only(
-                        top: SizeConfig.vertical * 0.5,
-                        bottom: SizeConfig.vertical * 0.5,
-                        left: SizeConfig.horizontal * 2,
-                        right: SizeConfig.horizontal * 2,
-                      ),
+                    Visibility(
+                      visible: viewSifat ?? false,
                       child: Container(
-                        child: Text(
-                          sifat ?? "",
-                          style: TextStyle(
-                              color: Palete.white,
-                              fontFamily: Palete.cabinSemiBold,
-                              fontSize: SizeConfig.horizontal * 4.3),
+                        alignment: Alignment.center,
+                        margin: EdgeInsets.only(
+                            bottom: SizeConfig.horizontal * 1,
+                            top: SizeConfig.vertical * 2),
+                        decoration: BoxDecoration(
+                            color: Color.fromRGBO(224, 157, 0, 1),
+                            borderRadius: BorderRadius.circular(13)),
+                        padding: EdgeInsets.only(
+                          top: SizeConfig.vertical * 0.5,
+                          bottom: SizeConfig.vertical * 0.5,
+                          left: SizeConfig.horizontal * 2,
+                          right: SizeConfig.horizontal * 2,
+                        ),
+                        child: Container(
+                          child: Text(
+                            sifat ?? "",
+                            style: TextStyle(
+                                color: Palete.white,
+                                fontFamily: Palete.cabinSemiBold,
+                                fontSize: SizeConfig.horizontal * 4.3),
+                          ),
                         ),
                       ),
                     ),

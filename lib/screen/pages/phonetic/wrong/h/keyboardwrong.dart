@@ -23,23 +23,14 @@ class KeyboardWrong extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Padding(
-                    padding:
-                        EdgeInsets.only(right: SizeConfig.horizontal * 1.0),
-                    child: KeyboardLayout(
-                      symbol: "ʁ",
-                      ontap: () {
-                        wrongState.setCurrentFlex(4);
-                        wrongState.setWrongContent(0);
-                      },
-                    ),
-                  ),
-                  KeyboardLayout(
-                    symbol: "p",
+                 
+                 customKeyboards(
+                    context,
                     ontap: () {
-                      wrongState.setCurrentFlex(1);
-                      wrongState.setWrongContent(1);
+                      wrongState.setCurrentFlex(4);
+                      wrongState.setWrongContent(0);
                     },
+                    symbol: "pronounced in silent letter"
                   ),
                 ],
               )

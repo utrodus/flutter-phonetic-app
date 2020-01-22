@@ -22,10 +22,23 @@ class ContentWrong extends StatelessWidget {
           ContentLayoutWrong(
             visible: wrongState.getWrongContent == 0 ? true : false,
             symbol: simbol,
-            sifat: "Voiceless Labiodental Fricative",
-            img: "assets/img/missp/f.png",
+            sifat: "Voiced Bilabial Fricative",
+            img: "assets/img/wrong/bs.png",
+            content: Column(
+              children: <Widget>[
+                penjelasan(context,
+                    number: "1. ",
+                    text: "Move the two lips close enough, no blocking"),
+                penjelasan(context,
+                    number: "2. ",
+                    text: "Constrict the airflow through the narrow channel to make a friction"),
+                penjelasan(context,
+                    number: "3. ", text: "Vibrate the vocal cords"),
+              ],
+            ),
           ),
           ContentLayoutWrong(
+            viewImg: false,
             visible: wrongState.getWrongContent == 1 ? true : false,
             symbol: simbol,
             sifat: "Voiceless Bilabial Stop",

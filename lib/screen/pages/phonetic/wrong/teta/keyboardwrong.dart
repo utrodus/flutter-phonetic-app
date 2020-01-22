@@ -27,20 +27,59 @@ class KeyboardWrong extends StatelessWidget {
                     padding:
                         EdgeInsets.only(right: SizeConfig.horizontal * 1.0),
                     child: KeyboardLayout(
-                      symbol: "ʁ",
+                      symbol: "t",
                       ontap: () {
                         wrongState.setCurrentFlex(4);
                         wrongState.setWrongContent(0);
                       },
                     ),
                   ),
-                  KeyboardLayout(
-                    symbol: "p",
+                  Padding(
+                    padding:
+                        EdgeInsets.only(right: SizeConfig.horizontal * 1.0),
+                  child : KeyboardLayout(
+                    symbol: "s",
                     ontap: () {
                       wrongState.setCurrentFlex(1);
                       wrongState.setWrongContent(1);
                     },
                   ),
+                  ),
+                  Padding(
+                    padding:
+                        EdgeInsets.only(right: SizeConfig.horizontal * 1.0),
+                    child: KeyboardLayout(
+                      symbol: "th",
+                      ontap: () {
+                        wrongState.setCurrentFlex(4);
+                        wrongState.setWrongContent(2);
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        EdgeInsets.only(right: SizeConfig.horizontal * 1.0),
+                    child: KeyboardLayout(
+                      symbol: "ð",
+                      ontap: () {
+                        wrongState.setCurrentFlex(4);
+                        wrongState.setWrongContent(3);
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        EdgeInsets.only(right: SizeConfig.horizontal * 1.0),
+                    child: KeyboardLayout(
+                      symbol: "t̪",
+                      ontap: () {
+                        wrongState.setCurrentFlex(4);
+                        wrongState.setWrongContent(4);
+                      },
+                    ),
+                  ),
+                  
+
                 ],
               )
             ],
