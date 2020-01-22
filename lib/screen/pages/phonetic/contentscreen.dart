@@ -963,7 +963,7 @@ class ContentScreen extends StatelessWidget {
                   "Mrs. King is bringing something pink for Mr. King to drink",
               audio: "n2.mp3",
               controller: controller,
-              gif: "assets/gif/consonant/n-min.gif",
+              gif: "assets/gif/consonant/n2-min.gif",
               sifat: "Voiced Velar Nasal",
               content: Column(
                 children: <Widget>[

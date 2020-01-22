@@ -109,7 +109,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       Provider.of<Simbol>(context).setCurrentSymbol(6);
                       vowel.play("i.mp3");
                       controller.value = 0.0;
-                      controller.animateTo(20,
+                      controller.animateTo(4,
                           duration: Duration(milliseconds: 1000));
                     },
                   ),
@@ -134,7 +134,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     Provider.of<Simbol>(context).setCurrentSymbol(7);
                     vowel.play("u.mp3");
                     controller.value = 0.0;
-                    controller.animateTo(19,
+                    controller.animateTo(4,
                         duration: Duration(milliseconds: 1000));
                   },
                 ),
@@ -211,7 +211,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       Provider.of<Simbol>(context).setCurrentSymbol(12);
                       consonant.play("r.mp3");
                       controller.value = 0.0;
-                      controller.animateTo(17,
+                      controller.animateTo(4,
                           duration: Duration(milliseconds: 1000));
                     },
                   ),
@@ -225,7 +225,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       Provider.of<Simbol>(context).setCurrentSymbol(13);
                       consonant.play("l.mp3");
                       controller.value = 0.0;
-                      controller.animateTo(16,
+                      controller.animateTo(4,
                           duration: Duration(milliseconds: 1000));
                     },
                   ),
@@ -241,7 +241,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       Provider.of<Simbol>(context).setCurrentSymbol(14);
                       vowel.play("igedi.mp3");
                       controller.value = 0.0;
-                      controller.animateTo(20,
+                      controller.animateTo(4,
                           duration: Duration(milliseconds: 1000));
                     },
                   ),
@@ -255,7 +255,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       Provider.of<Simbol>(context).setCurrentSymbol(15);
                       vowel.play("v2.mp3");
                       controller.value = 0.0;
-                      controller.animateTo(17,
+                      controller.animateTo(4,
                           duration: Duration(milliseconds: 1000));
                     },
                   ),
@@ -267,7 +267,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     Provider.of<Simbol>(context).setCurrentSymbol(16);
                     vowel.play("u2.mp3");
                     controller.value = 0.0;
-                    controller.animateTo(16,
+                    controller.animateTo(4,
                         duration: Duration(milliseconds: 1000));
                   },
                 ),
@@ -328,7 +328,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               Provider.of<Simbol>(context).setCurrentSymbol(24);
                               consonant.play("0.mp3");
                               controller.value = 0.0;
-                              controller.animateTo(17,
+                              controller.animateTo(4,
                                   duration: Duration(milliseconds: 1000));
                             },
                           ),
@@ -343,7 +343,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               Provider.of<Simbol>(context).setCurrentSymbol(25);
                               consonant.play("03.mp3");
                               controller.value = 0.0;
-                              controller.animateTo(15,
+                              controller.animateTo(4,
                                   duration: Duration(milliseconds: 1000));
                             },
                           ),
@@ -389,7 +389,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     Provider.of<Simbol>(context).setCurrentSymbol(20);
                     consonant.play("g.mp3");
                     controller.value = 0.0;
-                    controller.animateTo(20,
+                    controller.animateTo(4,
                         duration: Duration(milliseconds: 1000));
                   },
                 ),
@@ -462,7 +462,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               Provider.of<Simbol>(context).setCurrentSymbol(27);
                               consonant.play("n.mp3");
                               controller.value = 0.0;
-                              controller.animateTo(16,
+                              controller.animateTo(4,
                                   duration: Duration(milliseconds: 1000));
                             },
                           ),
@@ -480,7 +480,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                           Provider.of<Simbol>(context).setCurrentSymbol(30);
                           consonant.play("n2.mp3");
                           controller.value = 0.0;
-                          controller.animateTo(16,
+                          controller.animateTo(4,
                               duration: Duration(milliseconds: 1000));
                         },
                       ),
@@ -517,7 +517,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               Provider.of<Simbol>(context).setCurrentSymbol(23);
                               vowel.play("ewalik.mp3");
                               controller.value = 0.0;
-                              controller.animateTo(14,
+                              controller.animateTo(4,
                                   duration: Duration(milliseconds: 1000));
                             },
                           ),
@@ -550,7 +550,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                     .setCurrentSymbol(28);
                                 vowel.play("e.mp3");
                                 controller.value = 0.0;
-                                controller.animateTo(16,
+                                controller.animateTo(4,
                                     duration: Duration(milliseconds: 1000));
                               },
                             ),
@@ -600,7 +600,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                     .setCurrentSymbol(31);
                                 vowel.play("eponi.mp3");
                                 controller.value = 0.0;
-                                controller.animateTo(18,
+                                controller.animateTo(4,
                                     duration: Duration(milliseconds: 1000));
                               },
                             ),
@@ -616,7 +616,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                     .setCurrentSymbol(32);
                                 vowel.play("a.mp3");
                                 controller.value = 0.0;
-                                controller.animateTo(17,
+                                controller.animateTo(4,
                                     duration: Duration(milliseconds: 1000));
                               },
                             ),
@@ -628,7 +628,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                               Provider.of<Simbol>(context).setCurrentSymbol(33);
                               vowel.play("c2.mp3");
                               controller.value = 0.0;
-                              controller.animateTo(20,
+                              controller.animateTo(4,
                                   duration: Duration(milliseconds: 1000));
                             },
                           ),
@@ -651,7 +651,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                     .setCurrentSymbol(34);
                                 vowel.play("3buntut.mp3");
                                 controller.value = 0.0;
-                                controller.animateTo(16,
+                                controller.animateTo(4,
                                     duration: Duration(milliseconds: 1000));
                               },
                             ),
@@ -667,7 +667,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                                     .setCurrentSymbol(35);
                                 vowel.play("ebuntut.mp3");
                                 controller.value = 0.0;
-                                controller.animateTo(16,
+                                controller.animateTo(4,
                                     duration: Duration(milliseconds: 1000));
                               },
                             ),

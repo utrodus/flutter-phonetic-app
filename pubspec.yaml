@@ -93,6 +93,8 @@ flutter:
     - assets/gif/consonant/z-min.gif
     - assets/gif/consonant/3.gif
     - assets/gif/consonant/teta.gif
+    - assets/gif/consonant/n2-min.gif
+    
     # TODO: GIF VOWEL:
     - assets/gif/vowel/a.gif
     - assets/gif/vowel/ae.gif
@@ -105,7 +107,7 @@ flutter:
     - assets/gif/vowel/cwalik.gif
     - assets/gif/vowel/u-min.gif
     - assets/gif/vowel/u2.gif
-    - assets/gif/vowel/vwalik.gif 
+    - assets/gif/vowel/vwalik.gif
     
     
     
