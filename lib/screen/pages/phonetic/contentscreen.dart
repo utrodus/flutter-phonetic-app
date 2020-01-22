@@ -183,7 +183,7 @@ class ContentScreen extends StatelessWidget {
                   " If Charlie choose Charlton chocolate, should Charlie choose the cheap Charlton chocolate to chew?",
               audio: "tf.mp3",
               controller: controller,
-              gif: "assets/gif/consonant/tʃ-min.gif",
+              gif: "assets/gif/consonant/tf-min.gif",
               sifat: "Voiceless Palato-Alveolar Affricate",
               content: Column(
                 children: <Widget>[
@@ -488,7 +488,7 @@ class ContentScreen extends StatelessWidget {
               twistertext: "A duck comes into a pub",
               audio: "v2.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/ʌ-min.gif",
+              gif: "assets/gif/vowel/vwalik.gif",
               sifat: "Open Mid-Back Unrounded Vowel",
               content: Column(
                 children: <Widget>[
@@ -515,7 +515,7 @@ class ContentScreen extends StatelessWidget {
               twistertext: "A cook stood in a brook",
               audio: "u2.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/ʊ-min.gif",
+              gif: "assets/gif/vowel/u2.gif",
               sifat: "Near-Close Back Rounded Vowel",
               content: Column(
                 children: <Widget>[
@@ -550,7 +550,7 @@ class ContentScreen extends StatelessWidget {
                   "If she stops at the shop where I stop, then i shouldn't stop to shop at the shop where she stops",
               audio: "ff.mp3",
               controller: controller,
-              gif: "assets/gif/consonant/ʃ-min.gif",
+              gif: "assets/gif/consonant/ff.gif",
               sifat: "Voiceless Palato-ALveolar Sibilant",
               content: Column(
                 children: <Widget>[
@@ -586,7 +586,7 @@ class ContentScreen extends StatelessWidget {
                   "The beige version of the television does not look usual but casual.",
               audio: "3.mp3",
               controller: controller,
-              gif: "assets/gif/consonant/ʒ-min.gif",
+              gif: "assets/gif/consonant/3.gif",
               sifat: "Voiced Palato-Alveolar Sibilant",
               content: Column(
                 children: <Widget>[
@@ -768,7 +768,7 @@ class ContentScreen extends StatelessWidget {
               twistertext: "Seven balloons above the ocean",
               audio: "ewalik.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/ə-min.gif",
+              gif: "assets/gif/vowel/ewalik.gif",
               sifat: "Mid-Central Vowel",
               content: Column(
                 children: <Widget>[
@@ -795,7 +795,7 @@ class ContentScreen extends StatelessWidget {
                   " I thought a thought but the thought I thought I thought wasn't the thought I thought",
               audio: "θ.mp3",
               controller: controller,
-              gif: "assets/gif/consonant/θ-min.gif",
+              gif: "assets/gif/consonant/teta.gif",
               sifat: "Voiceless Dental Fricative",
               content: Column(
                 children: <Widget>[
@@ -909,7 +909,7 @@ class ContentScreen extends StatelessWidget {
               twistertext: "Men met and fed a wet elk",
               audio: "e.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/ɛ-min.gif",
+              gif: "assets/gif/vowel/e.gif",
               sifat: "Close-Mid Front Unrounded Vowel",
               content: Column(
                 children: <Widget>[
@@ -987,7 +987,7 @@ class ContentScreen extends StatelessWidget {
               twistertext: "A fat black cat in a hat had a nap",
               audio: "eponi.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/æ-min.gif",
+              gif: "assets/gif/vowel/ae.gif",
               sifat: "Near-Open Front Unrounded Vowel",
               content: Column(
                 children: <Widget>[
@@ -1019,7 +1019,7 @@ class ContentScreen extends StatelessWidget {
               twistertext: "A fox got a shock in a shop",
               audio: "a.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/a-min.gif",
+              gif: "assets/gif/vowel/a.gif",
               sifat: "Open Back Unrounded Vowel",
               content: Column(
                 children: <Widget>[
@@ -1052,7 +1052,7 @@ class ContentScreen extends StatelessWidget {
               twistertext: "A small frog lost in a fog",
               audio: "c2.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/ɔ-min.gif",
+              gif: "assets/gif/vowel/cwalik.gif",
               sifat: "Open-Mid Back Rounded Vowel",
               content: Column(
                 children: <Widget>[
@@ -1086,7 +1086,7 @@ class ContentScreen extends StatelessWidget {
                   "The nurse heard a thirsty bird flies to observe the dessert.",
               audio: "3buntut.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/ɝ-min.gif",
+              gif: "assets/gif/vowel/3buntut.gif",
               sifat: "R-Colored vowel",
               content: Column(
                 children: <Widget>[
@@ -1121,7 +1121,7 @@ class ContentScreen extends StatelessWidget {
                   "Mr. Fraser, the red-colored collar man, is the clever author to answer the question better.",
               audio: "ebuntut.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/ɚ-min.gif",
+              gif: "assets/gif/vowel/ebuntut.gif",
               sifat: "R-Colored Vowel",
               content: Column(
                 children: <Widget>[

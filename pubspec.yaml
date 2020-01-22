@@ -65,17 +65,10 @@ flutter:
     - assets/img/missp/f.png
     #ɓ 
     - assets/img/missp/b2.png
-    #- assets/img/missp/p.png
-    #- assets/img/missp/Rwalik.png
-    #t̪
-    #- assets/img/missp/t2.png
-    #β
-    #- assets/img/missp/b3.png
+   
     
     # TODO: GIF CONSONANT: 
-    - assets/gif/coba.gif
-    - assets/gif/b.gif
-    - assets/gif/d.gif
+    
     - assets/gif/consonant/h-min.gif
     - assets/gif/consonant/b-min.gif
     - assets/gif/consonant/d-min.gif
@@ -92,51 +85,31 @@ flutter:
     - assets/gif/consonant/p-min.gif
     - assets/gif/consonant/r-min.gif
     - assets/gif/consonant/s-min.gif
-    - assets/gif/consonant/ʃ-min.gif
+    - assets/gif/consonant/ff.gif
     - assets/gif/consonant/t-min.gif
-    - assets/gif/consonant/tʃ-min.gif
+    - assets/gif/consonant/tf-min.gif
     - assets/gif/consonant/v-min.gif
     - assets/gif/consonant/w-min.gif
     - assets/gif/consonant/z-min.gif
-    - assets/gif/consonant/ʒ-min.gif
-    - assets/gif/consonant/θ-min.gif
+    - assets/gif/consonant/3.gif
+    - assets/gif/consonant/teta.gif
     # TODO: GIF VOWEL:
-    - assets/gif/vowel/a-min.gif
-    - assets/gif/vowel/æ-min.gif
-    - assets/gif/vowel/ə-min.gif
-    - assets/gif/vowel/ɛ-min.gif
-    - assets/gif/vowel/ɚ-min.gif
-    - assets/gif/vowel/ɝ-min.gif
+    - assets/gif/vowel/a.gif
+    - assets/gif/vowel/ae.gif
+    - assets/gif/vowel/ewalik.gif
+    - assets/gif/vowel/e.gif
+    - assets/gif/vowel/ebuntut.gif
+    - assets/gif/vowel/3buntut.gif
     - assets/gif/vowel/i-min.gif
     - assets/gif/vowel/II-min.gif
-    - assets/gif/vowel/ɔ-min.gif
+    - assets/gif/vowel/cwalik.gif
     - assets/gif/vowel/u-min.gif
-    - assets/gif/vowel/ʊ-min.gif
-    - assets/gif/vowel/ʌ-min.gif 
+    - assets/gif/vowel/u2.gif
+    - assets/gif/vowel/vwalik.gif 
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
+ 
 
 #consonan :
     - assets/audio/b.mp3
@@ -185,7 +158,7 @@ flutter:
     #- assets/audio/ɚ.mp3
     #- assets/audio/ɛ.mp3
     #- assets/audio/ɝ.mp3
-    - assets/audio/ɪ.mp3
+    - assets/audio/igedi.mp3
     - assets/audio/e.mp3
     - assets/audio/3buntut.mp3
     - assets/audio/ebuntut.mp3

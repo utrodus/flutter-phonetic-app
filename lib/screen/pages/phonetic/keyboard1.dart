@@ -236,10 +236,10 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       right: SizeConfig.horizontal * 1),
                   child: KeyboardLayout(
                     symbol: "ɪ",
-                    audio: "ɪ.mp3",
+                    audio: "igedi.mp3",
                     ontap: () {
                       Provider.of<Simbol>(context).setCurrentSymbol(14);
-                      vowel.play("ɪ.mp3");
+                      vowel.play("igedi.mp3");
                       controller.value = 0.0;
                       controller.animateTo(20,
                           duration: Duration(milliseconds: 1000));
