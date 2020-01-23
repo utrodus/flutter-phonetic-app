@@ -13,7 +13,7 @@ class Quiz with ChangeNotifier {
 
 
   addScore() {
-    _score++;
+    _score += 10;
     notifyListeners();
   }
 

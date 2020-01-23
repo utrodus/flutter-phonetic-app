@@ -240,6 +240,7 @@ class _QuizLayoutState extends State<QuizLayout> {
                                 borderRadius: new BorderRadius.circular(10.0)),
                             color: Color.fromRGBO(224, 157, 0, 1),
                             onPressed: () {
+                              answer.trim();
                               if (answer.isNotEmpty) {
                                 if (quiz.getCurrentShuffle[widget.noQuiz][1]
                                     .contains(answer)) {

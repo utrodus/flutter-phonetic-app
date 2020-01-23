@@ -129,8 +129,8 @@ class _QuizLayout2State extends State<QuizLayout2> {
                       fontSize: SizeConfig.vertical * 3,
                     ),
                     keyboardType: TextInputType.text,
-                    attribute: "answer",
                     textCapitalization: TextCapitalization.sentences,
+                    attribute: "answer",
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.only(
                         top: SizeConfig.vertical * 2,
@@ -214,15 +214,18 @@ class _QuizLayout2State extends State<QuizLayout2> {
                           child: FlatButton(
                             shape: new RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(10.0)),
-                             color: Color.fromRGBO(224, 157, 0, 1),
+                            color: Color.fromRGBO(224, 157, 0, 1),
                             onPressed: () {
                               _quizKey.currentState.save();
+                              var _answer = _quizKey
+                                        .currentState.value['answer']
+                                        .toString()
+                                        .toLowerCase().trim();
 
                               if (_quizKey
                                   .currentState.value['answer'].isNotEmpty) {
                                 if (quiz.getCurrentShuffle[widget.noQuiz][1]
-                                    .contains(_quizKey
-                                        .currentState.value['answer'])) {
+                                    .contains(_answer)) {
                                   quiz.addScore();
                                   widget.navigation();
                                   check = false;
@@ -239,7 +242,8 @@ class _QuizLayout2State extends State<QuizLayout2> {
                               }
                             },
                             child: Container(
-                              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10)),
                               padding: EdgeInsets.only(
                                 top: SizeConfig.vertical * 1.5,
                                 bottom: SizeConfig.vertical * 1.5,
