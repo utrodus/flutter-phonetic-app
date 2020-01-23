@@ -389,7 +389,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                     Provider.of<Simbol>(context).setCurrentSymbol(20);
                     consonant.play("g.mp3");
                     controller.value = 0.0;
-                    controller.animateTo(4,
+                    controller.animateTo(24,
                         duration: Duration(milliseconds: 1000));
                   },
                 ),

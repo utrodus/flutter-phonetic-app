@@ -16,7 +16,7 @@ class ContentWrong extends StatelessWidget {
     var wrongState = Provider.of<Simbol>(context);
 
     return Expanded(
-      flex: wrongState.getFlexContent,
+      flex: 2,
       child: Stack(
         children: <Widget>[
           ContentLayoutWrong(

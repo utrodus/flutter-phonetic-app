@@ -151,7 +151,7 @@ class ContentScreen extends StatelessWidget {
               audio: "d3.mp3",
               gif: "assets/gif/consonant/d3-min.gif",
               controller: controller,
-              sifat: "Voiced Bilabial Stop",
+              sifat: "Voiced Palato-Alveolar Affricate",
               content: Column(
                 children: <Widget>[
                   penjelasan(context,
@@ -217,7 +217,7 @@ class ContentScreen extends StatelessWidget {
               audio: "i.mp3",
               controller: controller,
               gif: "assets/gif/vowel/i-min.gif",
-              sifat: "Voiceless Palato-Alveolar Affricate",
+              sifat: "Close Front Unrounded Vowel",
               content: Column(
                 children: <Widget>[
                   penjelasan(context,
@@ -652,7 +652,7 @@ class ContentScreen extends StatelessWidget {
               twistertext: "Gale's great glass globe glows green",
               audio: "g.mp3",
               controller: controller,
-              gif: "assets/gif/vowel/i-min.gif",
+              gif: "assets/gif/consonant/g-min.gif",
               sifat: "Voiced velar Stop",
               content: Column(
                 children: <Widget>[
@@ -825,7 +825,7 @@ class ContentScreen extends StatelessWidget {
               audio: "ð.mp3",
               controller: controller,
               gif: "assets/gif/consonant/o-min.gif",
-              sifat: "Voiceless Dental Fricative",
+              sifat: "Voiced Dental Fricative",
               content: Column(
                 children: <Widget>[
                   penjelasan(context,
@@ -1087,7 +1087,7 @@ class ContentScreen extends StatelessWidget {
               audio: "3buntut.mp3",
               controller: controller,
               gif: "assets/gif/vowel/3buntut.gif",
-              sifat: "R-Colored vowel",
+              sifat: "R-Colored Vowel",
               content: Column(
                 children: <Widget>[
                   penjelasan(context,
