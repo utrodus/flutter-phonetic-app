@@ -8,6 +8,7 @@ import 'package:phono/screen/pages/state/symbol.dart';
 
 Widget keyBoard1(BuildContext context, consonant, vowel,
     {GifController controller}) {
+  var currentContent = Provider.of<Simbol>(context).getCurrentSymbol;
   SizeConfig().init(context);
   return Container(
     child: SingleChildScrollView(

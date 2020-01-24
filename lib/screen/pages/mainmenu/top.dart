@@ -44,8 +44,9 @@ class TopContent extends StatelessWidget {
             ),
             Padding(
                 padding: EdgeInsets.only(
-                    top: SizeConfig.vertical * 1.0,
-                    bottom: SizeConfig.vertical * 1),
+                    top: SizeConfig.vertical * 1.5,
+                    bottom: SizeConfig.vertical * 0.1,
+                    ),
                 child: Container(
                     padding: EdgeInsets.only(
                         left: SizeConfig.horizontal * 0.8,
@@ -57,15 +58,15 @@ class TopContent extends StatelessWidget {
                       "Phono",
                       style: TextStyle(
                           color: Palete.white,
-                          fontFamily: Palete.cabinSemiBold,
-                          fontSize: SizeConfig.horizontal * 6),
+                          fontFamily: Palete.cabinBold,
+                          fontSize: SizeConfig.horizontal * 8),
                     ))),
             Text(
-              "Foʊ.noʊ",
+              "/Foʊ.noʊ/",
               style: TextStyle(
                   color: Palete.white,
                   fontSize: SizeConfig.horizontal * 5.5,
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.normal),
             ),
             Padding(
               padding: EdgeInsets.only(top: SizeConfig.vertical * 1),

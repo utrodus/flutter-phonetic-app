@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     ]);
     return MultiProvider(
       child: MaterialApp(
-        title: "Phono 'foʊ.noʊ",
+        title: "Phono '/Foʊ.noʊ/",
         debugShowCheckedModeBanner: false,
         home: MainMenu(),
         onGenerateRoute: Router.generateRoute,

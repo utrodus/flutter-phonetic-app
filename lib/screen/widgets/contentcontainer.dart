@@ -17,7 +17,6 @@ Widget textContentContainer({String text, double margin}) {
       textAlign: TextAlign.justify,
       style: TextStyle(
           height: SizeConfig.horizontal * 0.4,
-          fontFamily: Palete.cabinRegular,
           color: Palete.isiColor,
           fontSize: SizeConfig.horizontal * 3.8),
     ),
