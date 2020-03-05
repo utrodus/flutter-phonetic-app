@@ -78,8 +78,8 @@ class SubItemLayout extends StatelessWidget {
               },
             ),
             Expandable(
-              collapsed: buildCollapsed(),
-              expanded: buildExpanded(),
+              collapsed: buildExpanded(),
+              expanded: buildCollapsed(),
             ),
           ],
         ),

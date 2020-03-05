@@ -206,7 +206,7 @@ Widget keyBoard1(BuildContext context, consonant, vowel,
                       top: SizeConfig.vertical * 1,
                       left: SizeConfig.horizontal * 3),
                   child: KeyboardLayout(
-                    symbol: "r",
+                    symbol: "ɹ",
                     audio: "r.mp3",
                     ontap: () {
                       Provider.of<Simbol>(context).setCurrentSymbol(12);

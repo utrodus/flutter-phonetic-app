@@ -8,6 +8,8 @@ import 'package:phono/screen/widgets/contentcontainer.dart';
 import 'package:phono/screen/widgets/introitemlayout.dart';
 import 'package:phono/screen/widgets/subitemlayout.dart';
 
+import '../../widgets/introitemlayout.dart';
+
 Widget introItem(BuildContext context) {
   SizeConfig().init(context);
   return ExpandableTheme(
@@ -64,20 +66,26 @@ Widget introItem(BuildContext context) {
                   fontSize: SizeConfig.horizontal * 3.5),
             ),
             textContentContainer(text: materi2),
-            Text(
-              "\nProblem of Language Interference in Indonesia\n",
-              overflow: TextOverflow.clip,
-              style: TextStyle(
-                  height: SizeConfig.horizontal * 0.4,
-                  fontFamily: Palete.cabinRegular,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: SizeConfig.horizontal * 4),
-            ),
+            // Text(
+            //   "\n\n",
+            //   overflow: TextOverflow.clip,
+            //   style: TextStyle(
+            //       height: SizeConfig.horizontal * 0.4,
+            //       fontFamily: Palete.cabinRegular,
+            //       color: Colors.black,
+            //       fontWeight: FontWeight.bold,
+            //       fontSize: SizeConfig.horizontal * 4),
+            // ),
+          ],
+        ),
+        IntroItemLayout(
+          title: "Problem of Language Interference in Indonesia",
+          content: <Widget>[
             textContentContainer(text: subVowel2),
             SubItemLayout(subtitle: "1.	Consonants", subcontent: [
               SizedBox(height: SizeConfig.vertical * 5),
               tableContentContainer(tabel4),
+              
             ]),
             SubItemLayout(subtitle: "2.	Vowels", subcontent: [
               SizedBox(height: SizeConfig.vertical * 5),

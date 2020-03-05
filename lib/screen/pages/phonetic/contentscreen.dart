@@ -472,7 +472,7 @@ class ContentScreen extends StatelessWidget {
                   penjelasan(context,
                       number: "- ",
                       text:
-                          "Exist in lest than 20% of the world languages. Many people may distorted it."),
+                          "Exist in less than 20% of the world languages. Many people may distorted it."),
                   penjelasan(context,
                       number: "- ",
                       text:
@@ -533,7 +533,7 @@ class ContentScreen extends StatelessWidget {
                   penjelasan(context,
                       number: "- ",
                       text:
-                          "Exist in lest than 20% of the world languages. Many people distorted it with the /u/ sound."),
+                          "Exist in less than 20% of the world languages. Many people distorted it with the /u/ sound."),
                   penjelasan(context,
                       number: "- ",
                       text:
@@ -567,7 +567,7 @@ class ContentScreen extends StatelessWidget {
                   penjelasan(context,
                       number: "- ",
                       text:
-                          "Sibilant is fricative consonants with a higher amplitude."),
+                          "Sibilant is fricative consonant with a higher amplitude."),
                   penjelasan(context,
                       number: "- ", text: "Counterpart: /ʒ/ (voiced)."),
                   penjelasan(context,
@@ -775,11 +775,11 @@ class ContentScreen extends StatelessWidget {
                   penjelasan(context,
                       number: "1. ",
                       text:
-                          "Slighly open the mouth, relax the lips and tongue."),
+                          "Slightly open the mouth, relax the lips and tongue."),
                   penjelasan(context,
                       number: "2. ",
                       text:
-                          "Slighly open the mouth, relax the lips and tongue."),
+                          "Place the tongue in the middle of the mouth."),
                   penjelasan(context,
                       number: "- ",
                       text:
@@ -844,10 +844,10 @@ class ContentScreen extends StatelessWidget {
                   penjelasan(context,
                       number: "- ",
                       text:
-                          "Occurs in less then 10% of the world's languages and it's not present in the majority of European and Asian languages."),
+                          "Occurs in less than 10% of the world's languages and it's not present in the majority of European and Asian languages."),
                   penjelasan(context,
                       number: "- ",
-                      text: "Used in only less then 1% of English words."),
+                      text: "Used in only less than 1% of English words."),
                 ],
               ),
               isWrong: true,
@@ -945,8 +945,7 @@ class ContentScreen extends StatelessWidget {
                           "Slightly open the mouth, leave the lips and tongue neutrally."),
                   penjelasan(context,
                       number: "2. ",
-                      text:
-                          "Slightly open the mouth, leave the lips and tongue neutrally."),
+                      text: "Breath out the air through the vocal cords."),
                   penjelasan(context,
                       number: "3. ", text: "Do not vibrate the vocal cords."),
                   penjelasan(context,
@@ -972,7 +971,7 @@ class ContentScreen extends StatelessWidget {
                       text: "Pull the back of the tongue toward the throat."),
                   penjelasan(context,
                       number: "2. ",
-                      text: "Pull the back of the tongue toward the throat."),
+                      text: "Stop the air, direct it into the nose."),
                   penjelasan(context,
                       number: "- ",
                       text:

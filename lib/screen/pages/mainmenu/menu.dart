@@ -33,7 +33,7 @@ class _MenuItemState extends State<MenuItem> {
                 icon: Palete.ae,
                 paddingTitle: SizeConfig.horizontal * 3.8,
                 width: SizeConfig.horizontal * 11,
-                menuTitle: "Phonetics Chart", onTap: () {
+                menuTitle: "Phonemic Chart", onTap: () {
               Navigator.pushNamed(context, phoneticRoute);
             }),
           ),
