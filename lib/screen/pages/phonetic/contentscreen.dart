@@ -403,7 +403,7 @@ class ContentScreen extends StatelessWidget {
             ),
             ContentLayout(
               visible: currentContent == 12 ? true : false,
-              symbol: "r",
+              symbol: "ɹ",
               twistertext: "A rider rides racing bike in the rain",
               audio: "r.mp3",
               controller: controller,
