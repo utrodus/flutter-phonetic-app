@@ -9,7 +9,12 @@ class ContentLayoutWrong extends StatelessWidget {
   final bool viewImg;
   final Widget content;
   final String img;
+  final String img2;
   final String sifat;
+
+  final double imgSize;
+  final double imgMargin;
+  final bool scdImg;
 
   ContentLayoutWrong({
     Key key,
@@ -20,6 +25,10 @@ class ContentLayoutWrong extends StatelessWidget {
     this.sifat,
     this.viewSifat,
     this.viewImg,
+    this.scdImg,
+    this.imgSize,
+    this.imgMargin,
+    this.img2,
   }) : super(key: key);
 
   @override
@@ -66,21 +75,42 @@ class ContentLayoutWrong extends StatelessWidget {
                     Visibility(
                       visible: viewImg ?? true,
                       child: Container(
-                        margin:
-                            EdgeInsets.only(left: SizeConfig.horizontal * 15),
-                        width: SizeConfig.horizontal * 34,
+                        margin: EdgeInsets.only(
+                            left: imgMargin ?? SizeConfig.horizontal * 15),
+                        width: imgSize ?? SizeConfig.horizontal * 34,
                         child: Image(
                           fit: BoxFit.cover,
                           image: AssetImage(img),
                         ),
                       ),
                     ),
+                    Visibility(
+                        //second image
+                        visible: scdImg ?? false,
+                        child: Row(
+                          children: <Widget>[
+                            SizedBox(width: SizeConfig.horizontal * 2),
+                            Text(
+                              " + ",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(
+                                  left: SizeConfig.horizontal * 2),
+                              width: imgSize ?? SizeConfig.horizontal * 34,
+                              child: Image(
+                                fit: BoxFit.cover,
+                                image: AssetImage(img2 ?? img),
+                              ),
+                            ),
+                          ],
+                        )),
                   ],
                 ),
                 Visibility(
                   visible: viewImg ?? false,
                   child: Container(
-                    margin: EdgeInsets.only(top: SizeConfig.vertical * 7),
+                      margin: EdgeInsets.only(top: SizeConfig.vertical * 7),
                       alignment: Alignment.center,
                       child: Text(
                         "Pronounced In Silent Letter",
