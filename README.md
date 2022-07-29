@@ -1,17 +1,30 @@
-# IPA
+## Flutter Phonetics Learn App 
+Mobile App for learn International Phonetic Alphabet with Lessons & Quiz
 
-A new Flutter project.
+### ✨ Features : 
 
-## Getting Started
+- Play Audio & Gif 
+- Phonetic Lesson & Quiz
+- Reusable Widgets
+- Provider State Management
 
-This project is a starting point for a Flutter application.
+**📦 Packages Used :**
+- expandable : [🔗](https://pub.dev/packages/expandable)
+- audioplayers [🔗](https://pub.dev/packages/audioplayers)
+- provider : [🔗](https://pub.dev/packages/provider)
+- flutter_form_builder [🔗](https://pub.dev/packages/flutter_form_builder)
+- flutter_svg [🔗](https://pub.dev/packages/flutter_svg)
 
-A few resources to get you started if this is your first Flutter project:
+**🎨 Fonts**
+- Cabin [🔗](https://www.1001fonts.com/cabin-font.html)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Contact Info
+- Github : [![GitHub followers](https://img.shields.io/github/followers/utrodus.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/utrodus?tab=followers) 
+- Website : [utrodus.my.id](https://utrodus.my.id)
+- Instagram : [@utrodus](https://www.instagram.com/utrodus)
+- WhatsApp : [+62 816 5416 082](https://wa.me/628165416082)
+- Email : [contact.utrodus@gmail.com](mailto:contact.utrodus@gmail.com)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Phonetic-App
+---
+
+###### tags: `Flutter` `Ui App` `Dicoding Indonesia` `Sleep App` `meditation app`
