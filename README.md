@@ -27,4 +27,4 @@ Mobile App for learn International Phonetic Alphabet with Lessons & Quiz
 
 ---
 
-###### tags: `Flutter` `Ui App` `Dicoding Indonesia` `Sleep App` `meditation app`
+###### tags: `Flutter` `Ui App` `Quiz App` `Learn Phonetics`
